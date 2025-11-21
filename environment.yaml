@@ -1,0 +1,11 @@
+name: '522'
+channels:
+  - conda-forge
+dependencies:
+  - ucimlrepo
+  - ipykernel
+  - ydata-profiling
+  - pandas
+  - altair-all
+  - python=3.11
+  - scikit-learn
