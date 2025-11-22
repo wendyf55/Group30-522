@@ -19,7 +19,7 @@ Group 30 in DSCI 522
 - Mehmet Imga  
 - Wendy Frankel  
 - Claudia Liauw  
-- Serene Zha 
+- Serene Zha
 
 ## How to Run the Analysis
 
