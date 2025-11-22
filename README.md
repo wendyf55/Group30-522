@@ -32,7 +32,32 @@ git clone https://github.com/wendyf55/Group30-522.git
 cd Group30-522
 ```
 
-How to run data analysis: Use the environment.yaml file, run our analysis file.
+### Step 2: Create and activate the conda environment
+
+We provide an environment.yml file that pins the versions of Python and required packages.
+
+```bash
+conda env create -f environment.yaml
+conda activate 522
+```
+
+### Step 3: Run the analysis
+
+1. Launch Jupyter Lab or Jupyter Notebook from within the activated environment:
+
+```bash
+jupyter lab
+```
+
+2. Open the abalone_rings.ipynb notebook in the repository.
+
+3. Run all cells from top to bottom.
+This will:
+- Fetch and load the Abalone dataset,
+- Perform basic data cleaning and train–test splitting,
+- Conduct exploratory data analysis (EDA),
+- Fit and evaluate the linear regression, Random Forest, and SVR models,
+- Produce summary tables and visualizations comparing model performance and feature importance.
 
 Dependencies: Pandas, Altair, SciKit Learn, ucimlrepo, ipykernel
 
