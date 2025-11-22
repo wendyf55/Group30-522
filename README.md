@@ -59,6 +59,15 @@ This will:
 - Fit and evaluate the linear regression, Random Forest, and SVR models,
 - Produce summary tables and visualizations comparing model performance and feature importance.
 
+## Dataset
+
+### Abalone Dataset
+
+- Source: UCI Machine Learning Repository
+- Instances: 4,177 abalones
+- Features: 8 predictor variables
+- Target: Rings – number of shell rings
+
 Dependencies: Pandas, Altair, SciKit Learn, ucimlrepo, ipykernel
 
 Names of the licenses: MIT
