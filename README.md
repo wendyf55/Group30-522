@@ -68,7 +68,17 @@ This will:
 - Features: 8 predictor variables
 - Target: Rings – number of shell rings
 
-Dependencies: Pandas, Altair, SciKit Learn, ucimlrepo, ipykernel
+## Dependencies
+
+All dependencies (with versions) are specified in environment.yaml. Key libraries include:
+- pandas
+- numpy
+- scikit-learn
+- altair
+- ucimlrepo
+- ipykernel
+
+Install these via the conda environment described above to ensure a reproducible computational environment.
 
 Names of the licenses: MIT
 
