@@ -80,6 +80,10 @@ All dependencies (with versions) are specified in environment.yaml. Key librarie
 
 Install these via the conda environment described above to ensure a reproducible computational environment.
 
-Names of the licenses: MIT
+## License
+
+The code and analysis in this repository are licensed under the MIT License.
+See LICENSE.md for the full license text.
+
 
 n the main README.md file for this project you should include: - the project title - the list of contributors/authors - a short summary of the project (view from 10,000 feet) - how to run your data analysis - a list of the dependencies needed to run your analysis - the names of the licenses contained in LICENSE.md
