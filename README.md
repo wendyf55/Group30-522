@@ -1,15 +1,96 @@
 # Predicting Abalone Ages Based on Individual Characteristics - Regression Problem
 
-## Group 30 in DSCI 522
+## Project Summary
 
-## Contributors: Mehmet Imga, Wendy Frankel, Claudia Liauw, Serene Zha
+This project builds and compares regression models to predict the age of individual abalones from simple physical measurements. Using the Abalone dataset from the UCI Machine Learning Repository, we model the relationship between age (approximated from shell rings) and features such as sex, shell length, diameter, height, and several weight measurements.
 
-Project Summary: In this project, we attempt to create a model which can predict the age of individual abalone. We run this analysis in Python.
+We fit three supervised learning models in Python:
 
-How to run data analysis: Use the environment.yaml file, run our analysis file.
+- **Baseline linear regression**
+- **Random Forest regressor**
+- **Support Vector Regressor (SVR) with an RBF kernel**
 
-Dependencies: Pandas, Altair, SciKit Learn, ucimlrepo, ipykernel
+Our linear regression model explains about half of the variance in ring count (R² ≈ 0.44, RMSE ≈ 5.48), while the non-linear Random Forest and SVR models both perform better (R² ≈ 0.52, RMSE ≈ 4.76–4.70). Whole weight is a strong positive predictor of age, whereas shucked weight has a strong negative coefficient, suggesting collinearity among weight variables. Overall, these results indicate that flexible, non-linear models using carefully chosen features are better suited for predicting abalone age from physical measurements.
 
-Names of the licenses: MIT
+## Contributors
 
-n the main README.md file for this project you should include: - the project title - the list of contributors/authors - a short summary of the project (view from 10,000 feet) - how to run your data analysis - a list of the dependencies needed to run your analysis - the names of the licenses contained in LICENSE.md
+Group 30 in DSCI 522  
+
+- Mehmet Imga  
+- Wendy Frankel  
+- Claudia Liauw  
+- Serene Zha
+
+## How to Run the Analysis
+
+Follow these steps to set up the environment and reproduce our analysis.
+
+### Step 1: Clone the repository
+
+```bash
+git clone https://github.com/wendyf55/Group30-522.git
+cd Group30-522
+```
+
+### Step 2: Create and activate the conda environment
+
+We provide an environment.yml file that pins the versions of Python and required packages.
+
+```bash
+conda env create -f environment.yaml
+conda activate 522
+```
+
+### Step 3: Run the analysis
+
+1. Launch Jupyter Lab or Jupyter Notebook from within the activated environment:
+
+```bash
+jupyter lab
+```
+
+2. Open the abalone_rings.ipynb notebook in the repository.
+
+3. Run all cells from top to bottom.
+This will:
+- Fetch and load the Abalone dataset,
+- Perform basic data cleaning and train–test splitting,
+- Conduct exploratory data analysis (EDA),
+- Fit and evaluate the linear regression, Random Forest, and SVR models,
+- Produce summary tables and visualizations comparing model performance and feature importance.
+
+## Dataset
+
+### Abalone Dataset
+
+- Source: UCI Machine Learning Repository
+- Instances: 4,177 abalones
+- Features: 8 predictor variables
+- Target: Rings – number of shell rings
+
+## Dependencies
+
+All dependencies (with versions) are specified in environment.yaml. Key libraries include:
+- pandas
+- numpy
+- scikit-learn
+- altair
+- ucimlrepo
+- ipykernel
+
+Install these via the conda environment described above to ensure a reproducible computational environment.
+
+## License
+
+The code and analysis in this repository are licensed under the MIT License.
+See LICENSE.md for the full license text.
+
+## References
+
+[1] Dua, D., & Graff, C. (2019). UCI Machine Learning Repository: Abalone Data Set. University of California, Irvine, School of Information and Computer Science. Retrieved from the UCI Machine Learning Repository.
+
+[2] Nash, W. J., Sellers, T. L., Talbot, S. R., Cawthorn, A. J., & Ford, W. B. (1994). The population biology of abalone (Haliotis species) in Tasmania. I. Blacklip abalone (H. rubra) from the north coast and islands of Bass Strait. Sea Fisheries Division Technical Report No. 48.
+
+[3] Guney, S., Kilinc, I., Hameed, A.A., Jamil, A. (2022). Abalone Age Prediction Using Machine Learning. In: Djeddi, C., Siddiqi, I., Jamil, A., Ali Hameed, A., Kucuk, İ. (eds) Pattern Recognition and Artificial Intelligence. MedPRAI 2021. Communications in Computer and Information Science, vol 1543. Springer, Cham. https://doi.org/10.1007/978-3-031-04112-9_25
+
+[4] Python Core Team. Python: A dynamic, open source programming language. Python Software Foundation, 2019. Python version 2.7. URL: https://www.python.org/.
