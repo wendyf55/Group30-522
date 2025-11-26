@@ -1,0 +1,14 @@
+services:
+  dockerlock:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dockerlock
+    container_name: dockerlock
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    stdin_open: true
+    tty: true

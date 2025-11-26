@@ -6,6 +6,8 @@ dependencies:
   - ipykernel
   - ydata-profiling
   - pandas
-  - altair-all
+  - altair
+  - jupyterlab
+  - ipywidgets
   - python=3.11
   - scikit-learn
