@@ -25,12 +25,12 @@ cl: ## create conda lock for multiple platforms
 .PHONY: env
 env: ## remove previous and create environment from lock file
 	# remove the existing env, and ignore if missing
-	conda env remove -n dockerlock || true
-	conda-lock install -n dockerlock conda-lock.yml
+	conda env remove -n group30-522 || true
+	conda-lock install -n group30-522 conda-lock.yml
 
 .PHONY: build
 build: ## build the docker image from the Dockerfile
-	docker build -t dockerlock --file Dockerfile .
+	docker build -t group30-522 --file Dockerfile .
 
 .PHONY: run
 run: ## alias for the up target

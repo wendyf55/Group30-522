@@ -80,6 +80,33 @@ All dependencies (with versions) are specified in environment.yaml. Key librarie
 
 Install these via the conda environment described above to ensure a reproducible computational environment.
 
+## Computational environment (Docker)
+
+This project uses a reproducible Docker environment located at:
+
+- **Docker Hub image:** `wfrankel55/group30-522`
+- **Compose file:** `docker-compose.yml`
+- **Build definition:** `Dockerfile` and `conda-linux-64.lock`
+
+The Docker image is automatically built and pushed to Docker Hub by the
+GitHub Actions workflow `.github/workflows/docker-publish.yml`.
+
+---
+
+### How to start the environment (recommended: Docker Compose)
+
+1. Install **Docker Desktop** (which includes Docker Compose).
+
+2. Clone this repository:
+
+   ```bash
+   git clone https://github.com/wendyf55/Group30-522.git
+   cd Group30-522
+   ```
+
+3. 
+
+
 ## License
 
 The code and analysis in this repository are licensed under the MIT License.
