@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: wendyf55/Group30-522  
+          images: wfrankel55/group30-522  
           tags: |
             type=raw, value={{sha}},enable=${{github.ref_type != 'tag' }}
             type=raw, value=latest
@@ -47,4 +47,4 @@ jobs:
       - name: Update docker-compose.yml with new image tag
         if: success()
         run: | 
-          sed -i "s|image:  wendyf55/Group30-522:.*|image:  wendyf55/Group30-522:${{ steps.meta.outputs.version }}|" docker-compose.yml
+          sed -i "s|image:  wfrankel55/group30-522:.*|image:  wfrankel55/group30-522:${{ steps.meta.outputs.version }}|" docker-compose.yml
