@@ -46,7 +46,7 @@ jobs:
       
       - name: Update docker-compose.yml with new image tag
         if: success()
-        run: |
+        run: | 
           sed -i "s|image:  wendyf55/Group30-522:.*|image:  wendyf55/Group30-522:${{ steps.meta.outputs.version }}|" docker-compose.yml
 
       - name: Commit and push updated docker-compose.yml
