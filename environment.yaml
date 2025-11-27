@@ -11,3 +11,5 @@ dependencies:
   - ipywidgets
   - python=3.11
   - scikit-learn
+  - pandera
+  - dask
