@@ -3,8 +3,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: dockerlock
-    container_name: dockerlock
+    image: group30-522
+    container_name: group30-522
     ports:
       - "8888:8888"
     volumes:
