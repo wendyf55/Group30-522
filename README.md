@@ -89,7 +89,7 @@ This project uses a reproducible Docker environment located at:
 - **Build definition:** `Dockerfile` and `conda-linux-64.lock`
 
 The Docker image is automatically built and pushed to Docker Hub by the
-GitHub Actions workflow `.github/workflows/docker-publish.yml`.
+GitHub Actions workflow `.github/workflows/docker-publish.yml`. 
 
 ---
 
@@ -104,8 +104,27 @@ GitHub Actions workflow `.github/workflows/docker-publish.yml`.
    cd Group30-522
    ```
 
-3. 
+3. Start the container with Docker Compose:
 
+```bash
+docker compose up
+```
+
+This command:
+
+- builds/pulls the image defined in docker-compose.yml
+
+- starts a container called dockerlock
+
+- maps port 8888 on your machine to 8888 inside the container
+(so Jupyter will be available at http://localhost:8888)
+
+4. To stop the container, press Ctrl + C in the terminal where
+docker compose up is running, then clean up with:
+
+```bash
+docker compose down
+```
 
 ## License
 
