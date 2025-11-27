@@ -124,7 +124,7 @@ docker compose up is running, then clean up with:
 
 ```bash
 docker compose down
-```
+``` 
 
 ## License
 
