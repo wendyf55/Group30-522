@@ -80,6 +80,20 @@ All dependencies (with versions) are specified in environment.yaml. Key librarie
 
 Install these via the conda environment described above to ensure a reproducible computational environment.
 
+## Adding a new dependency
+
+- Add the dependency to the environment.yml file on a new branch.
+
+- Run conda-lock -k explicit --file environment.yml -p linux-64 to update the conda-linux-64.lock file.
+
+- Re-build the Docker image locally to ensure it builds and runs properly.
+
+- Push the changes to GitHub. A new Docker image will be built and pushed to Docker Hub automatically. It will be tagged with the SHA for the commit that changed the file.
+
+- Update the docker-compose.yml file on your branch to use the new container image (make sure to update the tag specifically).
+
+- Send a pull request to merge the changes into the main branch.
+
 ## Computational environment (Docker)
 
 This project uses a reproducible Docker environment located at:
