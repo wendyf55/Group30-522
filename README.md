@@ -80,6 +80,66 @@ All dependencies (with versions) are specified in environment.yaml. Key librarie
 
 Install these via the conda environment described above to ensure a reproducible computational environment.
 
+## Adding a new dependency
+
+- Add the dependency to the environment.yml file on a new branch.
+
+- Run conda-lock -k explicit --file environment.yml -p linux-64 to update the conda-linux-64.lock file.
+
+- Re-build the Docker image locally to ensure it builds and runs properly.
+
+- Push the changes to GitHub. A new Docker image will be built and pushed to Docker Hub automatically. It will be tagged with the SHA for the commit that changed the file.
+
+- Update the docker-compose.yml file on your branch to use the new container image (make sure to update the tag specifically).
+
+- Send a pull request to merge the changes into the main branch.
+
+## Computational environment (Docker)
+
+This project uses a reproducible Docker environment located at:
+
+- **Docker Hub image:** `wfrankel55/group30-522`
+- **Compose file:** `docker-compose.yml`
+- **Build definition:** `Dockerfile` and `conda-linux-64.lock`
+
+The Docker image is automatically built and pushed to Docker Hub by the
+GitHub Actions workflow `.github/workflows/docker-publish.yml`. 
+
+---
+
+### How to start the environment (recommended: Docker Compose)
+
+1. Install **Docker Desktop** (which includes Docker Compose).
+
+2. Clone this repository:
+
+   ```bash
+   git clone https://github.com/wendyf55/Group30-522.git
+   cd Group30-522
+   ```
+
+3. Start the container with Docker Compose:
+
+```bash
+docker compose up
+```
+
+This command:
+
+- builds/pulls the image defined in docker-compose.yml
+
+- starts a container called dockerlock
+
+- maps port 8888 on your machine to 8888 inside the container
+(so Jupyter will be available at http://localhost:8888)
+
+4. To stop the container, press Ctrl + C in the terminal where
+docker compose up is running, then clean up with:
+
+```bash
+docker compose down
+``` 
+
 ## License
 
 The code and analysis in this repository are licensed under the MIT License.
