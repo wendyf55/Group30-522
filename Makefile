@@ -7,20 +7,14 @@ help: ## Show this help message
 
 .PHONY: all
 all: ## runs the targets: cl, env, build
-	make cl
-	make env
-	make build
+	$(MAKE) cl
+	$(MAKE) env
+	$(MAKE) build
 
 .PHONY: cl
 cl: ## create conda lock for multiple platforms
 	# the linux-aarch64 is used for ARM Macs using linux docker container
-	conda-lock lock \
-		--file environment.yaml \
-		-p linux-64 \
-		-p osx-64 \
-		-p osx-arm64 \
-		-p win-64 \
-		-p linux-aarch64
+	conda-lock lock --file environment.yaml -p linux-64 -p osx-64 -p osx-arm64 -p win-64 -p linux-aarch64
 
 .PHONY: env
 env: ## remove previous and create environment from lock file
@@ -34,12 +28,12 @@ build: ## build the docker image from the Dockerfile
 
 .PHONY: run
 run: ## alias for the up target
-	make up
+	$(MAKE) up
 
 .PHONY: up
 up: ## stop and start docker-compose services
 	# by default stop everything before re-creating
-	make stop
+	$(MAKE) stop
 	docker-compose up -d
 
 .PHONY: stop
