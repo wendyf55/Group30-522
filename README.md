@@ -21,7 +21,7 @@ Group 30 in DSCI 522
 - Claudia Liauw  
 - Serene Zha
 
-## How to Run the Analysis
+## Run the Analysis
 
 Follow these steps to set up the environment and reproduce our analysis.
 
@@ -43,21 +43,19 @@ conda activate 522
 
 ### Step 3: Run the analysis
 
-1. Launch Jupyter Lab or Jupyter Notebook from within the activated environment:
+1. Navigate to the root of this project on your computer using the
+   command line and enter the following command:
 
-```bash
-jupyter lab
+``` bash
+docker compose up
 ```
 
-2. Open the abalone_rings.ipynb notebook in the repository.
+2. In the terminal, look for a URL that starts with 
+`http://127.0.0.1:8888/lab?token=` 
+(for an example, see the highlighted text in the terminal below). 
+Copy and paste that URL into your browser.
 
-3. Run all cells from top to bottom.
-This will:
-- Fetch and load the Abalone dataset,
-- Perform basic data cleaning and train–test splitting,
-- Conduct exploratory data analysis (EDA),
-- Fit and evaluate the linear regression, Random Forest, and SVR models,
-- Produce summary tables and visualizations comparing model performance and feature importance.
+
 
 ## Dataset
 
@@ -104,41 +102,6 @@ This project uses a reproducible Docker environment located at:
 
 The Docker image is automatically built and pushed to Docker Hub by the
 GitHub Actions workflow `.github/workflows/docker-publish.yml`. 
-
----
-
-### How to start the environment (recommended: Docker Compose)
-
-1. Install **Docker Desktop** (which includes Docker Compose).
-
-2. Clone this repository:
-
-   ```bash
-   git clone https://github.com/wendyf55/Group30-522.git
-   cd Group30-522
-   ```
-
-3. Start the container with Docker Compose:
-
-```bash
-docker compose up
-```
-
-This command:
-
-- builds/pulls the image defined in docker-compose.yml
-
-- starts a container called dockerlock
-
-- maps port 8888 on your machine to 8888 inside the container
-(so Jupyter will be available at http://localhost:8888)
-
-4. To stop the container, press Ctrl + C in the terminal where
-docker compose up is running, then clean up with:
-
-```bash
-docker compose down
-``` 
 
 ## License
 
