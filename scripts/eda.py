@@ -28,7 +28,7 @@ def save_eda_report(train_df, report_path):
               type=str,
               default=DEFAULT_SAVE_DIR,
               help='Path to directory to save EDA outputs')
-@click.option('--table-name',
+@click.option('--table-file',
               type=str,
               default=DEFAULT_TABLE_FILE,
               help='Filename to save descriptive stats including extension')
@@ -36,12 +36,12 @@ def save_eda_report(train_df, report_path):
               type=str,
               default=DEFAULT_REPORT_FILE,
               help='Filename to save descriptive stats including extension')
-def main(train_path, save_dir, table_name, report_file):
+def main(train_path, save_dir, table_file, report_file):
     os.makedirs(save_dir, exist_ok=True)
 
     train_df = pd.read_csv(train_path)
 
-    save_descriptive_table(train_df, os.path.join(save_dir, table_name))
+    save_descriptive_table(train_df, os.path.join(save_dir, table_file))
     save_eda_report(train_df, os.path.join(save_dir, report_file))
 
 
