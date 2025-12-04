@@ -112,6 +112,43 @@ def check_empty(train_df):
     schema.validate(train_df, lazy=True)
 
 
+def save_boxplot(train_df, boxplot_path):
+    # Create boxplot with improved formatting
+    fig, ax = plt.subplots(figsize=(10, 4))
+    sns.boxplot(data=train_df, x='Rings', ax=ax, color='steelblue')
+    ax.set_xlabel('Number of Rings (Age Proxy)', fontsize=12)
+    ax.set_title('Distribution of Abalone Ring Counts', fontsize=14, fontweight='bold')
+    ax.tick_params(axis='both', labelsize=11)
+    plt.tight_layout()
+    plt.savefig(boxplot_path)
+
+
+def save_histogram(train_df, histogram_path):
+    # Create histogram with improved formatting
+    fig, ax = plt.subplots(figsize=(10, 5))
+    sns.histplot(data=train_df, x='Rings', binwidth=1, ax=ax, color='steelblue', edgecolor='white')
+    ax.set_xlabel('Number of Rings (Age Proxy)', fontsize=12)
+    ax.set_ylabel('Count', fontsize=12)
+    ax.set_title('Distribution of Abalone Ring Counts', fontsize=14, fontweight='bold')
+    ax.tick_params(axis='both', labelsize=11)
+
+    # Add vertical line for median
+    median_rings = train_df['Rings'].median()
+    ax.axvline(median_rings, color='red', linestyle='--', linewidth=2, label=f'Median = {median_rings:.0f}')
+    ax.legend(fontsize=11)
+    plt.tight_layout()
+    plt.savefig(histogram_path)
+    
+
+def check_target_distribution(train_df):
+    from scipy.stats import shapiro
+    normal_pvalue = shapiro(train_df.Rings).pvalue
+    try:
+        assert normal_pvalue > 0.05
+    except AssertionError:
+        print(f"Target variable is not normal! Shapiro p-value: {normal_pvalue}")
+
+
 @click.command()
 @click.option('--train-path',
               type=str,
@@ -122,7 +159,15 @@ def check_empty(train_df):
               type=str,
               default=DEFAULT_SAVE_DIR,
               help='Path to directory to save EDA outputs')
-def main(train_path, save_dir):
+@click.option('--boxplot-file',
+              type=str,
+              default=DEFAULT_BOXPLOT_FILE,
+              help='Filename to save boxplot for target distribution')
+@click.option('--hist-file',
+              type=str,
+              default=DEFAULT_HIST_FILE,
+              help='Filename to save histogram for target distribution')
+def main(train_path, save_dir, boxplot_file, hist_file):
     os.makedirs(save_dir, exist_ok=True)
 
     train_df = pd.read_csv(train_path)
@@ -134,6 +179,10 @@ def main(train_path, save_dir):
     check_anomalous_categorical(train_df)
     check_duplicates(train_df)
     check_empty(train_df)
+
+    save_boxplot(train_df, os.path.join(save_dir, boxplot_file))
+    save_histogram(train_df, os.path.join(save_dir, hist_file))
+    check_target_distribution(train_df)
 
 
 if __name__ == "__main__":
