@@ -4,12 +4,14 @@ import pandas as pd
 import pandera.pandas as pa
 import matplotlib.pyplot as plt
 import seaborn as sns
+import numpy as np
 
 DEFAULT_TRAIN_PATH = '../data/processed/abalone_train.csv'
 DEFAULT_SAVE_DIR = '../results/data_validation'
 DEFAULT_BOXPLOT_FILE = 'target_boxplot.png'
 DEFAULT_HIST_FILE = 'target_histogram.png'
 DEFAULT_CORRELATION_FILE = 'correlation_plot.png'
+DEFAULT_THRESHOLD = 0.9
 
 
 def check_data_format(train_df):
@@ -149,6 +151,51 @@ def check_target_distribution(train_df):
         print(f"Target variable is not normal! Shapiro p-value: {normal_pvalue}")
 
 
+def save_correlation(train_df, correlation_path):
+    # Create correlation matrix with human-readable labels
+    corr_matrix = train_df.select_dtypes(include=['float64', 'int64']).corr()
+
+    # Map column names to human-readable labels
+    label_map = {
+        'Length': 'Length',
+        'Diameter': 'Diameter', 
+        'Height': 'Height',
+        'Whole_weight': 'Whole Weight',
+        'Shucked_weight': 'Shucked Weight',
+        'Viscera_weight': 'Viscera Weight',
+        'Shell_weight': 'Shell Weight',
+        'Rings': 'Rings (Target)'
+    }
+
+    # Rename index and columns
+    corr_matrix_display = corr_matrix.rename(index=label_map, columns=label_map)
+
+    # Create heatmap with improved formatting
+    fig, ax = plt.subplots(figsize=(12, 10))
+    sns.heatmap(corr_matrix_display, annot=True, fmt='.2f', vmin=-1, vmax=1, 
+                cmap='coolwarm', ax=ax, annot_kws={'size': 10},
+                cbar_kws={'label': 'Correlation Coefficient'})
+    ax.set_title('Feature Correlation Matrix', fontsize=14, fontweight='bold', pad=20)
+    ax.tick_params(axis='both', labelsize=11)
+    plt.xticks(rotation=45, ha='right')
+    plt.yticks(rotation=0)
+    plt.tight_layout()
+    plt.savefig(correlation_path)
+
+
+def check_correlation(train_df, threshold=0.9):
+    corr_matrix = train_df.select_dtypes(include=['float64', 'int64']).corr()
+
+    exceeds_threshold = [(corr_matrix.index[i], corr_matrix.columns[j],
+                          corr_matrix.iloc[i, j].round(4))
+                         for i, j in np.argwhere(corr_matrix > threshold)]
+    try:
+        assert len(exceeds_threshold) == 0
+    except AssertionError:
+        print(f"Anomalous correlations above {threshold}!")
+        print(exceeds_threshold)
+
+
 @click.command()
 @click.option('--train-path',
               type=str,
@@ -167,7 +214,15 @@ def check_target_distribution(train_df):
               type=str,
               default=DEFAULT_HIST_FILE,
               help='Filename to save histogram for target distribution')
-def main(train_path, save_dir, boxplot_file, hist_file):
+@click.option('--correlation-file',
+              type=str,
+              default=DEFAULT_CORRELATION_FILE,
+              help='Filename to save correlation plot')
+@click.option('--threshold',
+              type=float,
+              default=DEFAULT_THRESHOLD,
+              help='Anomalous correlation threshold')
+def main(train_path, save_dir, boxplot_file, hist_file, correlation_file, threshold):
     os.makedirs(save_dir, exist_ok=True)
 
     train_df = pd.read_csv(train_path)
@@ -183,6 +238,9 @@ def main(train_path, save_dir, boxplot_file, hist_file):
     save_boxplot(train_df, os.path.join(save_dir, boxplot_file))
     save_histogram(train_df, os.path.join(save_dir, hist_file))
     check_target_distribution(train_df)
+
+    save_correlation(train_df, os.path.join(save_dir, correlation_file))
+    check_correlation(train_df, threshold)
 
 
 if __name__ == "__main__":
