@@ -71,12 +71,12 @@ This will:
 ## Dependencies
 
 All dependencies (with versions) are specified in environment.yaml. Key libraries include:
-- pandas
-- numpy
-- scikit-learn
-- altair
-- ucimlrepo
-- ipykernel
+- python (version 3.11)
+- pandas (version 2.3.3) 
+- scikit-learn (version 1.7.2)
+- altair (version 6.0.0)
+- ucimlrepo (version 0.0.7)
+- ipykernel (version 7.1.0)
 
 Install these via the conda environment described above to ensure a reproducible computational environment.
 
