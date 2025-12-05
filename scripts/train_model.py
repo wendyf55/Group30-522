@@ -15,7 +15,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 DEFAULT_TRAIN_PATH = '../data/processed/abalone_train.csv'
 DEFAULT_TEST_PATH = '../data/processed/abalone_test.csv'
-DEFAULT_OUTPUT_PREFIX = '../results/model_results'
+DEFAULT_OUTPUT_PREFIX = '../results/model/model_results'
 DEFAULT_SEED = 522
 
 NUMERIC_FEATURES = [
@@ -160,12 +160,8 @@ def create_residuals_chart(predictions_df):
 
 
 def save_chart(chart, path):
-    """Save chart to file, falling back to HTML if PNG fails."""
-    try:
-        chart.save(path, scale_factor=2)
-    except ValueError:
-        html_path = path.replace('.png', '.html')
-        chart.save(html_path)
+    """Save chart to PNG file."""
+    chart.save(path)
 
 
 def train_and_save_results(train_path, test_path, output_prefix, seed):
