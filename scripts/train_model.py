@@ -6,13 +6,15 @@ import pandas as pd
 import altair as alt
 from sklearn.compose import make_column_transformer
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.linear_model import Ridge
+from sklearn.linear_model import LinearRegression
+from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
 
 DEFAULT_TRAIN_PATH = '../data/processed/abalone_train.csv'
+DEFAULT_TEST_PATH = '../data/processed/abalone_test.csv'
 DEFAULT_OUTPUT_PREFIX = '../results/model_results'
 DEFAULT_SEED = 522
 
@@ -34,16 +36,16 @@ def create_preprocessor():
 
 
 def train_models(X, y, seed):
-    """Train Ridge Regression and Random Forest models."""
+    """Train Linear Regression, Random Forest, and SVR models."""
     models = {}
     
-    # Ridge Regression
-    ridge_pipeline = make_pipeline(
+    # Linear Regression (Baseline)
+    lr_pipeline = make_pipeline(
         create_preprocessor(),
-        Ridge(alpha=1.0, random_state=seed)
+        LinearRegression()
     )
-    ridge_pipeline.fit(X, y)
-    models['Ridge Regression'] = ridge_pipeline
+    lr_pipeline.fit(X, y)
+    models['Linear Regression'] = lr_pipeline
     
     # Random Forest
     rf_pipeline = make_pipeline(
@@ -56,6 +58,14 @@ def train_models(X, y, seed):
     )
     rf_pipeline.fit(X, y)
     models['Random Forest'] = rf_pipeline
+    
+    # SVR (RBF Kernel)
+    svr_pipeline = make_pipeline(
+        create_preprocessor(),
+        SVR(kernel='rbf', C=1.0, epsilon=0.1)
+    )
+    svr_pipeline.fit(X, y)
+    models['SVR (RBF Kernel)'] = svr_pipeline
     
     return models
 
@@ -158,9 +168,10 @@ def save_chart(chart, path):
         chart.save(html_path)
 
 
-def train_and_save_results(train_path, output_prefix, seed):
+def train_and_save_results(train_path, test_path, output_prefix, seed):
     """
-    Train models on the data and save results as figures and tables.
+    Train models on training data and evaluate on test data.
+    Save results as figures and tables.
     """
     # Create output directory
     output_dir = os.path.dirname(output_prefix)
@@ -170,17 +181,22 @@ def train_and_save_results(train_path, output_prefix, seed):
     # Set random seed
     np.random.seed(seed)
     
-    # Load data
-    df = pd.read_csv(train_path)
-    X = df[NUMERIC_FEATURES + CATEGORICAL_FEATURES]
-    y = df[TARGET_COLUMN]
+    # Load training data
+    train_df = pd.read_csv(train_path)
+    X_train = train_df[NUMERIC_FEATURES + CATEGORICAL_FEATURES]
+    y_train = train_df[TARGET_COLUMN]
     
-    # Train models
-    models = train_models(X, y, seed)
+    # Load test data
+    test_df = pd.read_csv(test_path)
+    X_test = test_df[NUMERIC_FEATURES + CATEGORICAL_FEATURES]
+    y_test = test_df[TARGET_COLUMN]
     
-    # Evaluate models
-    metrics_df = evaluate_models(models, X, y)
-    predictions_df = create_predictions_df(models, X, y)
+    # Train models on training data
+    models = train_models(X_train, y_train, seed)
+    
+    # Evaluate models on test data
+    metrics_df = evaluate_models(models, X_test, y_test)
+    predictions_df = create_predictions_df(models, X_test, y_test)
     
     # Save models
     model_path = f"{output_prefix}_models.pkl"
@@ -218,6 +234,12 @@ def train_and_save_results(train_path, output_prefix, seed):
     help='Path to training data CSV file'
 )
 @click.option(
+    '--test-path',
+    type=str,
+    default=DEFAULT_TEST_PATH,
+    help='Path to test data CSV file'
+)
+@click.option(
     '--output-prefix',
     type=str,
     default=DEFAULT_OUTPUT_PREFIX,
@@ -229,9 +251,9 @@ def train_and_save_results(train_path, output_prefix, seed):
     default=DEFAULT_SEED,
     help='Random seed for reproducibility'
 )
-def main(train_path, output_prefix, seed):
-    """Train models on processed data and save results as figures and tables."""
-    train_and_save_results(train_path, output_prefix, seed)
+def main(train_path, test_path, output_prefix, seed):
+    """Train models on training data and evaluate on test data."""
+    train_and_save_results(train_path, test_path, output_prefix, seed)
 
 
 if __name__ == "__main__":
