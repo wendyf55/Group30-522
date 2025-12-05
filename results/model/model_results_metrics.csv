@@ -1,0 +1,4 @@
+Model,RMSE,R2_Score
+Linear Regression,2.3419,0.4427
+Random Forest,2.1817,0.5163
+SVR (RBF Kernel),2.1673,0.5227

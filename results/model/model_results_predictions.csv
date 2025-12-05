@@ -1,0 +1,2509 @@
+Model,Actual,Predicted
+Linear Regression,9,11.15853683109259
+Linear Regression,8,6.754079569419432
+Linear Regression,13,17.743454874247796
+Linear Regression,12,10.370999894666612
+Linear Regression,11,11.106916149856689
+Linear Regression,10,11.881635764690012
+Linear Regression,7,7.357736200733631
+Linear Regression,8,9.586970821188777
+Linear Regression,8,7.891431036642335
+Linear Regression,8,8.405025513380622
+Linear Regression,8,10.408376145520588
+Linear Regression,7,7.261780375423815
+Linear Regression,5,5.605023887015619
+Linear Regression,10,10.60156152978932
+Linear Regression,10,11.037535388884962
+Linear Regression,13,11.450163940358138
+Linear Regression,10,11.967078226355301
+Linear Regression,9,8.936918592685592
+Linear Regression,7,5.07987704959221
+Linear Regression,12,10.95634666066015
+Linear Regression,8,9.349544041691994
+Linear Regression,8,10.963599037466672
+Linear Regression,8,10.042271808234245
+Linear Regression,9,9.728216295811539
+Linear Regression,9,10.0806187423443
+Linear Regression,7,8.170291920512081
+Linear Regression,11,9.731608183921262
+Linear Regression,11,10.1072609240275
+Linear Regression,7,7.437977596378617
+Linear Regression,9,10.044633826181142
+Linear Regression,11,13.32611840713331
+Linear Regression,13,13.83518061622972
+Linear Regression,10,10.301390840534065
+Linear Regression,12,9.95745227657646
+Linear Regression,7,7.387658041107363
+Linear Regression,11,9.735889676772182
+Linear Regression,9,10.141010932785079
+Linear Regression,10,9.465218871722637
+Linear Regression,10,9.185469806163873
+Linear Regression,10,10.327852714692735
+Linear Regression,13,12.688706175306395
+Linear Regression,18,9.67611453770509
+Linear Regression,8,9.461289167963638
+Linear Regression,7,7.077376648579278
+Linear Regression,9,9.555674331535474
+Linear Regression,7,8.794760222045173
+Linear Regression,9,10.252958570743612
+Linear Regression,10,10.737725774104625
+Linear Regression,14,10.511088386085174
+Linear Regression,10,10.007467028895693
+Linear Regression,10,10.85359790427
+Linear Regression,9,9.377955348535796
+Linear Regression,11,12.955206670006632
+Linear Regression,9,9.599523588237291
+Linear Regression,16,10.726282751532512
+Linear Regression,7,9.8541076512945
+Linear Regression,15,13.255570342511918
+Linear Regression,8,7.2679630788446765
+Linear Regression,13,11.418118434875185
+Linear Regression,12,11.374587965179641
+Linear Regression,12,12.328485178126545
+Linear Regression,9,9.858494135760818
+Linear Regression,9,10.92834628044097
+Linear Regression,7,8.355147863239804
+Linear Regression,6,6.121068421477221
+Linear Regression,11,13.71535595778521
+Linear Regression,9,10.672440482966696
+Linear Regression,11,9.583286180743379
+Linear Regression,9,6.830763726236702
+Linear Regression,8,7.3644283614218695
+Linear Regression,4,4.824234250086243
+Linear Regression,11,11.346188026565919
+Linear Regression,8,9.249468613119046
+Linear Regression,9,8.558996883011599
+Linear Regression,8,7.196696574817909
+Linear Regression,11,12.70470904659301
+Linear Regression,5,7.0531966498221115
+Linear Regression,6,7.96746633641834
+Linear Regression,8,9.224340200603537
+Linear Regression,10,9.457832935877658
+Linear Regression,11,8.982952646388593
+Linear Regression,10,11.065436744050697
+Linear Regression,6,7.078864317913194
+Linear Regression,6,6.9810595850833375
+Linear Regression,10,9.04956239584887
+Linear Regression,9,9.860058136699891
+Linear Regression,11,11.334368344950562
+Linear Regression,10,11.394325386690758
+Linear Regression,8,9.4860692165129
+Linear Regression,10,10.686239816720699
+Linear Regression,7,8.753150294859601
+Linear Regression,7,7.648984998978121
+Linear Regression,9,10.472698281878479
+Linear Regression,14,10.926233033362148
+Linear Regression,13,16.720615646126216
+Linear Regression,11,11.553508956337161
+Linear Regression,15,10.923150107183607
+Linear Regression,14,11.723160691536894
+Linear Regression,8,7.451650733153482
+Linear Regression,8,6.9562985474084895
+Linear Regression,7,7.76608372575423
+Linear Regression,12,13.421988510576128
+Linear Regression,8,9.188909435574656
+Linear Regression,5,6.541400039148232
+Linear Regression,15,9.581132876764388
+Linear Regression,17,14.010445259722397
+Linear Regression,9,9.693063428572314
+Linear Regression,9,9.813592100469966
+Linear Regression,8,7.525467776008619
+Linear Regression,16,12.567128473237787
+Linear Regression,7,6.587609880216966
+Linear Regression,11,11.764232379370966
+Linear Regression,6,8.249881086296478
+Linear Regression,13,7.395794247976643
+Linear Regression,16,12.165552354175706
+Linear Regression,7,8.627871910042177
+Linear Regression,11,11.674453266184818
+Linear Regression,10,12.5129644311676
+Linear Regression,10,10.726236596867235
+Linear Regression,7,9.400861920259768
+Linear Regression,6,7.27326180761532
+Linear Regression,9,11.333846049189944
+Linear Regression,14,8.665237214121015
+Linear Regression,9,8.260551632819235
+Linear Regression,9,10.697552928217583
+Linear Regression,9,9.232389082473002
+Linear Regression,9,10.147306944937249
+Linear Regression,6,7.318819744777277
+Linear Regression,8,7.291900908661754
+Linear Regression,9,11.311935454127209
+Linear Regression,14,11.446036736669202
+Linear Regression,9,10.909415758256587
+Linear Regression,17,14.241971050519961
+Linear Regression,10,12.659445418114336
+Linear Regression,9,10.104684686452847
+Linear Regression,6,6.8559386182523925
+Linear Regression,15,8.98441753156504
+Linear Regression,10,11.474044885306137
+Linear Regression,6,7.402034875910322
+Linear Regression,11,10.728692907804495
+Linear Regression,11,10.709082132431195
+Linear Regression,12,9.947211359360567
+Linear Regression,11,10.870586365382913
+Linear Regression,10,10.81126829982076
+Linear Regression,14,10.563477063363113
+Linear Regression,8,10.019616072183027
+Linear Regression,7,7.426146913300563
+Linear Regression,9,7.946461215449453
+Linear Regression,8,8.625317671504977
+Linear Regression,13,11.010724129344258
+Linear Regression,13,8.849725042712674
+Linear Regression,10,8.547017778443186
+Linear Regression,8,9.07054818082648
+Linear Regression,8,8.257247406267053
+Linear Regression,10,9.951310469785776
+Linear Regression,7,7.15108716135066
+Linear Regression,9,9.235330906911805
+Linear Regression,7,8.719772956719527
+Linear Regression,10,8.520009165944906
+Linear Regression,8,8.203427645431166
+Linear Regression,4,5.449400552329139
+Linear Regression,8,10.23995677780623
+Linear Regression,12,10.978900425761942
+Linear Regression,12,9.611840992430992
+Linear Regression,13,11.899836362853113
+Linear Regression,7,7.8690577453283765
+Linear Regression,14,10.172547093984598
+Linear Regression,10,10.003652396690804
+Linear Regression,11,12.881840018854938
+Linear Regression,8,11.260742617300874
+Linear Regression,10,8.919116201424904
+Linear Regression,10,12.853854631948732
+Linear Regression,9,11.776433106645188
+Linear Regression,6,8.472669067414488
+Linear Regression,8,8.232558116702144
+Linear Regression,9,11.686709867396557
+Linear Regression,11,10.674480657360057
+Linear Regression,11,11.739190917745153
+Linear Regression,10,9.453570259906535
+Linear Regression,10,10.69596962767756
+Linear Regression,12,10.558341087127864
+Linear Regression,12,12.008355999747517
+Linear Regression,13,11.773775884606371
+Linear Regression,7,6.771797080147015
+Linear Regression,13,16.12350349123852
+Linear Regression,11,9.724138826438875
+Linear Regression,9,9.589159386296952
+Linear Regression,11,10.623692103626778
+Linear Regression,11,9.678981768307215
+Linear Regression,19,15.015341307506526
+Linear Regression,10,10.823492846788291
+Linear Regression,9,11.348049000423108
+Linear Regression,10,9.04070399674472
+Linear Regression,7,6.280792115152422
+Linear Regression,10,11.068323121541317
+Linear Regression,9,10.184688474848823
+Linear Regression,6,8.789010439408608
+Linear Regression,14,14.924733410397717
+Linear Regression,12,10.238911592643563
+Linear Regression,8,9.505470812303615
+Linear Regression,8,8.331072061771504
+Linear Regression,5,4.897213747849168
+Linear Regression,5,8.396125253910927
+Linear Regression,17,13.748286931235532
+Linear Regression,9,11.344715730844413
+Linear Regression,10,10.106152694052259
+Linear Regression,8,10.037972062846581
+Linear Regression,11,11.00557218620381
+Linear Regression,9,9.551246863931086
+Linear Regression,8,9.793782889473004
+Linear Regression,17,11.29466756813104
+Linear Regression,11,12.23907649687386
+Linear Regression,13,12.519095348726609
+Linear Regression,7,7.890842198125026
+Linear Regression,8,6.987790869025064
+Linear Regression,7,6.403263467943892
+Linear Regression,8,9.5024556076161
+Linear Regression,8,8.401560243554822
+Linear Regression,13,12.464132519278353
+Linear Regression,10,9.982292232445873
+Linear Regression,12,9.401467275366075
+Linear Regression,8,10.073657160959392
+Linear Regression,13,13.65073544069483
+Linear Regression,16,15.525048443109235
+Linear Regression,10,13.66784227217667
+Linear Regression,8,10.97907800374098
+Linear Regression,9,10.31417753364037
+Linear Regression,7,9.967877415420801
+Linear Regression,7,6.67686037871752
+Linear Regression,7,6.86013905178098
+Linear Regression,16,17.464080341404177
+Linear Regression,13,10.492906403243689
+Linear Regression,8,8.890676426467163
+Linear Regression,8,8.196327652121798
+Linear Regression,7,7.682380525676338
+Linear Regression,9,9.395761841565795
+Linear Regression,9,10.213746676832853
+Linear Regression,10,11.1173509089681
+Linear Regression,13,11.471320844316628
+Linear Regression,15,12.141000382384636
+Linear Regression,8,7.826834539202399
+Linear Regression,12,9.905372328214732
+Linear Regression,8,9.600364605637772
+Linear Regression,6,7.11273819270401
+Linear Regression,10,7.429294825722222
+Linear Regression,8,7.639828715718339
+Linear Regression,23,12.593573752570364
+Linear Regression,7,10.864772602784367
+Linear Regression,13,11.65113945643632
+Linear Regression,11,10.070401204729029
+Linear Regression,10,10.836913980609303
+Linear Regression,6,6.3850682076150695
+Linear Regression,8,8.842322275428568
+Linear Regression,17,16.63286322830925
+Linear Regression,10,10.031255035541893
+Linear Regression,10,11.16811512655111
+Linear Regression,9,8.330865900739857
+Linear Regression,9,9.722686185613634
+Linear Regression,13,10.75737775011897
+Linear Regression,8,8.766645046702383
+Linear Regression,11,13.131194440016547
+Linear Regression,10,9.847839642803207
+Linear Regression,6,9.12268096095725
+Linear Regression,9,7.4740303600957985
+Linear Regression,11,9.641637610907948
+Linear Regression,15,12.40913800810904
+Linear Regression,7,7.504319776114455
+Linear Regression,11,11.655084692378153
+Linear Regression,10,9.24604143375968
+Linear Regression,12,14.438957325683106
+Linear Regression,7,10.039638193721373
+Linear Regression,9,7.955147543953041
+Linear Regression,10,11.409215132929887
+Linear Regression,15,13.932861525012322
+Linear Regression,10,13.320019183414272
+Linear Regression,11,11.585131817235531
+Linear Regression,6,7.7211014828976205
+Linear Regression,6,7.219480795803126
+Linear Regression,9,9.70822440753456
+Linear Regression,12,7.976211813086687
+Linear Regression,8,12.354697654533918
+Linear Regression,12,13.442719700775875
+Linear Regression,8,9.331321528028145
+Linear Regression,11,13.15721782969041
+Linear Regression,11,9.178229326341192
+Linear Regression,9,9.958891099000184
+Linear Regression,15,10.46404731441922
+Linear Regression,9,8.067547508809813
+Linear Regression,10,10.303740651645446
+Linear Regression,9,9.434556208732214
+Linear Regression,9,9.086610479098885
+Linear Regression,7,9.858536853394916
+Linear Regression,10,10.395361436912756
+Linear Regression,8,9.92666346889713
+Linear Regression,8,8.757753475216298
+Linear Regression,6,4.969370552923319
+Linear Regression,15,16.865078463274934
+Linear Regression,12,8.934453239122519
+Linear Regression,8,7.495627984191048
+Linear Regression,15,11.151490001671464
+Linear Regression,10,13.31646425978852
+Linear Regression,8,7.848955968184756
+Linear Regression,11,13.852819607423491
+Linear Regression,9,9.958555756234311
+Linear Regression,19,13.961711641187676
+Linear Regression,19,12.770894465042005
+Linear Regression,9,10.25681339552647
+Linear Regression,6,6.901709606019895
+Linear Regression,14,13.824039055581654
+Linear Regression,12,9.13386340631979
+Linear Regression,8,9.472836457755344
+Linear Regression,7,8.262910787636438
+Linear Regression,10,9.773769806230106
+Linear Regression,20,15.747044751401393
+Linear Regression,8,10.738492605134242
+Linear Regression,9,9.941658978961508
+Linear Regression,10,9.87326575019396
+Linear Regression,8,8.505227843087978
+Linear Regression,6,6.865493959076967
+Linear Regression,8,8.822095330040007
+Linear Regression,16,10.993210936943004
+Linear Regression,3,5.323288406700309
+Linear Regression,11,9.336656622014576
+Linear Regression,14,15.15432084786082
+Linear Regression,9,9.586805549623477
+Linear Regression,7,8.193473322474064
+Linear Regression,14,14.541475571226963
+Linear Regression,5,7.00787094928793
+Linear Regression,10,15.474424727492732
+Linear Regression,11,8.429400868192847
+Linear Regression,7,7.7991131448214865
+Linear Regression,9,9.026787740067556
+Linear Regression,12,12.446232493915561
+Linear Regression,6,7.150622679790764
+Linear Regression,21,12.355686279009038
+Linear Regression,10,10.03688638083333
+Linear Regression,10,12.367297555443562
+Linear Regression,11,5.969092061792351
+Linear Regression,7,7.8931961375178545
+Linear Regression,8,8.872296005299873
+Linear Regression,9,11.751668204887242
+Linear Regression,10,11.760410493364885
+Linear Regression,9,8.303200728154408
+Linear Regression,11,9.749410371297927
+Linear Regression,8,8.528764223942986
+Linear Regression,5,5.194998092027511
+Linear Regression,8,8.501467136368689
+Linear Regression,10,10.573456989739704
+Linear Regression,7,7.464072642457804
+Linear Regression,11,9.936806495134578
+Linear Regression,8,8.94716102649575
+Linear Regression,16,11.630025707659213
+Linear Regression,5,6.513179365008599
+Linear Regression,15,12.983021877314854
+Linear Regression,8,6.965108576544186
+Linear Regression,10,11.720879000710102
+Linear Regression,5,5.882816282201668
+Linear Regression,10,12.119260513460883
+Linear Regression,9,8.514906975959732
+Linear Regression,14,10.266434042258492
+Linear Regression,10,11.782750580510307
+Linear Regression,7,6.229433957578031
+Linear Regression,8,9.62686677783481
+Linear Regression,11,10.289739234590067
+Linear Regression,9,9.828891269799819
+Linear Regression,8,9.29933093279842
+Linear Regression,10,13.286994891955228
+Linear Regression,9,10.012698670912073
+Linear Regression,9,11.224692113443831
+Linear Regression,13,14.545830186623203
+Linear Regression,10,10.019586536217643
+Linear Regression,8,11.677494598580273
+Linear Regression,10,7.6134255497540595
+Linear Regression,12,11.79118180454325
+Linear Regression,6,7.187672226323922
+Linear Regression,5,6.052522705638091
+Linear Regression,7,6.956869763152075
+Linear Regression,4,4.660965812855644
+Linear Regression,8,7.995312637826642
+Linear Regression,7,7.902033832078651
+Linear Regression,14,14.636693648824432
+Linear Regression,8,7.2337667577672216
+Linear Regression,15,9.632341788376118
+Linear Regression,7,8.945646742950554
+Linear Regression,9,8.972748580100868
+Linear Regression,13,12.599699112110509
+Linear Regression,9,9.238042728665766
+Linear Regression,8,8.612500727734202
+Linear Regression,10,10.141169657098189
+Linear Regression,6,8.28179850332414
+Linear Regression,12,8.210158674377112
+Linear Regression,7,6.7154074630347385
+Linear Regression,10,9.012104826308466
+Linear Regression,8,9.616789840536468
+Linear Regression,6,10.23070434299519
+Linear Regression,9,9.431407435125626
+Linear Regression,7,7.90950593519255
+Linear Regression,23,12.650796186580502
+Linear Regression,6,7.215263388900709
+Linear Regression,8,28.389006951085697
+Linear Regression,18,10.818321732514251
+Linear Regression,9,9.567308069846863
+Linear Regression,11,11.020493126235422
+Linear Regression,12,10.428215912533673
+Linear Regression,11,9.048889929457035
+Linear Regression,9,8.099127896755245
+Linear Regression,10,10.429458908148018
+Linear Regression,7,7.066665555366976
+Linear Regression,12,9.627802505812845
+Linear Regression,19,13.092503994975061
+Linear Regression,8,8.279679431816056
+Linear Regression,16,14.942091144881815
+Linear Regression,10,11.41226597467245
+Linear Regression,6,6.868490992441992
+Linear Regression,9,7.26489074529312
+Linear Regression,9,7.974209160628069
+Linear Regression,11,12.25724749687698
+Linear Regression,13,9.41710514712457
+Linear Regression,9,10.427498887782416
+Linear Regression,5,7.053325492662434
+Linear Regression,7,7.730552755432668
+Linear Regression,11,11.891220153703474
+Linear Regression,10,9.321652963325224
+Linear Regression,7,7.520917410230168
+Linear Regression,7,7.377573220109577
+Linear Regression,11,13.7034331594946
+Linear Regression,10,9.103608636713691
+Linear Regression,9,10.432499905190834
+Linear Regression,11,11.479562491540502
+Linear Regression,8,6.093701448526879
+Linear Regression,9,9.860274835162807
+Linear Regression,6,9.616793612189953
+Linear Regression,8,9.660334157430105
+Linear Regression,8,9.297228923798789
+Linear Regression,13,12.34879424039959
+Linear Regression,10,10.590283529986158
+Linear Regression,10,10.839061057413765
+Linear Regression,8,8.023176173843558
+Linear Regression,10,10.456602129926953
+Linear Regression,11,10.678039450277833
+Linear Regression,15,10.93026112215192
+Linear Regression,9,10.690772046150315
+Linear Regression,12,11.742644609755555
+Linear Regression,7,8.15517266358668
+Linear Regression,10,11.952999565447408
+Linear Regression,11,11.109692909343863
+Linear Regression,7,7.6925419023886725
+Linear Regression,7,7.8759037419445335
+Linear Regression,8,11.532774391464871
+Linear Regression,9,10.957322335247925
+Linear Regression,16,19.798769670464598
+Linear Regression,10,9.684702640594733
+Linear Regression,7,8.688333758808527
+Linear Regression,8,7.555015806650277
+Linear Regression,8,10.97423189918841
+Linear Regression,8,8.976046749804235
+Linear Regression,9,10.667637203445542
+Linear Regression,13,12.18389819119489
+Linear Regression,10,7.661838125921354
+Linear Regression,8,8.762188290188396
+Linear Regression,9,9.172008068207795
+Linear Regression,7,8.418791581343374
+Linear Regression,9,10.242994777744329
+Linear Regression,8,9.999988243786822
+Linear Regression,11,9.242740940419162
+Linear Regression,8,10.236936789526537
+Linear Regression,10,9.768203999693664
+Linear Regression,7,7.3247623919398075
+Linear Regression,8,11.270308487641241
+Linear Regression,8,11.096051072000405
+Linear Regression,12,9.104131075906267
+Linear Regression,10,10.18174805368609
+Linear Regression,12,12.1317548383968
+Linear Regression,11,8.649534227329735
+Linear Regression,11,9.63481809456296
+Linear Regression,9,9.136792690054369
+Linear Regression,8,9.286511888699467
+Linear Regression,7,7.553619861796374
+Linear Regression,8,10.824139178309526
+Linear Regression,7,10.67825972333096
+Linear Regression,7,7.195207189380763
+Linear Regression,5,5.627867588069322
+Linear Regression,9,9.474538956906688
+Linear Regression,18,11.96742432634387
+Linear Regression,10,10.552065260101427
+Linear Regression,8,8.996493564346498
+Linear Regression,11,12.386866348060714
+Linear Regression,15,13.370520901472759
+Linear Regression,10,11.03429831692513
+Linear Regression,6,6.230637152218876
+Linear Regression,8,7.110283239477685
+Linear Regression,11,12.285603516764947
+Linear Regression,6,6.685091764990322
+Linear Regression,9,12.179952512308105
+Linear Regression,5,-1.5082433534665558
+Linear Regression,8,8.90825278875694
+Linear Regression,6,7.7453582092030935
+Linear Regression,9,12.041738196091588
+Linear Regression,6,6.0385269280685465
+Linear Regression,10,10.676099359901386
+Linear Regression,10,10.144222088215173
+Linear Regression,10,11.37415966824167
+Linear Regression,7,7.481473895769194
+Linear Regression,15,12.403609894681411
+Linear Regression,8,9.308329248737325
+Linear Regression,11,10.627782278000776
+Linear Regression,6,14.36704493576607
+Linear Regression,20,13.375752057298373
+Linear Regression,13,11.502660990816011
+Linear Regression,7,9.708020768069021
+Linear Regression,10,11.747786711083496
+Linear Regression,9,7.947602984519661
+Linear Regression,7,7.323619934182147
+Linear Regression,6,7.022013563904439
+Linear Regression,13,9.66161377675261
+Linear Regression,13,11.831357272849385
+Linear Regression,11,9.809915332019663
+Linear Regression,9,9.599223586519157
+Linear Regression,10,8.37468206412434
+Linear Regression,14,12.74193379296648
+Linear Regression,12,13.832433956726415
+Linear Regression,10,12.104459045449545
+Linear Regression,10,11.63837196152309
+Linear Regression,11,10.821572697290431
+Linear Regression,11,13.927073842265512
+Linear Regression,11,12.109883638854376
+Linear Regression,9,7.708377506482124
+Linear Regression,11,9.775623511708307
+Linear Regression,14,11.756049270952342
+Linear Regression,7,6.8690620496819985
+Linear Regression,11,9.863918156774934
+Linear Regression,12,9.02021096388729
+Linear Regression,10,8.853314960366111
+Linear Regression,12,19.251612288229076
+Linear Regression,17,16.0951587596021
+Linear Regression,9,11.841291889020471
+Linear Regression,9,9.100273933374297
+Linear Regression,9,8.669078520528812
+Linear Regression,8,13.197858101796948
+Linear Regression,14,11.317389753226857
+Linear Regression,9,10.758138901666788
+Linear Regression,21,13.231139707685696
+Linear Regression,12,10.445642643115841
+Linear Regression,20,12.308778815501643
+Linear Regression,11,9.90928611069187
+Linear Regression,12,10.192594407536722
+Linear Regression,11,10.208363289980667
+Linear Regression,15,10.08051404156937
+Linear Regression,10,11.17611273439226
+Linear Regression,6,7.3713338816446505
+Linear Regression,11,11.483569757716888
+Linear Regression,15,10.3548849974627
+Linear Regression,11,12.51395914467162
+Linear Regression,6,6.297087691551857
+Linear Regression,7,9.437142122620575
+Linear Regression,11,11.814478665075015
+Linear Regression,11,10.096348187492081
+Linear Regression,12,9.954862111647742
+Linear Regression,7,7.291523937271962
+Linear Regression,11,7.824015179193098
+Linear Regression,8,9.331407862053672
+Linear Regression,10,11.773166230411993
+Linear Regression,19,13.277465055261024
+Linear Regression,20,17.595154116852164
+Linear Regression,13,9.901036523397767
+Linear Regression,9,9.264238231443565
+Linear Regression,8,9.650615198804763
+Linear Regression,10,8.913615734107875
+Linear Regression,8,10.908191312736744
+Linear Regression,16,15.69828785073642
+Linear Regression,10,12.747007728376161
+Linear Regression,13,12.20956686464563
+Linear Regression,9,9.94233997759314
+Linear Regression,12,10.979295813285468
+Linear Regression,11,9.846663194382808
+Linear Regression,11,9.703104518946706
+Linear Regression,14,11.407538881602587
+Linear Regression,9,11.858288040710347
+Linear Regression,15,10.228713708924234
+Linear Regression,8,7.54437747964991
+Linear Regression,10,11.0170434181076
+Linear Regression,10,15.77693301819598
+Linear Regression,8,8.378663609564363
+Linear Regression,8,9.441928362135906
+Linear Regression,9,10.439620370958922
+Linear Regression,10,9.428083671634868
+Linear Regression,4,5.320273509673856
+Linear Regression,16,15.07023620952742
+Linear Regression,10,10.89847884781947
+Linear Regression,9,8.386921223978886
+Linear Regression,5,6.318570807628697
+Linear Regression,7,9.673907987316301
+Linear Regression,10,12.18445138883461
+Linear Regression,9,9.417902742938377
+Linear Regression,11,11.786740731637064
+Linear Regression,9,11.791339243809489
+Linear Regression,13,12.110895256114588
+Linear Regression,8,9.19387313561628
+Linear Regression,11,11.80478726485835
+Linear Regression,8,8.886367352372872
+Linear Regression,9,9.160888173058732
+Linear Regression,10,10.60831289100004
+Linear Regression,14,10.331321502568837
+Linear Regression,10,9.99091020001196
+Linear Regression,11,13.688668454704883
+Linear Regression,26,14.737165646063405
+Linear Regression,11,15.467187395375415
+Linear Regression,10,13.69199792088688
+Linear Regression,5,4.752916049297094
+Linear Regression,5,6.017028563242544
+Linear Regression,10,10.752433222522665
+Linear Regression,7,8.75388187198579
+Linear Regression,12,9.930298423976776
+Linear Regression,17,15.27469367853543
+Linear Regression,7,9.36335793901136
+Linear Regression,10,9.758372853249162
+Linear Regression,8,7.734450192800754
+Linear Regression,9,11.264129118002822
+Linear Regression,10,10.830908333512468
+Linear Regression,9,9.462248578468824
+Linear Regression,8,9.46254340673818
+Linear Regression,7,8.66240848747409
+Linear Regression,7,7.098699050666268
+Linear Regression,10,8.39037860695909
+Linear Regression,12,12.17500102480724
+Linear Regression,15,11.009477201837388
+Linear Regression,12,14.0840618547722
+Linear Regression,10,8.659198083912953
+Linear Regression,8,8.450692624805319
+Linear Regression,9,8.780901383116223
+Linear Regression,6,5.869978838625533
+Linear Regression,11,10.740113117079805
+Linear Regression,5,5.963468258624556
+Linear Regression,13,11.103589406157699
+Linear Regression,13,14.284403141914023
+Linear Regression,10,9.440317918255229
+Linear Regression,5,6.491794702569741
+Linear Regression,9,7.806371872090085
+Linear Regression,15,13.350575581601102
+Linear Regression,10,8.897726843176006
+Linear Regression,10,8.677205762220353
+Linear Regression,9,8.251384063178184
+Linear Regression,11,11.605284661193261
+Linear Regression,11,11.829532403457367
+Linear Regression,9,8.686300515016043
+Linear Regression,15,14.366605602409305
+Linear Regression,7,8.558606208664667
+Linear Regression,10,11.854287205600173
+Linear Regression,8,8.199628537459633
+Linear Regression,12,12.353218728320662
+Linear Regression,11,10.253086879232018
+Linear Regression,12,10.805589234061745
+Linear Regression,10,12.360780820165632
+Linear Regression,11,11.957098602289486
+Linear Regression,8,7.633596060211277
+Linear Regression,21,13.327927978389177
+Linear Regression,10,11.661058345490101
+Linear Regression,4,6.458522880242623
+Linear Regression,10,10.29741449434063
+Linear Regression,10,10.71474344050583
+Linear Regression,8,7.626160010690978
+Linear Regression,10,12.552881686472315
+Linear Regression,10,9.961659791477874
+Linear Regression,15,11.963782823612886
+Linear Regression,9,7.652318551573125
+Linear Regression,9,11.913481327414296
+Linear Regression,11,9.508264304599084
+Linear Regression,11,13.17814536004316
+Linear Regression,9,10.142873031224394
+Linear Regression,13,10.29290232252462
+Linear Regression,11,10.296008203678394
+Linear Regression,13,14.998486344636062
+Linear Regression,10,9.543477158288656
+Linear Regression,7,9.666924769057788
+Linear Regression,11,13.003296728374389
+Linear Regression,6,6.948990467755893
+Linear Regression,11,11.285679886565132
+Linear Regression,8,7.810918948995763
+Linear Regression,7,6.829871619447061
+Linear Regression,9,9.138660267487806
+Linear Regression,11,10.825100289698687
+Linear Regression,14,11.371130245139296
+Linear Regression,8,8.866248625367495
+Linear Regression,8,6.134788932528177
+Linear Regression,9,9.450912211725337
+Linear Regression,14,10.103201157791935
+Linear Regression,9,8.55718471417115
+Linear Regression,8,8.398160592741348
+Linear Regression,10,10.69447712155513
+Linear Regression,13,11.737014682893815
+Linear Regression,9,9.476209916889927
+Linear Regression,9,8.10963149128311
+Linear Regression,9,8.402731307986443
+Linear Regression,7,7.040387127373452
+Linear Regression,7,7.717778479538039
+Linear Regression,13,12.108171744133099
+Linear Regression,7,10.223524587977032
+Linear Regression,8,7.903701752820957
+Linear Regression,7,7.71707603572011
+Linear Regression,19,12.755883880472465
+Linear Regression,11,11.387135957377566
+Linear Regression,9,8.599663697612238
+Linear Regression,10,7.646386489859914
+Linear Regression,17,11.59075775571386
+Linear Regression,10,9.920643313301797
+Linear Regression,8,10.951864555750587
+Linear Regression,8,11.063544598445862
+Linear Regression,11,12.014530884346133
+Linear Regression,9,8.948853013009487
+Linear Regression,8,8.793436374040157
+Linear Regression,9,8.718918057279497
+Linear Regression,8,9.464589169093353
+Linear Regression,18,13.091370089825553
+Linear Regression,10,12.011215370137755
+Linear Regression,11,10.964370004994562
+Linear Regression,8,5.9771072529522575
+Linear Regression,11,9.039976733777332
+Linear Regression,8,10.230445403676795
+Linear Regression,8,6.7356886486892416
+Linear Regression,11,13.10185354957666
+Linear Regression,7,7.842299731490862
+Linear Regression,17,11.74627716440335
+Linear Regression,6,6.333854979155844
+Linear Regression,11,10.612992063244677
+Linear Regression,10,9.576922252018969
+Linear Regression,12,11.1935745814986
+Linear Regression,13,10.275768005613655
+Linear Regression,10,7.894685315410014
+Linear Regression,12,12.7543549878224
+Linear Regression,7,6.960418765962486
+Linear Regression,19,13.614738433130722
+Linear Regression,13,13.389703096668683
+Linear Regression,10,10.177849965290328
+Linear Regression,8,9.763531119613859
+Linear Regression,13,12.218687712462513
+Linear Regression,12,9.91862109369527
+Linear Regression,8,10.409583794797465
+Linear Regression,9,11.560459387254014
+Linear Regression,12,16.977930376996518
+Linear Regression,11,12.522043140489618
+Linear Regression,13,8.782355357596266
+Linear Regression,19,13.900458711939248
+Linear Regression,10,11.950766429687647
+Linear Regression,9,9.900110402716518
+Linear Regression,15,11.116638540175504
+Linear Regression,9,11.185873333723688
+Linear Regression,5,4.948206848768456
+Linear Regression,7,6.594078340738429
+Linear Regression,24,16.602107935432116
+Linear Regression,8,8.842226003840493
+Linear Regression,15,11.364730895242104
+Linear Regression,7,7.219470262579184
+Linear Regression,10,10.953474287211135
+Linear Regression,7,6.58639545426086
+Linear Regression,16,12.507717054216737
+Linear Regression,9,10.888265388279855
+Linear Regression,13,8.402924670028014
+Linear Regression,8,8.769575125680323
+Linear Regression,7,7.392780052670875
+Linear Regression,14,11.348326429436707
+Linear Regression,13,10.493312965621307
+Linear Regression,9,10.927682126111733
+Linear Regression,18,12.208064808586066
+Linear Regression,7,6.827674187835552
+Linear Regression,12,11.22101367192565
+Linear Regression,7,8.027115862805939
+Linear Regression,5,4.873770286854733
+Linear Regression,7,8.001857419512017
+Linear Regression,15,9.420526855154995
+Linear Regression,12,8.311341839197372
+Linear Regression,9,8.448517604603845
+Linear Regression,8,8.748568582733027
+Linear Regression,11,9.67515739313212
+Linear Regression,6,6.737903367286487
+Linear Regression,10,9.86232841116811
+Linear Regression,9,7.987571916934437
+Linear Regression,12,11.727081240266385
+Linear Regression,4,6.959811214941472
+Linear Regression,16,10.842541328463964
+Linear Regression,4,4.765421643496266
+Linear Regression,10,14.869989876905674
+Linear Regression,11,10.990649450673024
+Linear Regression,7,7.735409436657773
+Linear Regression,8,8.99063013811156
+Linear Regression,12,8.98947329772787
+Linear Regression,14,11.287090600344087
+Linear Regression,8,7.502589832542117
+Linear Regression,10,10.663270831658904
+Linear Regression,11,12.428509451073198
+Linear Regression,8,9.570178803520122
+Linear Regression,12,10.260849791530102
+Linear Regression,10,10.587815201020227
+Linear Regression,7,6.941161126124208
+Linear Regression,8,8.136456763692905
+Linear Regression,18,12.759375776131824
+Linear Regression,10,11.602091630217839
+Linear Regression,13,8.30834806071476
+Linear Regression,10,9.442762558216595
+Linear Regression,11,9.44571057716195
+Linear Regression,8,7.91867063551411
+Linear Regression,12,9.414378670291809
+Linear Regression,13,13.372701981446125
+Linear Regression,7,8.929508623427411
+Linear Regression,8,7.95307187249519
+Linear Regression,9,8.074985266612074
+Linear Regression,8,8.507242365035761
+Linear Regression,6,5.704605266399136
+Linear Regression,15,13.4073727720273
+Linear Regression,9,10.024901629020656
+Linear Regression,11,10.767890515347915
+Linear Regression,5,6.86759010448647
+Linear Regression,8,7.185073793112613
+Linear Regression,9,8.957528965038106
+Linear Regression,6,7.6278497032963966
+Linear Regression,6,8.657221105071699
+Linear Regression,7,8.223962196116084
+Linear Regression,10,9.70314007629298
+Linear Regression,12,11.189199195929337
+Linear Regression,10,9.474934404682969
+Linear Regression,6,5.536318034549297
+Linear Regression,12,12.950882668436403
+Linear Regression,9,9.481219227633742
+Linear Regression,10,13.834128152409411
+Linear Regression,9,7.605001665555878
+Linear Regression,9,8.680323414955883
+Linear Regression,9,10.557392197304633
+Linear Regression,7,7.571039318768092
+Linear Regression,9,10.97225919860617
+Linear Regression,7,7.304481350766909
+Linear Regression,8,7.451456423283416
+Linear Regression,14,13.077321991545546
+Linear Regression,6,7.8941683177577096
+Linear Regression,14,13.001516329900312
+Linear Regression,15,11.119578673636466
+Linear Regression,11,14.43788603724175
+Linear Regression,5,7.040598378712833
+Random Forest,9,10.28
+Random Forest,8,6.1
+Random Forest,13,16.76
+Random Forest,12,10.91
+Random Forest,11,11.57
+Random Forest,10,11.03
+Random Forest,7,7.52
+Random Forest,8,9.33
+Random Forest,8,8.42
+Random Forest,8,7.95
+Random Forest,8,10.15
+Random Forest,7,6.52
+Random Forest,5,4.03
+Random Forest,10,10.41
+Random Forest,10,11.72
+Random Forest,13,10.77
+Random Forest,10,10.8
+Random Forest,9,7.99
+Random Forest,7,8.15
+Random Forest,12,11.51
+Random Forest,8,9.28
+Random Forest,8,10.62
+Random Forest,8,10.12
+Random Forest,9,9.35
+Random Forest,9,8.8
+Random Forest,7,7.68
+Random Forest,11,9.05
+Random Forest,11,9.97
+Random Forest,7,7.79
+Random Forest,9,10.37
+Random Forest,11,14.84
+Random Forest,13,14.0
+Random Forest,10,9.67
+Random Forest,12,10.11
+Random Forest,7,8.17
+Random Forest,11,11.29
+Random Forest,9,10.56
+Random Forest,10,9.61
+Random Forest,10,9.98
+Random Forest,10,10.65
+Random Forest,13,12.13
+Random Forest,18,9.82
+Random Forest,8,8.77
+Random Forest,7,8.17
+Random Forest,9,10.16
+Random Forest,7,9.7
+Random Forest,9,8.35
+Random Forest,10,10.63
+Random Forest,14,12.16
+Random Forest,10,10.67
+Random Forest,10,10.59
+Random Forest,9,10.07
+Random Forest,11,12.85
+Random Forest,9,9.52
+Random Forest,16,9.34
+Random Forest,7,8.99
+Random Forest,15,16.55
+Random Forest,8,6.63
+Random Forest,13,12.47
+Random Forest,12,11.81
+Random Forest,12,13.04
+Random Forest,9,9.86
+Random Forest,9,10.65
+Random Forest,7,11.59
+Random Forest,6,5.93
+Random Forest,11,12.6
+Random Forest,9,10.39
+Random Forest,11,9.94
+Random Forest,9,7.79
+Random Forest,8,7.25
+Random Forest,4,3.93
+Random Forest,11,9.98
+Random Forest,8,9.04
+Random Forest,9,8.97
+Random Forest,8,7.46
+Random Forest,11,11.33
+Random Forest,5,7.22
+Random Forest,6,7.69
+Random Forest,8,8.94
+Random Forest,10,10.42
+Random Forest,11,10.91
+Random Forest,10,10.79
+Random Forest,6,6.72
+Random Forest,6,6.8
+Random Forest,10,8.67
+Random Forest,9,8.87
+Random Forest,11,11.11
+Random Forest,10,11.48
+Random Forest,8,9.57
+Random Forest,10,10.33
+Random Forest,7,10.38
+Random Forest,7,6.51
+Random Forest,9,11.14
+Random Forest,14,9.74
+Random Forest,13,12.68
+Random Forest,11,10.6
+Random Forest,15,11.48
+Random Forest,14,13.22
+Random Forest,8,7.01
+Random Forest,8,7.31
+Random Forest,7,7.96
+Random Forest,12,13.22
+Random Forest,8,8.9
+Random Forest,5,6.36
+Random Forest,15,10.1
+Random Forest,17,14.73
+Random Forest,9,9.32
+Random Forest,9,9.2
+Random Forest,8,7.62
+Random Forest,16,11.39
+Random Forest,7,6.26
+Random Forest,11,11.32
+Random Forest,6,8.97
+Random Forest,13,7.64
+Random Forest,16,11.31
+Random Forest,7,8.45
+Random Forest,11,10.54
+Random Forest,10,12.24
+Random Forest,10,12.42
+Random Forest,7,8.8
+Random Forest,6,7.16
+Random Forest,9,10.62
+Random Forest,14,11.63
+Random Forest,9,8.09
+Random Forest,9,10.13
+Random Forest,9,10.38
+Random Forest,9,10.15
+Random Forest,6,7.19
+Random Forest,8,7.2
+Random Forest,9,12.74
+Random Forest,14,13.0
+Random Forest,9,11.22
+Random Forest,17,14.66
+Random Forest,10,11.91
+Random Forest,9,12.24
+Random Forest,6,7.54
+Random Forest,15,8.96
+Random Forest,10,12.38
+Random Forest,6,7.08
+Random Forest,11,10.69
+Random Forest,11,10.54
+Random Forest,12,10.85
+Random Forest,11,10.55
+Random Forest,10,10.33
+Random Forest,14,12.19
+Random Forest,8,10.43
+Random Forest,7,7.71
+Random Forest,9,8.53
+Random Forest,8,8.41
+Random Forest,13,12.07
+Random Forest,13,10.9
+Random Forest,10,11.43
+Random Forest,8,8.98
+Random Forest,8,10.36
+Random Forest,10,10.55
+Random Forest,7,6.74
+Random Forest,9,8.83
+Random Forest,7,9.76
+Random Forest,10,8.62
+Random Forest,8,8.49
+Random Forest,4,4.91
+Random Forest,8,9.62
+Random Forest,12,10.51
+Random Forest,12,9.33
+Random Forest,13,11.04
+Random Forest,7,7.83
+Random Forest,14,12.57
+Random Forest,10,9.47
+Random Forest,11,12.77
+Random Forest,8,12.73
+Random Forest,10,10.3
+Random Forest,10,11.04
+Random Forest,9,10.25
+Random Forest,6,10.24
+Random Forest,8,8.25
+Random Forest,9,12.39
+Random Forest,11,11.96
+Random Forest,11,11.54
+Random Forest,10,10.69
+Random Forest,10,9.83
+Random Forest,12,10.65
+Random Forest,12,10.83
+Random Forest,13,11.09
+Random Forest,7,6.01
+Random Forest,13,14.15
+Random Forest,11,9.72
+Random Forest,9,9.71
+Random Forest,11,10.88
+Random Forest,11,9.69
+Random Forest,19,14.5
+Random Forest,10,10.09
+Random Forest,9,11.4
+Random Forest,10,10.48
+Random Forest,7,6.49
+Random Forest,10,10.8
+Random Forest,9,9.53
+Random Forest,6,8.17
+Random Forest,14,13.86
+Random Forest,12,12.63
+Random Forest,8,9.61
+Random Forest,8,8.27
+Random Forest,5,3.95
+Random Forest,5,8.7
+Random Forest,17,13.42
+Random Forest,9,10.06
+Random Forest,10,11.09
+Random Forest,8,9.54
+Random Forest,11,11.14
+Random Forest,9,11.67
+Random Forest,8,10.81
+Random Forest,17,11.32
+Random Forest,11,12.75
+Random Forest,13,11.69
+Random Forest,7,7.92
+Random Forest,8,7.79
+Random Forest,7,6.2
+Random Forest,8,10.4
+Random Forest,8,7.98
+Random Forest,13,13.03
+Random Forest,10,10.78
+Random Forest,12,10.37
+Random Forest,8,10.28
+Random Forest,13,16.59
+Random Forest,16,16.55
+Random Forest,10,11.67
+Random Forest,8,10.33
+Random Forest,9,10.0
+Random Forest,7,12.34
+Random Forest,7,6.59
+Random Forest,7,6.45
+Random Forest,16,16.99
+Random Forest,13,11.11
+Random Forest,8,8.61
+Random Forest,8,8.06
+Random Forest,7,8.73
+Random Forest,9,9.51
+Random Forest,9,10.79
+Random Forest,10,10.57
+Random Forest,13,11.02
+Random Forest,15,12.7
+Random Forest,8,7.01
+Random Forest,12,10.89
+Random Forest,8,10.81
+Random Forest,6,6.85
+Random Forest,10,7.23
+Random Forest,8,8.04
+Random Forest,23,14.21
+Random Forest,7,14.19
+Random Forest,13,15.04
+Random Forest,11,12.76
+Random Forest,10,11.35
+Random Forest,6,6.89
+Random Forest,8,9.25
+Random Forest,17,18.49
+Random Forest,10,10.08
+Random Forest,10,10.15
+Random Forest,9,8.9
+Random Forest,9,10.12
+Random Forest,13,15.66
+Random Forest,8,9.4
+Random Forest,11,15.36
+Random Forest,10,10.08
+Random Forest,6,8.8
+Random Forest,9,7.23
+Random Forest,11,10.09
+Random Forest,15,12.82
+Random Forest,7,7.19
+Random Forest,11,10.4
+Random Forest,10,9.41
+Random Forest,12,15.35
+Random Forest,7,10.66
+Random Forest,9,7.96
+Random Forest,10,10.97
+Random Forest,15,12.76
+Random Forest,10,12.43
+Random Forest,11,10.97
+Random Forest,6,6.42
+Random Forest,6,7.16
+Random Forest,9,11.31
+Random Forest,12,8.36
+Random Forest,8,10.2
+Random Forest,12,13.3
+Random Forest,8,9.54
+Random Forest,11,11.91
+Random Forest,11,9.81
+Random Forest,9,8.54
+Random Forest,15,10.69
+Random Forest,9,8.08
+Random Forest,10,10.64
+Random Forest,9,10.42
+Random Forest,9,9.87
+Random Forest,7,9.38
+Random Forest,10,10.1
+Random Forest,8,9.1
+Random Forest,8,8.13
+Random Forest,6,4.16
+Random Forest,15,16.32
+Random Forest,12,9.46
+Random Forest,8,7.1
+Random Forest,15,11.98
+Random Forest,10,11.17
+Random Forest,8,7.28
+Random Forest,11,13.97
+Random Forest,9,10.68
+Random Forest,19,16.75
+Random Forest,19,15.58
+Random Forest,9,10.8
+Random Forest,6,7.05
+Random Forest,14,13.73
+Random Forest,12,9.45
+Random Forest,8,8.89
+Random Forest,7,8.48
+Random Forest,10,11.55
+Random Forest,20,18.63
+Random Forest,8,10.93
+Random Forest,9,8.97
+Random Forest,10,10.7
+Random Forest,8,8.73
+Random Forest,6,6.93
+Random Forest,8,7.93
+Random Forest,16,11.11
+Random Forest,3,3.64
+Random Forest,11,11.58
+Random Forest,14,14.02
+Random Forest,9,9.48
+Random Forest,7,8.11
+Random Forest,14,12.78
+Random Forest,5,6.33
+Random Forest,10,14.67
+Random Forest,11,9.4
+Random Forest,7,7.19
+Random Forest,9,8.29
+Random Forest,12,15.58
+Random Forest,6,8.12
+Random Forest,21,13.66
+Random Forest,10,10.83
+Random Forest,10,10.43
+Random Forest,11,10.42
+Random Forest,7,6.94
+Random Forest,8,8.64
+Random Forest,9,10.8
+Random Forest,10,11.62
+Random Forest,9,9.16
+Random Forest,11,11.27
+Random Forest,8,7.61
+Random Forest,5,4.0
+Random Forest,8,8.35
+Random Forest,10,10.63
+Random Forest,7,7.99
+Random Forest,11,10.78
+Random Forest,8,10.6
+Random Forest,16,11.35
+Random Forest,5,6.68
+Random Forest,15,10.98
+Random Forest,8,6.82
+Random Forest,10,10.56
+Random Forest,5,4.2
+Random Forest,10,11.3
+Random Forest,9,8.91
+Random Forest,14,11.59
+Random Forest,10,11.05
+Random Forest,7,6.39
+Random Forest,8,10.61
+Random Forest,11,10.44
+Random Forest,9,9.76
+Random Forest,8,9.13
+Random Forest,10,12.03
+Random Forest,9,9.14
+Random Forest,9,9.93
+Random Forest,13,16.07
+Random Forest,10,10.94
+Random Forest,8,11.08
+Random Forest,10,7.47
+Random Forest,12,10.05
+Random Forest,6,6.93
+Random Forest,5,5.37
+Random Forest,7,7.09
+Random Forest,4,4.04
+Random Forest,8,9.09
+Random Forest,7,9.1
+Random Forest,14,15.12
+Random Forest,8,7.55
+Random Forest,15,10.06
+Random Forest,7,8.02
+Random Forest,9,8.13
+Random Forest,13,12.29
+Random Forest,9,8.94
+Random Forest,8,9.3
+Random Forest,10,10.63
+Random Forest,6,7.43
+Random Forest,12,11.6
+Random Forest,7,6.48
+Random Forest,10,10.43
+Random Forest,8,9.66
+Random Forest,6,10.01
+Random Forest,9,8.71
+Random Forest,7,7.97
+Random Forest,23,13.81
+Random Forest,6,7.17
+Random Forest,8,7.98
+Random Forest,18,11.08
+Random Forest,9,9.32
+Random Forest,11,11.08
+Random Forest,12,11.12
+Random Forest,11,8.6
+Random Forest,9,8.41
+Random Forest,10,10.41
+Random Forest,7,5.78
+Random Forest,12,8.81
+Random Forest,19,14.92
+Random Forest,8,8.17
+Random Forest,16,16.35
+Random Forest,10,11.07
+Random Forest,6,6.78
+Random Forest,9,6.96
+Random Forest,9,7.75
+Random Forest,11,10.66
+Random Forest,13,9.75
+Random Forest,9,9.96
+Random Forest,5,6.91
+Random Forest,7,8.23
+Random Forest,11,11.66
+Random Forest,10,8.38
+Random Forest,7,7.21
+Random Forest,7,6.78
+Random Forest,11,12.41
+Random Forest,10,9.17
+Random Forest,9,9.42
+Random Forest,11,10.4
+Random Forest,8,5.54
+Random Forest,9,10.47
+Random Forest,6,7.87
+Random Forest,8,9.12
+Random Forest,8,10.23
+Random Forest,13,15.58
+Random Forest,10,11.12
+Random Forest,10,10.25
+Random Forest,8,8.15
+Random Forest,10,10.36
+Random Forest,11,10.67
+Random Forest,15,11.05
+Random Forest,9,10.15
+Random Forest,12,11.45
+Random Forest,7,7.63
+Random Forest,10,12.59
+Random Forest,11,10.45
+Random Forest,7,7.79
+Random Forest,7,7.2
+Random Forest,8,10.35
+Random Forest,9,11.02
+Random Forest,16,17.89
+Random Forest,10,9.73
+Random Forest,7,7.84
+Random Forest,8,8.01
+Random Forest,8,10.15
+Random Forest,8,8.35
+Random Forest,9,10.41
+Random Forest,13,12.23
+Random Forest,10,7.38
+Random Forest,8,9.02
+Random Forest,9,8.96
+Random Forest,7,8.01
+Random Forest,9,10.36
+Random Forest,8,8.5
+Random Forest,11,9.23
+Random Forest,8,9.53
+Random Forest,10,9.21
+Random Forest,7,6.96
+Random Forest,8,11.49
+Random Forest,8,10.54
+Random Forest,12,11.14
+Random Forest,10,10.55
+Random Forest,12,11.06
+Random Forest,11,9.1
+Random Forest,11,10.47
+Random Forest,9,8.42
+Random Forest,8,8.86
+Random Forest,7,7.74
+Random Forest,8,11.23
+Random Forest,7,10.4
+Random Forest,7,7.42
+Random Forest,5,5.7
+Random Forest,9,10.2
+Random Forest,18,10.01
+Random Forest,10,11.25
+Random Forest,8,8.83
+Random Forest,11,11.6
+Random Forest,15,16.21
+Random Forest,10,10.92
+Random Forest,6,6.47
+Random Forest,8,6.96
+Random Forest,11,11.32
+Random Forest,6,6.77
+Random Forest,9,11.3
+Random Forest,5,5.95
+Random Forest,8,8.7
+Random Forest,6,7.28
+Random Forest,9,12.99
+Random Forest,6,5.58
+Random Forest,10,9.65
+Random Forest,10,9.63
+Random Forest,10,10.43
+Random Forest,7,8.65
+Random Forest,15,11.88
+Random Forest,8,8.76
+Random Forest,11,9.87
+Random Forest,6,17.23
+Random Forest,20,14.89
+Random Forest,13,11.76
+Random Forest,7,8.63
+Random Forest,10,10.96
+Random Forest,9,8.1
+Random Forest,7,7.26
+Random Forest,6,5.83
+Random Forest,13,10.45
+Random Forest,13,10.54
+Random Forest,11,9.24
+Random Forest,9,10.36
+Random Forest,10,8.27
+Random Forest,14,12.69
+Random Forest,12,14.18
+Random Forest,10,10.77
+Random Forest,10,11.57
+Random Forest,11,10.84
+Random Forest,11,13.81
+Random Forest,11,12.58
+Random Forest,9,8.56
+Random Forest,11,9.46
+Random Forest,14,12.64
+Random Forest,7,6.47
+Random Forest,11,12.99
+Random Forest,12,9.12
+Random Forest,10,9.64
+Random Forest,12,17.35
+Random Forest,17,13.36
+Random Forest,9,10.93
+Random Forest,9,8.75
+Random Forest,9,8.59
+Random Forest,8,15.41
+Random Forest,14,11.23
+Random Forest,9,9.64
+Random Forest,21,14.96
+Random Forest,12,11.13
+Random Forest,20,10.38
+Random Forest,11,10.55
+Random Forest,12,12.5
+Random Forest,11,10.81
+Random Forest,15,11.01
+Random Forest,10,11.22
+Random Forest,6,7.41
+Random Forest,11,9.91
+Random Forest,15,10.21
+Random Forest,11,11.39
+Random Forest,6,6.54
+Random Forest,7,9.7
+Random Forest,11,11.49
+Random Forest,11,10.47
+Random Forest,12,9.66
+Random Forest,7,7.49
+Random Forest,11,7.75
+Random Forest,8,9.05
+Random Forest,10,12.6
+Random Forest,19,12.61
+Random Forest,20,15.49
+Random Forest,13,11.71
+Random Forest,9,8.95
+Random Forest,8,9.09
+Random Forest,10,8.7
+Random Forest,8,9.99
+Random Forest,16,14.15
+Random Forest,10,13.13
+Random Forest,13,10.57
+Random Forest,9,9.31
+Random Forest,12,13.12
+Random Forest,11,9.82
+Random Forest,11,9.86
+Random Forest,14,13.35
+Random Forest,9,11.65
+Random Forest,15,9.66
+Random Forest,8,8.24
+Random Forest,10,13.4
+Random Forest,10,13.5
+Random Forest,8,8.35
+Random Forest,8,9.06
+Random Forest,9,10.63
+Random Forest,10,9.74
+Random Forest,4,5.01
+Random Forest,16,12.07
+Random Forest,10,10.93
+Random Forest,9,7.87
+Random Forest,5,6.46
+Random Forest,7,10.66
+Random Forest,10,10.42
+Random Forest,9,9.54
+Random Forest,11,11.76
+Random Forest,9,10.35
+Random Forest,13,12.76
+Random Forest,8,8.37
+Random Forest,11,11.71
+Random Forest,8,9.36
+Random Forest,9,8.62
+Random Forest,10,12.0
+Random Forest,14,9.24
+Random Forest,10,10.16
+Random Forest,11,12.28
+Random Forest,26,15.87
+Random Forest,11,15.72
+Random Forest,10,14.0
+Random Forest,5,4.14
+Random Forest,5,5.51
+Random Forest,10,10.28
+Random Forest,7,12.39
+Random Forest,12,10.09
+Random Forest,17,13.51
+Random Forest,7,9.58
+Random Forest,10,10.65
+Random Forest,8,8.25
+Random Forest,9,9.8
+Random Forest,10,9.73
+Random Forest,9,8.91
+Random Forest,8,10.33
+Random Forest,7,8.16
+Random Forest,7,7.01
+Random Forest,10,8.39
+Random Forest,12,11.79
+Random Forest,15,12.31
+Random Forest,12,12.31
+Random Forest,10,7.94
+Random Forest,8,8.04
+Random Forest,9,10.27
+Random Forest,6,5.29
+Random Forest,11,12.82
+Random Forest,5,5.84
+Random Forest,13,12.02
+Random Forest,13,12.61
+Random Forest,10,8.55
+Random Forest,5,5.65
+Random Forest,9,7.46
+Random Forest,15,12.41
+Random Forest,10,8.5
+Random Forest,10,7.08
+Random Forest,9,8.88
+Random Forest,11,10.61
+Random Forest,11,14.69
+Random Forest,9,8.74
+Random Forest,15,13.8
+Random Forest,7,8.74
+Random Forest,10,10.85
+Random Forest,8,8.18
+Random Forest,12,12.15
+Random Forest,11,10.11
+Random Forest,12,10.51
+Random Forest,10,11.56
+Random Forest,11,10.91
+Random Forest,8,8.03
+Random Forest,21,12.44
+Random Forest,10,12.08
+Random Forest,4,6.28
+Random Forest,10,11.16
+Random Forest,10,10.84
+Random Forest,8,7.64
+Random Forest,10,11.46
+Random Forest,10,10.59
+Random Forest,15,11.26
+Random Forest,9,8.65
+Random Forest,9,11.48
+Random Forest,11,10.7
+Random Forest,11,13.38
+Random Forest,9,9.5
+Random Forest,13,10.23
+Random Forest,11,10.19
+Random Forest,13,14.16
+Random Forest,10,11.02
+Random Forest,7,9.96
+Random Forest,11,12.1
+Random Forest,6,7.18
+Random Forest,11,8.73
+Random Forest,8,7.87
+Random Forest,7,5.95
+Random Forest,9,8.88
+Random Forest,11,10.37
+Random Forest,14,11.69
+Random Forest,8,8.3
+Random Forest,8,5.53
+Random Forest,9,10.84
+Random Forest,14,9.14
+Random Forest,9,8.47
+Random Forest,8,7.79
+Random Forest,10,12.09
+Random Forest,13,12.78
+Random Forest,9,9.4
+Random Forest,9,8.89
+Random Forest,9,8.62
+Random Forest,7,7.31
+Random Forest,7,7.66
+Random Forest,13,10.43
+Random Forest,7,9.97
+Random Forest,8,6.93
+Random Forest,7,7.0
+Random Forest,19,11.93
+Random Forest,11,10.53
+Random Forest,9,8.76
+Random Forest,10,8.08
+Random Forest,17,11.1
+Random Forest,10,10.61
+Random Forest,8,12.04
+Random Forest,8,10.91
+Random Forest,11,10.39
+Random Forest,9,8.48
+Random Forest,8,8.69
+Random Forest,9,8.31
+Random Forest,8,10.11
+Random Forest,18,12.42
+Random Forest,10,10.7
+Random Forest,11,11.11
+Random Forest,8,5.6
+Random Forest,11,9.04
+Random Forest,8,9.2
+Random Forest,8,7.2
+Random Forest,11,12.28
+Random Forest,7,6.99
+Random Forest,17,13.62
+Random Forest,6,6.24
+Random Forest,11,10.57
+Random Forest,10,10.2
+Random Forest,12,12.16
+Random Forest,13,9.46
+Random Forest,10,8.3
+Random Forest,12,14.81
+Random Forest,7,9.39
+Random Forest,19,13.52
+Random Forest,13,11.89
+Random Forest,10,12.04
+Random Forest,8,10.56
+Random Forest,13,13.19
+Random Forest,12,11.29
+Random Forest,8,10.81
+Random Forest,9,10.09
+Random Forest,12,12.19
+Random Forest,11,10.79
+Random Forest,13,8.98
+Random Forest,19,15.87
+Random Forest,10,10.47
+Random Forest,9,9.01
+Random Forest,15,10.96
+Random Forest,9,11.58
+Random Forest,5,4.53
+Random Forest,7,6.06
+Random Forest,24,16.71
+Random Forest,8,9.19
+Random Forest,15,10.73
+Random Forest,7,7.19
+Random Forest,10,10.26
+Random Forest,7,6.29
+Random Forest,16,15.8
+Random Forest,9,10.41
+Random Forest,13,8.56
+Random Forest,8,8.52
+Random Forest,7,7.61
+Random Forest,14,12.43
+Random Forest,13,12.42
+Random Forest,9,9.68
+Random Forest,18,13.42
+Random Forest,7,7.37
+Random Forest,12,10.34
+Random Forest,7,8.41
+Random Forest,5,4.68
+Random Forest,7,7.58
+Random Forest,15,7.84
+Random Forest,12,8.74
+Random Forest,9,8.99
+Random Forest,8,9.22
+Random Forest,11,9.87
+Random Forest,6,6.92
+Random Forest,10,10.36
+Random Forest,9,8.91
+Random Forest,12,11.31
+Random Forest,4,6.8
+Random Forest,16,10.02
+Random Forest,4,3.97
+Random Forest,10,11.55
+Random Forest,11,10.58
+Random Forest,7,7.77
+Random Forest,8,9.41
+Random Forest,12,10.38
+Random Forest,14,13.1
+Random Forest,8,9.69
+Random Forest,10,10.63
+Random Forest,11,12.49
+Random Forest,8,11.76
+Random Forest,12,10.33
+Random Forest,10,10.28
+Random Forest,7,7.65
+Random Forest,8,7.1
+Random Forest,18,11.5
+Random Forest,10,11.34
+Random Forest,13,11.13
+Random Forest,10,9.73
+Random Forest,11,10.79
+Random Forest,8,7.67
+Random Forest,12,10.04
+Random Forest,13,12.54
+Random Forest,7,8.42
+Random Forest,8,6.88
+Random Forest,9,7.89
+Random Forest,8,9.73
+Random Forest,6,5.14
+Random Forest,15,16.88
+Random Forest,9,10.72
+Random Forest,11,9.94
+Random Forest,5,6.51
+Random Forest,8,6.66
+Random Forest,9,8.23
+Random Forest,6,7.27
+Random Forest,6,10.2
+Random Forest,7,7.45
+Random Forest,10,10.24
+Random Forest,12,12.51
+Random Forest,10,9.92
+Random Forest,6,5.19
+Random Forest,12,15.06
+Random Forest,9,8.64
+Random Forest,10,14.41
+Random Forest,9,7.96
+Random Forest,9,8.64
+Random Forest,9,11.17
+Random Forest,7,9.16
+Random Forest,9,10.7
+Random Forest,7,6.83
+Random Forest,8,6.89
+Random Forest,14,13.47
+Random Forest,6,6.93
+Random Forest,14,14.44
+Random Forest,15,14.27
+Random Forest,11,12.57
+Random Forest,5,5.81
+SVR (RBF Kernel),9,10.404642059318345
+SVR (RBF Kernel),8,6.455965623110436
+SVR (RBF Kernel),13,15.628456402810212
+SVR (RBF Kernel),12,10.367830713454534
+SVR (RBF Kernel),11,11.516251522279125
+SVR (RBF Kernel),10,11.009448724176195
+SVR (RBF Kernel),7,7.1141964817014935
+SVR (RBF Kernel),8,9.179919546142873
+SVR (RBF Kernel),8,7.368226494249974
+SVR (RBF Kernel),8,8.105905187118404
+SVR (RBF Kernel),8,10.20128562354327
+SVR (RBF Kernel),7,6.9482381543836915
+SVR (RBF Kernel),5,4.6748640814840705
+SVR (RBF Kernel),10,10.210213577188018
+SVR (RBF Kernel),10,10.583007045784639
+SVR (RBF Kernel),13,10.785448401084452
+SVR (RBF Kernel),10,10.971057530086076
+SVR (RBF Kernel),9,8.642148398057543
+SVR (RBF Kernel),7,6.9224494511002375
+SVR (RBF Kernel),12,10.906463962796963
+SVR (RBF Kernel),8,8.810185914038698
+SVR (RBF Kernel),8,10.434784118448402
+SVR (RBF Kernel),8,9.995738862091368
+SVR (RBF Kernel),9,9.232922971861187
+SVR (RBF Kernel),9,9.173054323944045
+SVR (RBF Kernel),7,7.624775644568867
+SVR (RBF Kernel),11,9.141585446466532
+SVR (RBF Kernel),11,9.765345461614455
+SVR (RBF Kernel),7,7.056645538353691
+SVR (RBF Kernel),9,9.331020576234057
+SVR (RBF Kernel),11,12.39765947422972
+SVR (RBF Kernel),13,12.316762787098087
+SVR (RBF Kernel),10,9.745826068367778
+SVR (RBF Kernel),12,9.590827851390817
+SVR (RBF Kernel),7,7.0092219755033325
+SVR (RBF Kernel),11,10.446560541271408
+SVR (RBF Kernel),9,9.749855882879235
+SVR (RBF Kernel),10,9.222770754165698
+SVR (RBF Kernel),10,9.44710054213992
+SVR (RBF Kernel),10,9.938887908377009
+SVR (RBF Kernel),13,11.410276626182226
+SVR (RBF Kernel),18,8.91700800280626
+SVR (RBF Kernel),8,9.048719481686744
+SVR (RBF Kernel),7,7.406403705867317
+SVR (RBF Kernel),9,9.431283282347273
+SVR (RBF Kernel),7,8.450210551651157
+SVR (RBF Kernel),9,9.448569886184382
+SVR (RBF Kernel),10,10.5195994768832
+SVR (RBF Kernel),14,10.824974376560116
+SVR (RBF Kernel),10,10.100554909264801
+SVR (RBF Kernel),10,9.990193971018222
+SVR (RBF Kernel),9,9.592276132910463
+SVR (RBF Kernel),11,11.764763338955222
+SVR (RBF Kernel),9,9.709075834905805
+SVR (RBF Kernel),16,9.969144468240291
+SVR (RBF Kernel),7,10.056977409927221
+SVR (RBF Kernel),15,13.606777971195806
+SVR (RBF Kernel),8,7.0358866255052375
+SVR (RBF Kernel),13,11.812723101091928
+SVR (RBF Kernel),12,11.698946709376862
+SVR (RBF Kernel),12,11.263023196823934
+SVR (RBF Kernel),9,9.354797503465376
+SVR (RBF Kernel),9,10.253628576317677
+SVR (RBF Kernel),7,8.687860743901735
+SVR (RBF Kernel),6,5.640774248032449
+SVR (RBF Kernel),11,12.71485228743256
+SVR (RBF Kernel),9,10.083153120412131
+SVR (RBF Kernel),11,9.495603494823593
+SVR (RBF Kernel),9,7.1354597209910375
+SVR (RBF Kernel),8,6.962866392127438
+SVR (RBF Kernel),4,4.144766499055016
+SVR (RBF Kernel),11,10.535188146944801
+SVR (RBF Kernel),8,8.903011202830232
+SVR (RBF Kernel),9,8.523986354593662
+SVR (RBF Kernel),8,6.985021077070022
+SVR (RBF Kernel),11,12.021895857991383
+SVR (RBF Kernel),5,6.771722270423267
+SVR (RBF Kernel),6,7.550575147770928
+SVR (RBF Kernel),8,9.106742053982739
+SVR (RBF Kernel),10,9.551222063363925
+SVR (RBF Kernel),11,10.746908540020662
+SVR (RBF Kernel),10,10.688575459561863
+SVR (RBF Kernel),6,6.833587320863817
+SVR (RBF Kernel),6,6.722468562390525
+SVR (RBF Kernel),10,8.238322631489215
+SVR (RBF Kernel),9,9.617777451553433
+SVR (RBF Kernel),11,10.830568532194977
+SVR (RBF Kernel),10,10.439346187155904
+SVR (RBF Kernel),8,9.567562327276706
+SVR (RBF Kernel),10,10.235540264866673
+SVR (RBF Kernel),7,8.816451721907715
+SVR (RBF Kernel),7,7.577398385549102
+SVR (RBF Kernel),9,10.387658325166242
+SVR (RBF Kernel),14,10.264812158892173
+SVR (RBF Kernel),13,13.595635032864024
+SVR (RBF Kernel),11,10.801391075691463
+SVR (RBF Kernel),15,11.079975561933114
+SVR (RBF Kernel),14,12.256095205557475
+SVR (RBF Kernel),8,6.993577488276106
+SVR (RBF Kernel),8,6.456197590927766
+SVR (RBF Kernel),7,7.418261938503637
+SVR (RBF Kernel),12,13.70040018895464
+SVR (RBF Kernel),8,8.651786495389038
+SVR (RBF Kernel),5,6.301582032489108
+SVR (RBF Kernel),15,9.380021010776996
+SVR (RBF Kernel),17,13.575205007415686
+SVR (RBF Kernel),9,9.014392763177831
+SVR (RBF Kernel),9,9.428128977796096
+SVR (RBF Kernel),8,7.141302242515956
+SVR (RBF Kernel),16,11.651877036126915
+SVR (RBF Kernel),7,6.436246933547523
+SVR (RBF Kernel),11,11.48794960595583
+SVR (RBF Kernel),6,8.467880588335987
+SVR (RBF Kernel),13,7.4202193572386035
+SVR (RBF Kernel),16,11.262223866493569
+SVR (RBF Kernel),7,8.696030329213674
+SVR (RBF Kernel),11,11.203459303476926
+SVR (RBF Kernel),10,11.70916604453764
+SVR (RBF Kernel),10,10.069853372062727
+SVR (RBF Kernel),7,9.315808714890215
+SVR (RBF Kernel),6,6.737050186583909
+SVR (RBF Kernel),9,10.56437794509079
+SVR (RBF Kernel),14,10.961629486243401
+SVR (RBF Kernel),9,8.035847645438835
+SVR (RBF Kernel),9,10.066277353007042
+SVR (RBF Kernel),9,9.842588420462066
+SVR (RBF Kernel),9,10.167263967657071
+SVR (RBF Kernel),6,7.027515748776555
+SVR (RBF Kernel),8,7.140543557276363
+SVR (RBF Kernel),9,10.686051961984905
+SVR (RBF Kernel),14,11.675049723514812
+SVR (RBF Kernel),9,11.185806838550823
+SVR (RBF Kernel),17,13.167075963684246
+SVR (RBF Kernel),10,11.501062337230316
+SVR (RBF Kernel),9,10.09388675664164
+SVR (RBF Kernel),6,6.696058343665269
+SVR (RBF Kernel),15,8.8169997868324
+SVR (RBF Kernel),10,11.573080730070155
+SVR (RBF Kernel),6,6.984355888134464
+SVR (RBF Kernel),11,10.647742339337526
+SVR (RBF Kernel),11,10.81899367141627
+SVR (RBF Kernel),12,9.88124010205077
+SVR (RBF Kernel),11,9.936800571474777
+SVR (RBF Kernel),10,10.173271754663181
+SVR (RBF Kernel),14,10.773531693878704
+SVR (RBF Kernel),8,9.567049293007763
+SVR (RBF Kernel),7,7.076299930032082
+SVR (RBF Kernel),9,8.69629630053873
+SVR (RBF Kernel),8,8.27893384743933
+SVR (RBF Kernel),13,10.546232408255669
+SVR (RBF Kernel),13,11.168879926474759
+SVR (RBF Kernel),10,10.7247376161722
+SVR (RBF Kernel),8,8.866896167950205
+SVR (RBF Kernel),8,8.074800333466449
+SVR (RBF Kernel),10,10.168373650199458
+SVR (RBF Kernel),7,6.795794167450242
+SVR (RBF Kernel),9,8.989837388310917
+SVR (RBF Kernel),7,8.302617229875747
+SVR (RBF Kernel),10,8.130663832646764
+SVR (RBF Kernel),8,7.693026528221731
+SVR (RBF Kernel),4,4.726510305540989
+SVR (RBF Kernel),8,9.378444909307852
+SVR (RBF Kernel),12,10.446832715162394
+SVR (RBF Kernel),12,9.550313889405247
+SVR (RBF Kernel),13,10.591038265739211
+SVR (RBF Kernel),7,7.658491053166964
+SVR (RBF Kernel),14,10.84698780171321
+SVR (RBF Kernel),10,9.502064381083784
+SVR (RBF Kernel),11,12.114094071937249
+SVR (RBF Kernel),8,11.752310249153707
+SVR (RBF Kernel),10,10.882778194387107
+SVR (RBF Kernel),10,11.81910982832265
+SVR (RBF Kernel),9,10.48801664909201
+SVR (RBF Kernel),6,8.0809628718326
+SVR (RBF Kernel),8,7.774527866768629
+SVR (RBF Kernel),9,11.096959119325263
+SVR (RBF Kernel),11,10.896007196871814
+SVR (RBF Kernel),11,11.628370690407738
+SVR (RBF Kernel),10,9.66994610439935
+SVR (RBF Kernel),10,9.858614363221058
+SVR (RBF Kernel),12,10.46673748639972
+SVR (RBF Kernel),12,11.002352888050348
+SVR (RBF Kernel),13,11.558311691161185
+SVR (RBF Kernel),7,6.100437781955398
+SVR (RBF Kernel),13,13.420285917799804
+SVR (RBF Kernel),11,10.607191828457507
+SVR (RBF Kernel),9,9.44115387445143
+SVR (RBF Kernel),11,10.528577300936755
+SVR (RBF Kernel),11,9.700274326989115
+SVR (RBF Kernel),19,12.536033980977887
+SVR (RBF Kernel),10,10.248001760510551
+SVR (RBF Kernel),9,10.5922715431757
+SVR (RBF Kernel),10,9.921565655459265
+SVR (RBF Kernel),7,5.727170031220475
+SVR (RBF Kernel),10,10.361201296823937
+SVR (RBF Kernel),9,9.436138550481143
+SVR (RBF Kernel),6,8.157540023444938
+SVR (RBF Kernel),14,13.248198824251244
+SVR (RBF Kernel),12,11.21467126325999
+SVR (RBF Kernel),8,9.534692946798287
+SVR (RBF Kernel),8,7.798396199494428
+SVR (RBF Kernel),5,3.9620065710638164
+SVR (RBF Kernel),5,8.223739234001965
+SVR (RBF Kernel),17,12.447092333910545
+SVR (RBF Kernel),9,10.682223167906233
+SVR (RBF Kernel),10,10.49188539847681
+SVR (RBF Kernel),8,9.997850365686471
+SVR (RBF Kernel),11,11.237165922270187
+SVR (RBF Kernel),9,9.16661383346329
+SVR (RBF Kernel),8,10.500736618644462
+SVR (RBF Kernel),17,11.384040181132107
+SVR (RBF Kernel),11,11.559749974903365
+SVR (RBF Kernel),13,12.341905078071216
+SVR (RBF Kernel),7,7.945492809144591
+SVR (RBF Kernel),8,6.564475161225205
+SVR (RBF Kernel),7,6.20873850623841
+SVR (RBF Kernel),8,9.173553651856643
+SVR (RBF Kernel),8,7.756810441770705
+SVR (RBF Kernel),13,11.722351580315172
+SVR (RBF Kernel),10,9.875897745880264
+SVR (RBF Kernel),12,9.540973101013433
+SVR (RBF Kernel),8,9.367574458450692
+SVR (RBF Kernel),13,13.073616381740209
+SVR (RBF Kernel),16,13.533117366507119
+SVR (RBF Kernel),10,12.577535529409404
+SVR (RBF Kernel),8,10.37040645170009
+SVR (RBF Kernel),9,9.94787884432219
+SVR (RBF Kernel),7,10.28677750475958
+SVR (RBF Kernel),7,6.2766370485277365
+SVR (RBF Kernel),7,6.5516528083109655
+SVR (RBF Kernel),16,14.846600798203585
+SVR (RBF Kernel),13,10.175450960075565
+SVR (RBF Kernel),8,8.825400269008089
+SVR (RBF Kernel),8,7.476852846538447
+SVR (RBF Kernel),7,7.231038660069184
+SVR (RBF Kernel),9,9.090366288214067
+SVR (RBF Kernel),9,10.651181709671091
+SVR (RBF Kernel),10,10.431566478658132
+SVR (RBF Kernel),13,10.945609381149008
+SVR (RBF Kernel),15,12.223746309534354
+SVR (RBF Kernel),8,7.45654124000343
+SVR (RBF Kernel),12,9.750137260584218
+SVR (RBF Kernel),8,9.289520114046573
+SVR (RBF Kernel),6,6.721326296167779
+SVR (RBF Kernel),10,7.02492176014137
+SVR (RBF Kernel),8,7.431536737712584
+SVR (RBF Kernel),23,12.691910465631777
+SVR (RBF Kernel),7,11.308160371351624
+SVR (RBF Kernel),13,11.990873277792392
+SVR (RBF Kernel),11,9.745143396013003
+SVR (RBF Kernel),10,10.494635444936408
+SVR (RBF Kernel),6,6.6056224740447345
+SVR (RBF Kernel),8,8.78149009131543
+SVR (RBF Kernel),17,14.425698593561421
+SVR (RBF Kernel),10,9.494599134440097
+SVR (RBF Kernel),10,10.924641219892296
+SVR (RBF Kernel),9,8.174626163317939
+SVR (RBF Kernel),9,9.665289756109487
+SVR (RBF Kernel),13,11.335334978558876
+SVR (RBF Kernel),8,8.8857458441041
+SVR (RBF Kernel),11,12.857487682842237
+SVR (RBF Kernel),10,9.767372190107263
+SVR (RBF Kernel),6,8.690613672577241
+SVR (RBF Kernel),9,7.173707681139406
+SVR (RBF Kernel),11,9.701816659826306
+SVR (RBF Kernel),15,11.80567515886828
+SVR (RBF Kernel),7,7.145954694856804
+SVR (RBF Kernel),11,10.45575116515661
+SVR (RBF Kernel),10,9.012381095708486
+SVR (RBF Kernel),12,13.953283627040584
+SVR (RBF Kernel),7,10.032428902744732
+SVR (RBF Kernel),9,7.51509221442842
+SVR (RBF Kernel),10,10.321390925256425
+SVR (RBF Kernel),15,13.0852070843884
+SVR (RBF Kernel),10,11.751191522785842
+SVR (RBF Kernel),11,10.66023978357882
+SVR (RBF Kernel),6,7.2806972291026355
+SVR (RBF Kernel),6,6.833992045511198
+SVR (RBF Kernel),9,10.032778424994177
+SVR (RBF Kernel),12,8.108560277566305
+SVR (RBF Kernel),8,11.388188000354214
+SVR (RBF Kernel),12,13.438646728911776
+SVR (RBF Kernel),8,8.884932278108534
+SVR (RBF Kernel),11,11.8213235088891
+SVR (RBF Kernel),11,9.225035272972862
+SVR (RBF Kernel),9,9.740179941555608
+SVR (RBF Kernel),15,10.978169486467674
+SVR (RBF Kernel),9,8.010311541879089
+SVR (RBF Kernel),10,9.924974872744757
+SVR (RBF Kernel),9,9.47686336492447
+SVR (RBF Kernel),9,8.98293568218615
+SVR (RBF Kernel),7,9.415911394120668
+SVR (RBF Kernel),10,10.110431082392116
+SVR (RBF Kernel),8,9.592966218220056
+SVR (RBF Kernel),8,8.055784725640986
+SVR (RBF Kernel),6,4.009173629158475
+SVR (RBF Kernel),15,14.82365915268092
+SVR (RBF Kernel),12,8.387958505592824
+SVR (RBF Kernel),8,7.181643455119709
+SVR (RBF Kernel),15,10.793437033996723
+SVR (RBF Kernel),10,11.42715722464254
+SVR (RBF Kernel),8,7.6823039753645785
+SVR (RBF Kernel),11,12.249690584405865
+SVR (RBF Kernel),9,9.660714772479858
+SVR (RBF Kernel),19,13.196876120767113
+SVR (RBF Kernel),19,12.782416680211249
+SVR (RBF Kernel),9,10.325992940674219
+SVR (RBF Kernel),6,6.6807660125803805
+SVR (RBF Kernel),14,11.990380124696207
+SVR (RBF Kernel),12,9.005706783742639
+SVR (RBF Kernel),8,9.341403476433616
+SVR (RBF Kernel),7,8.61484462984273
+SVR (RBF Kernel),10,10.473233429798366
+SVR (RBF Kernel),20,16.750416609657513
+SVR (RBF Kernel),8,9.72819350393432
+SVR (RBF Kernel),9,9.79162246726793
+SVR (RBF Kernel),10,9.451819143827016
+SVR (RBF Kernel),8,8.34192817340955
+SVR (RBF Kernel),6,6.629094410096024
+SVR (RBF Kernel),8,7.9788833102247505
+SVR (RBF Kernel),16,11.097524915305112
+SVR (RBF Kernel),3,4.497525400089658
+SVR (RBF Kernel),11,9.761261812022552
+SVR (RBF Kernel),14,13.060062017581597
+SVR (RBF Kernel),9,9.322394188570371
+SVR (RBF Kernel),7,7.824640149964697
+SVR (RBF Kernel),14,12.140608849257415
+SVR (RBF Kernel),5,6.725296469394813
+SVR (RBF Kernel),10,14.009021383980379
+SVR (RBF Kernel),11,7.894659298114149
+SVR (RBF Kernel),7,7.159050518419158
+SVR (RBF Kernel),9,8.23728279988777
+SVR (RBF Kernel),12,13.038045114913507
+SVR (RBF Kernel),6,6.869492972628146
+SVR (RBF Kernel),21,12.281263579068685
+SVR (RBF Kernel),10,10.971124794686913
+SVR (RBF Kernel),10,11.453076984951718
+SVR (RBF Kernel),11,10.750250554932563
+SVR (RBF Kernel),7,7.4235645768469585
+SVR (RBF Kernel),8,8.669180089338541
+SVR (RBF Kernel),9,10.601510018856201
+SVR (RBF Kernel),10,10.980988871040669
+SVR (RBF Kernel),9,8.925257396410883
+SVR (RBF Kernel),11,9.978009424594447
+SVR (RBF Kernel),8,8.22971351003206
+SVR (RBF Kernel),5,4.419677082199655
+SVR (RBF Kernel),8,8.430929877501216
+SVR (RBF Kernel),10,10.523648162253481
+SVR (RBF Kernel),7,7.519041106147952
+SVR (RBF Kernel),11,9.487217038599196
+SVR (RBF Kernel),8,8.86150275822854
+SVR (RBF Kernel),16,11.566531249270437
+SVR (RBF Kernel),5,6.053662247782595
+SVR (RBF Kernel),15,11.972527760180961
+SVR (RBF Kernel),8,6.762823403263663
+SVR (RBF Kernel),10,11.048157393603285
+SVR (RBF Kernel),5,4.8247514948967
+SVR (RBF Kernel),10,11.294522857511089
+SVR (RBF Kernel),9,8.386171658307388
+SVR (RBF Kernel),14,10.989898915385682
+SVR (RBF Kernel),10,12.06791088017033
+SVR (RBF Kernel),7,6.070800482915451
+SVR (RBF Kernel),8,10.344387855795661
+SVR (RBF Kernel),11,10.37338806186715
+SVR (RBF Kernel),9,9.530126457065005
+SVR (RBF Kernel),8,8.911389479612161
+SVR (RBF Kernel),10,11.486675590959383
+SVR (RBF Kernel),9,9.14959456548075
+SVR (RBF Kernel),9,10.609084895452325
+SVR (RBF Kernel),13,13.899278616662055
+SVR (RBF Kernel),10,10.407019221458198
+SVR (RBF Kernel),8,11.066899834648877
+SVR (RBF Kernel),10,7.0649804271505765
+SVR (RBF Kernel),12,11.092360678230627
+SVR (RBF Kernel),6,6.948395069243778
+SVR (RBF Kernel),5,5.639602684810473
+SVR (RBF Kernel),7,6.781531306401605
+SVR (RBF Kernel),4,3.9274028731971597
+SVR (RBF Kernel),8,7.927585990840981
+SVR (RBF Kernel),7,7.453422358088099
+SVR (RBF Kernel),14,12.758790982071448
+SVR (RBF Kernel),8,7.1262030619006
+SVR (RBF Kernel),15,9.426930351069434
+SVR (RBF Kernel),7,8.331796341387848
+SVR (RBF Kernel),9,9.360827175325902
+SVR (RBF Kernel),13,11.20681065733726
+SVR (RBF Kernel),9,8.431870764488778
+SVR (RBF Kernel),8,7.898630298320386
+SVR (RBF Kernel),10,10.612570142754787
+SVR (RBF Kernel),6,7.753740603704887
+SVR (RBF Kernel),12,10.087117197773487
+SVR (RBF Kernel),7,6.1167400193027
+SVR (RBF Kernel),10,10.383863014784401
+SVR (RBF Kernel),8,9.267332439075616
+SVR (RBF Kernel),6,9.557566337589579
+SVR (RBF Kernel),9,8.767902640814208
+SVR (RBF Kernel),7,7.824923127540754
+SVR (RBF Kernel),23,13.44555341541697
+SVR (RBF Kernel),6,6.917779857860405
+SVR (RBF Kernel),8,11.216853480285131
+SVR (RBF Kernel),18,10.20528578276446
+SVR (RBF Kernel),9,10.174888354784498
+SVR (RBF Kernel),11,10.628930235938483
+SVR (RBF Kernel),12,10.875593225479141
+SVR (RBF Kernel),11,9.146529214842248
+SVR (RBF Kernel),9,8.256712995737528
+SVR (RBF Kernel),10,10.281166335580593
+SVR (RBF Kernel),7,6.935046307725892
+SVR (RBF Kernel),12,9.438912519960297
+SVR (RBF Kernel),19,12.910862651641756
+SVR (RBF Kernel),8,8.62843279636233
+SVR (RBF Kernel),16,13.457229242327525
+SVR (RBF Kernel),10,10.545240007721153
+SVR (RBF Kernel),6,6.574851238400541
+SVR (RBF Kernel),9,6.866004295725077
+SVR (RBF Kernel),9,7.330329496598576
+SVR (RBF Kernel),11,11.228793598089327
+SVR (RBF Kernel),13,9.56399369764547
+SVR (RBF Kernel),9,9.827183426270775
+SVR (RBF Kernel),5,6.737718966399393
+SVR (RBF Kernel),7,7.871787828402639
+SVR (RBF Kernel),11,11.046875798077057
+SVR (RBF Kernel),10,9.087155583688682
+SVR (RBF Kernel),7,7.149603464138255
+SVR (RBF Kernel),7,7.0292203945004
+SVR (RBF Kernel),11,12.807396146239638
+SVR (RBF Kernel),10,8.97029066235535
+SVR (RBF Kernel),9,9.557126552003187
+SVR (RBF Kernel),11,10.423164454868484
+SVR (RBF Kernel),8,5.77560179889916
+SVR (RBF Kernel),9,10.198184511602904
+SVR (RBF Kernel),6,9.143313326949883
+SVR (RBF Kernel),8,9.43992586076833
+SVR (RBF Kernel),8,9.411629534675342
+SVR (RBF Kernel),13,12.91106341156884
+SVR (RBF Kernel),10,10.697339077011502
+SVR (RBF Kernel),10,10.174571903161022
+SVR (RBF Kernel),8,8.05476133740053
+SVR (RBF Kernel),10,10.397101295335675
+SVR (RBF Kernel),11,11.172075062199582
+SVR (RBF Kernel),15,11.008852502807274
+SVR (RBF Kernel),9,9.814199118461094
+SVR (RBF Kernel),12,11.1389633857544
+SVR (RBF Kernel),7,7.697601115269276
+SVR (RBF Kernel),10,11.270456394233086
+SVR (RBF Kernel),11,10.951914152333854
+SVR (RBF Kernel),7,7.2655748661110415
+SVR (RBF Kernel),7,7.324746699573465
+SVR (RBF Kernel),8,10.661402240290016
+SVR (RBF Kernel),9,10.25638771494502
+SVR (RBF Kernel),16,15.581776613656448
+SVR (RBF Kernel),10,9.565549877607527
+SVR (RBF Kernel),7,8.780870567068202
+SVR (RBF Kernel),8,7.2559760563501765
+SVR (RBF Kernel),8,10.062478397601359
+SVR (RBF Kernel),8,8.435381725318747
+SVR (RBF Kernel),9,9.969415256904316
+SVR (RBF Kernel),13,10.985528769655522
+SVR (RBF Kernel),10,7.2238242988116514
+SVR (RBF Kernel),8,7.9850255832242185
+SVR (RBF Kernel),9,8.974721399303789
+SVR (RBF Kernel),7,8.0574450802964
+SVR (RBF Kernel),9,9.916304536780945
+SVR (RBF Kernel),8,9.65166684919396
+SVR (RBF Kernel),11,9.380500043757994
+SVR (RBF Kernel),8,9.565571199962703
+SVR (RBF Kernel),10,9.341198382275483
+SVR (RBF Kernel),7,6.957056977857637
+SVR (RBF Kernel),8,11.02108220788042
+SVR (RBF Kernel),8,10.094179476465952
+SVR (RBF Kernel),12,10.722571445484181
+SVR (RBF Kernel),10,9.897557305426425
+SVR (RBF Kernel),12,11.04700085924371
+SVR (RBF Kernel),11,8.61578155207688
+SVR (RBF Kernel),11,9.715000529213187
+SVR (RBF Kernel),9,8.503729613068327
+SVR (RBF Kernel),8,9.111431106162199
+SVR (RBF Kernel),7,7.085902062498344
+SVR (RBF Kernel),8,10.163752074549059
+SVR (RBF Kernel),7,9.979853530176634
+SVR (RBF Kernel),7,6.969413570219205
+SVR (RBF Kernel),5,5.023257127932963
+SVR (RBF Kernel),9,9.33973598466137
+SVR (RBF Kernel),18,11.105832284259556
+SVR (RBF Kernel),10,11.256306504384636
+SVR (RBF Kernel),8,8.445446961424175
+SVR (RBF Kernel),11,11.094066622064133
+SVR (RBF Kernel),15,12.974361309639685
+SVR (RBF Kernel),10,11.103300292855087
+SVR (RBF Kernel),6,5.930745767237169
+SVR (RBF Kernel),8,6.702304947322437
+SVR (RBF Kernel),11,11.261973451007416
+SVR (RBF Kernel),6,6.825947681213193
+SVR (RBF Kernel),9,11.165246541497748
+SVR (RBF Kernel),5,5.587720088642467
+SVR (RBF Kernel),8,8.796492389962268
+SVR (RBF Kernel),6,7.810374062228934
+SVR (RBF Kernel),9,11.560804915306644
+SVR (RBF Kernel),6,5.513441354198761
+SVR (RBF Kernel),10,9.981768229783723
+SVR (RBF Kernel),10,9.294354482036598
+SVR (RBF Kernel),10,10.587470933508273
+SVR (RBF Kernel),7,7.294178952197808
+SVR (RBF Kernel),15,11.10382030264092
+SVR (RBF Kernel),8,8.595275054877256
+SVR (RBF Kernel),11,10.150488452354226
+SVR (RBF Kernel),6,15.477101749830961
+SVR (RBF Kernel),20,13.248560229512382
+SVR (RBF Kernel),13,11.226095964600676
+SVR (RBF Kernel),7,9.068895551689492
+SVR (RBF Kernel),10,10.915331607436563
+SVR (RBF Kernel),9,7.844064185186083
+SVR (RBF Kernel),7,7.044250943883685
+SVR (RBF Kernel),6,6.284165140827743
+SVR (RBF Kernel),13,9.536296739502399
+SVR (RBF Kernel),13,10.830220680139538
+SVR (RBF Kernel),11,9.652375964497422
+SVR (RBF Kernel),9,9.726307011842362
+SVR (RBF Kernel),10,8.214372318255712
+SVR (RBF Kernel),14,13.078294406568219
+SVR (RBF Kernel),12,13.499728969098939
+SVR (RBF Kernel),10,11.576103240889537
+SVR (RBF Kernel),10,10.9526320331688
+SVR (RBF Kernel),11,10.331537297782813
+SVR (RBF Kernel),11,14.85526748557166
+SVR (RBF Kernel),11,12.892332850524479
+SVR (RBF Kernel),9,7.567019609410403
+SVR (RBF Kernel),11,9.736509401514663
+SVR (RBF Kernel),14,11.041156346061031
+SVR (RBF Kernel),7,6.6028525149957895
+SVR (RBF Kernel),11,10.777310138607774
+SVR (RBF Kernel),12,9.074031052833256
+SVR (RBF Kernel),10,9.30521385147003
+SVR (RBF Kernel),12,16.790657679873785
+SVR (RBF Kernel),17,13.712603122658857
+SVR (RBF Kernel),9,10.864047622888743
+SVR (RBF Kernel),9,8.628312708853546
+SVR (RBF Kernel),9,8.40545666382329
+SVR (RBF Kernel),8,13.806132831326826
+SVR (RBF Kernel),14,10.298500737286911
+SVR (RBF Kernel),9,10.400946030539876
+SVR (RBF Kernel),21,13.169142495722092
+SVR (RBF Kernel),12,9.693880720169066
+SVR (RBF Kernel),20,11.26785304705692
+SVR (RBF Kernel),11,9.998845432273107
+SVR (RBF Kernel),12,11.374685720413563
+SVR (RBF Kernel),11,10.078039119620122
+SVR (RBF Kernel),15,10.295818081068024
+SVR (RBF Kernel),10,11.323627417242413
+SVR (RBF Kernel),6,7.005801837516079
+SVR (RBF Kernel),11,10.606135771756126
+SVR (RBF Kernel),15,9.6460641866465
+SVR (RBF Kernel),11,11.419884586183885
+SVR (RBF Kernel),6,5.892314870473186
+SVR (RBF Kernel),7,9.33976679783401
+SVR (RBF Kernel),11,10.960800441096604
+SVR (RBF Kernel),11,9.78382292031679
+SVR (RBF Kernel),12,9.743751141454279
+SVR (RBF Kernel),7,7.020891698210601
+SVR (RBF Kernel),11,7.3688366935877845
+SVR (RBF Kernel),8,10.102060352526154
+SVR (RBF Kernel),10,11.256215803422378
+SVR (RBF Kernel),19,11.989748660259163
+SVR (RBF Kernel),20,15.025913755017218
+SVR (RBF Kernel),13,10.35663953294939
+SVR (RBF Kernel),9,9.190505723536244
+SVR (RBF Kernel),8,8.93115282955823
+SVR (RBF Kernel),10,8.646249233428412
+SVR (RBF Kernel),8,10.15282711086278
+SVR (RBF Kernel),16,13.611100599533124
+SVR (RBF Kernel),10,12.63327627382042
+SVR (RBF Kernel),13,11.095424441939299
+SVR (RBF Kernel),9,9.213661177168778
+SVR (RBF Kernel),12,11.359874971869626
+SVR (RBF Kernel),11,9.080450124134371
+SVR (RBF Kernel),11,9.969871661844438
+SVR (RBF Kernel),14,11.869231293321347
+SVR (RBF Kernel),9,11.695387651506492
+SVR (RBF Kernel),15,9.827881380093626
+SVR (RBF Kernel),8,7.1504529367506375
+SVR (RBF Kernel),10,11.253418164860607
+SVR (RBF Kernel),10,13.027694460543508
+SVR (RBF Kernel),8,8.526322832666144
+SVR (RBF Kernel),8,9.309070716277262
+SVR (RBF Kernel),9,9.959002846882314
+SVR (RBF Kernel),10,9.184212059821839
+SVR (RBF Kernel),4,4.508744730360504
+SVR (RBF Kernel),16,12.649689556469577
+SVR (RBF Kernel),10,10.605909898057343
+SVR (RBF Kernel),9,8.302585067208273
+SVR (RBF Kernel),5,5.99353160962869
+SVR (RBF Kernel),7,10.257777233770826
+SVR (RBF Kernel),10,11.292229610031065
+SVR (RBF Kernel),9,9.129737100382497
+SVR (RBF Kernel),11,11.175989461749305
+SVR (RBF Kernel),9,10.688338197193799
+SVR (RBF Kernel),13,11.615162256015386
+SVR (RBF Kernel),8,8.465571689707417
+SVR (RBF Kernel),11,10.74644401236604
+SVR (RBF Kernel),8,8.908126838951247
+SVR (RBF Kernel),9,8.762564205351026
+SVR (RBF Kernel),10,10.814674267333702
+SVR (RBF Kernel),14,9.340473577136184
+SVR (RBF Kernel),10,9.404493376285895
+SVR (RBF Kernel),11,12.433002880828358
+SVR (RBF Kernel),26,14.005817178927028
+SVR (RBF Kernel),11,13.473355639373946
+SVR (RBF Kernel),10,12.241414066499114
+SVR (RBF Kernel),5,4.005855957153419
+SVR (RBF Kernel),5,5.10145906394228
+SVR (RBF Kernel),10,9.927453204503683
+SVR (RBF Kernel),7,8.528410189348152
+SVR (RBF Kernel),12,9.578465909050324
+SVR (RBF Kernel),17,13.046358608369578
+SVR (RBF Kernel),7,9.243672082833951
+SVR (RBF Kernel),10,9.597884280763731
+SVR (RBF Kernel),8,7.570349449082252
+SVR (RBF Kernel),9,10.283296251998797
+SVR (RBF Kernel),10,9.930052347373389
+SVR (RBF Kernel),9,8.946844800645373
+SVR (RBF Kernel),8,9.072557213213551
+SVR (RBF Kernel),7,8.360633866215718
+SVR (RBF Kernel),7,6.6753524765798895
+SVR (RBF Kernel),10,8.119801792864388
+SVR (RBF Kernel),12,11.208285270382364
+SVR (RBF Kernel),15,11.868703815981794
+SVR (RBF Kernel),12,12.811417330593601
+SVR (RBF Kernel),10,8.883459383105402
+SVR (RBF Kernel),8,8.381423835089633
+SVR (RBF Kernel),9,9.403297397380468
+SVR (RBF Kernel),6,5.067608715119362
+SVR (RBF Kernel),11,11.491339196730546
+SVR (RBF Kernel),5,5.4146850033872775
+SVR (RBF Kernel),13,11.372223681271146
+SVR (RBF Kernel),13,12.291054281964128
+SVR (RBF Kernel),10,8.916069881711792
+SVR (RBF Kernel),5,5.704872287228298
+SVR (RBF Kernel),9,7.273437805334844
+SVR (RBF Kernel),15,12.789987547817786
+SVR (RBF Kernel),10,9.073644421937395
+SVR (RBF Kernel),10,7.834987095344202
+SVR (RBF Kernel),9,7.901224784762494
+SVR (RBF Kernel),11,11.125748589273712
+SVR (RBF Kernel),11,12.13365603073857
+SVR (RBF Kernel),9,8.08178455243667
+SVR (RBF Kernel),15,13.969580492667138
+SVR (RBF Kernel),7,9.098841074301903
+SVR (RBF Kernel),10,11.343597421883167
+SVR (RBF Kernel),8,7.5948541912137575
+SVR (RBF Kernel),12,11.934112026186886
+SVR (RBF Kernel),11,10.087364680857162
+SVR (RBF Kernel),12,10.595256703614794
+SVR (RBF Kernel),10,11.306894894474413
+SVR (RBF Kernel),11,10.954638366077853
+SVR (RBF Kernel),8,7.13601772612925
+SVR (RBF Kernel),21,12.05596153660268
+SVR (RBF Kernel),10,10.77091867462511
+SVR (RBF Kernel),4,6.036359596576265
+SVR (RBF Kernel),10,10.327772148659106
+SVR (RBF Kernel),10,10.346198098671998
+SVR (RBF Kernel),8,7.496518708647212
+SVR (RBF Kernel),10,11.28434781946265
+SVR (RBF Kernel),10,10.196219056213852
+SVR (RBF Kernel),15,11.213258831374908
+SVR (RBF Kernel),9,7.527751403137523
+SVR (RBF Kernel),9,10.768065729412854
+SVR (RBF Kernel),11,9.935560335642197
+SVR (RBF Kernel),11,11.755379176268372
+SVR (RBF Kernel),9,9.796122278545978
+SVR (RBF Kernel),13,10.036680061608418
+SVR (RBF Kernel),11,9.746801790206696
+SVR (RBF Kernel),13,13.000459227895389
+SVR (RBF Kernel),10,10.012379650284043
+SVR (RBF Kernel),7,9.963460908115882
+SVR (RBF Kernel),11,11.983967501396874
+SVR (RBF Kernel),6,6.717516756394679
+SVR (RBF Kernel),11,9.139521199267294
+SVR (RBF Kernel),8,7.3721705376405
+SVR (RBF Kernel),7,6.5242720229194155
+SVR (RBF Kernel),9,9.062626852629993
+SVR (RBF Kernel),11,10.71528141852241
+SVR (RBF Kernel),14,11.300386507267886
+SVR (RBF Kernel),8,8.59256897760178
+SVR (RBF Kernel),8,5.512131953593452
+SVR (RBF Kernel),9,8.980591935618671
+SVR (RBF Kernel),14,9.534297437714342
+SVR (RBF Kernel),9,8.816655929947444
+SVR (RBF Kernel),8,8.078911136229925
+SVR (RBF Kernel),10,10.789364715259438
+SVR (RBF Kernel),13,12.36966259756845
+SVR (RBF Kernel),9,10.53554726333104
+SVR (RBF Kernel),9,7.798310953283101
+SVR (RBF Kernel),9,8.345983524588014
+SVR (RBF Kernel),7,6.754770558769213
+SVR (RBF Kernel),7,7.285530759027067
+SVR (RBF Kernel),13,10.836527658663586
+SVR (RBF Kernel),7,9.267699673499978
+SVR (RBF Kernel),8,7.346292529817974
+SVR (RBF Kernel),7,7.267273955304344
+SVR (RBF Kernel),19,11.815709220161093
+SVR (RBF Kernel),11,10.372104322643008
+SVR (RBF Kernel),9,8.687189012864762
+SVR (RBF Kernel),10,7.595955726445736
+SVR (RBF Kernel),17,11.391164079474171
+SVR (RBF Kernel),10,10.13562792801854
+SVR (RBF Kernel),8,10.290829157537843
+SVR (RBF Kernel),8,10.360096918022133
+SVR (RBF Kernel),11,11.389925313763678
+SVR (RBF Kernel),9,8.408779270270657
+SVR (RBF Kernel),8,8.57349355377708
+SVR (RBF Kernel),9,8.512603026134961
+SVR (RBF Kernel),8,9.566267873699116
+SVR (RBF Kernel),18,11.718792307316145
+SVR (RBF Kernel),10,11.302641232930585
+SVR (RBF Kernel),11,10.334057392131077
+SVR (RBF Kernel),8,5.229162485169431
+SVR (RBF Kernel),11,8.18569233749757
+SVR (RBF Kernel),8,9.841459534883516
+SVR (RBF Kernel),8,6.393180456623935
+SVR (RBF Kernel),11,11.704146978162887
+SVR (RBF Kernel),7,7.465993441841467
+SVR (RBF Kernel),17,12.039088886369496
+SVR (RBF Kernel),6,5.868830966187412
+SVR (RBF Kernel),11,10.27766675703985
+SVR (RBF Kernel),10,10.24252703823734
+SVR (RBF Kernel),12,11.77777571453476
+SVR (RBF Kernel),13,10.00870212622791
+SVR (RBF Kernel),10,7.6408390162799975
+SVR (RBF Kernel),12,13.367071273996014
+SVR (RBF Kernel),7,8.651742758139985
+SVR (RBF Kernel),19,12.339685009161602
+SVR (RBF Kernel),13,12.152088517021463
+SVR (RBF Kernel),10,11.177255036172117
+SVR (RBF Kernel),8,9.565177979801016
+SVR (RBF Kernel),13,12.414093812553904
+SVR (RBF Kernel),12,9.932643552612085
+SVR (RBF Kernel),8,10.562286986512506
+SVR (RBF Kernel),9,10.714313665150055
+SVR (RBF Kernel),12,12.285546227610569
+SVR (RBF Kernel),11,11.169148197794119
+SVR (RBF Kernel),13,9.109857801493543
+SVR (RBF Kernel),19,13.393483483317315
+SVR (RBF Kernel),10,10.911741185782995
+SVR (RBF Kernel),9,9.354133694616447
+SVR (RBF Kernel),15,11.65191143756207
+SVR (RBF Kernel),9,10.740245839200696
+SVR (RBF Kernel),5,4.224406002844946
+SVR (RBF Kernel),7,6.04962038091888
+SVR (RBF Kernel),24,14.818669610866051
+SVR (RBF Kernel),8,9.649918637293524
+SVR (RBF Kernel),15,11.009720779135792
+SVR (RBF Kernel),7,6.8751397767386155
+SVR (RBF Kernel),10,10.465755284205366
+SVR (RBF Kernel),7,6.5151495879925525
+SVR (RBF Kernel),16,13.074149652596867
+SVR (RBF Kernel),9,10.194801106686963
+SVR (RBF Kernel),13,8.776618178746446
+SVR (RBF Kernel),8,8.459906911913448
+SVR (RBF Kernel),7,6.9904693341704744
+SVR (RBF Kernel),14,11.463389429099779
+SVR (RBF Kernel),13,10.644769897111745
+SVR (RBF Kernel),9,10.070004280804401
+SVR (RBF Kernel),18,12.889707572874789
+SVR (RBF Kernel),7,6.807484231885717
+SVR (RBF Kernel),12,10.11589594268444
+SVR (RBF Kernel),7,7.693757438132295
+SVR (RBF Kernel),5,4.44610593131512
+SVR (RBF Kernel),7,7.468559818794446
+SVR (RBF Kernel),15,8.856473119501917
+SVR (RBF Kernel),12,8.293726144750963
+SVR (RBF Kernel),9,8.427895538842423
+SVR (RBF Kernel),8,9.622080832546146
+SVR (RBF Kernel),11,10.990418120738603
+SVR (RBF Kernel),6,6.351794604749495
+SVR (RBF Kernel),10,9.642008501503032
+SVR (RBF Kernel),9,7.827687995529524
+SVR (RBF Kernel),12,11.07054461379635
+SVR (RBF Kernel),4,6.653230499223488
+SVR (RBF Kernel),16,11.067039397131053
+SVR (RBF Kernel),4,3.9791323324734993
+SVR (RBF Kernel),10,11.894859798714684
+SVR (RBF Kernel),11,10.294566465168614
+SVR (RBF Kernel),7,7.4029948172467135
+SVR (RBF Kernel),8,8.775192298278021
+SVR (RBF Kernel),12,8.33751610658007
+SVR (RBF Kernel),14,11.985195018447158
+SVR (RBF Kernel),8,8.973000751646559
+SVR (RBF Kernel),10,9.918854639360896
+SVR (RBF Kernel),11,11.501626001578671
+SVR (RBF Kernel),8,10.114835251503433
+SVR (RBF Kernel),12,9.935730909437082
+SVR (RBF Kernel),10,10.071417431379789
+SVR (RBF Kernel),7,6.7232748688521715
+SVR (RBF Kernel),8,7.623984534746044
+SVR (RBF Kernel),18,11.722774690329137
+SVR (RBF Kernel),10,10.609848918429217
+SVR (RBF Kernel),13,10.210981870412358
+SVR (RBF Kernel),10,9.382341891370018
+SVR (RBF Kernel),11,10.04535513795402
+SVR (RBF Kernel),8,7.4202205694754095
+SVR (RBF Kernel),12,9.294030180479343
+SVR (RBF Kernel),13,11.925854177053747
+SVR (RBF Kernel),7,8.894395818076248
+SVR (RBF Kernel),8,7.573619702402199
+SVR (RBF Kernel),9,8.042610334081244
+SVR (RBF Kernel),8,8.609477798074362
+SVR (RBF Kernel),6,5.088795935871362
+SVR (RBF Kernel),15,13.541177763566505
+SVR (RBF Kernel),9,10.076538116619359
+SVR (RBF Kernel),11,9.73344609808991
+SVR (RBF Kernel),5,6.549287960360128
+SVR (RBF Kernel),8,6.9334717438598075
+SVR (RBF Kernel),9,8.435728833273911
+SVR (RBF Kernel),6,7.172982200012163
+SVR (RBF Kernel),6,8.308392128154425
+SVR (RBF Kernel),7,7.886561713879358
+SVR (RBF Kernel),10,9.9094876431216
+SVR (RBF Kernel),12,11.67994406860228
+SVR (RBF Kernel),10,9.931137966423412
+SVR (RBF Kernel),6,4.928347627840596
+SVR (RBF Kernel),12,13.328365990975476
+SVR (RBF Kernel),9,9.057431158965223
+SVR (RBF Kernel),10,12.883484331392431
+SVR (RBF Kernel),9,7.262060815350172
+SVR (RBF Kernel),9,8.339893608718887
+SVR (RBF Kernel),9,10.47235220114273
+SVR (RBF Kernel),7,7.134511230836646
+SVR (RBF Kernel),9,10.110821182370302
+SVR (RBF Kernel),7,6.976053091676748
+SVR (RBF Kernel),8,7.338754586746857
+SVR (RBF Kernel),14,12.581202899800179
+SVR (RBF Kernel),6,7.413171503364509
+SVR (RBF Kernel),14,11.622848946690034
+SVR (RBF Kernel),15,11.676413993717112
+SVR (RBF Kernel),11,12.740205162475046
+SVR (RBF Kernel),5,6.397080879182393
