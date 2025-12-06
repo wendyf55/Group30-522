@@ -46,12 +46,12 @@ Before proceeding with analysis, we validate the data quality using Pandera sche
 
 ![Boxplot showing the distribution and outliers of target variable Rings.](../results/data_validation/target_boxplot.png){#fig-dist-boxplot} 
 
-**Observation**: There are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.
+@fig-dist-boxplot shows that there are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.
 
 
 ![Histogram showing the distribution of target variable Rings.](../results/data_validation/target_histogram.png){#fig-rings-hist}
 
-**Observation**: The distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.
+@fig-rings-hist shows that the distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.
 
 
 
@@ -60,7 +60,7 @@ Before proceeding with analysis, we validate the data quality using Pandera sche
 ![Correlation heatmap showing relationships between numerical features and the target variable (Rings).](../results/data_validation/correlation_plot.png){#fig-rings-corr}
 
 
-**Observation**: Features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.
+@fig-rings-corr shows that features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.
 
 
 ### 5. Exploratory Data Analysis (EDA)
@@ -83,7 +83,7 @@ Below, we investigate the possible relationship between sex of adults (M/F), Inf
 
 ![Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.](../results/eda/interaction_plot.png){#fig-interaction-plot}
 
-**Observation**: The relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.
+@fig-interaction-plot shows that the relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.
 
 
 ### 6. Model Selection and Training
