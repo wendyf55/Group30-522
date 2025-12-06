@@ -42,12 +42,12 @@ Before proceeding with analysis, we validate the data quality using Pandera sche
 
 #### Distribution of Target
 
-![Boxplot showing the distribution and outliers of target variable Rings.](../results/data_validation/target_boxplot.png){#dist_boxplot} 
+![Boxplot showing the distribution and outliers of target variable Rings.](../results/data_validation/target_boxplot.png){#fig-dist-boxplot} 
 
 **Observation**: There are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.
 
 
-![Histogram showing the distribution of target variable Rings.](../results/data_validation/target_histogram.png){#rings_hist}
+![Histogram showing the distribution of target variable Rings.](../results/data_validation/target_histogram.png){#fig-rings-hist}
 
 **Observation**: The distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.
 
@@ -55,7 +55,7 @@ Before proceeding with analysis, we validate the data quality using Pandera sche
 
 #### Correlations
 
-![Correlation heatmap showing relationships between numerical features and the target variable (Rings).](../results/data_validation/correlation_plot.png){#rings_corr}
+![Correlation heatmap showing relationships between numerical features and the target variable (Rings).](../results/data_validation/correlation_plot.png){#fig-rings-corr}
 
 
 **Observation**: Features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.
@@ -65,7 +65,7 @@ Before proceeding with analysis, we validate the data quality using Pandera sche
 
 The exploratory analysis below is performed **only on the training set** to avoid any data leakage from the test set. This ensures our understanding of the data and any decisions made based on EDA do not inadvertently incorporate information from the held-out test data.
 
-![EDA](../results/eda/pandas_profiling.html){#eda_prof}
+![EDA](../results/eda/pandas_profiling.html){#fig-eda-prof width=100% height=500}
 
 #### Summary
 * Mostly numerical variables except sex.
@@ -79,7 +79,7 @@ The exploratory analysis below is performed **only on the training set** to avoi
 
 Below, we investigate the possible relationship between sex of adults (M/F), Infants, and number of rings, as the relationship may differ between those categories.
 
-![Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.](../results/eda/interaction_plot.png){#interaction_plot}
+![Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.](../results/eda/interaction_plot.png){#fig-interaction-plot}
 
 **Observation**: The relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.
 
@@ -120,7 +120,7 @@ In this section, we present the results of our model training and evaluation. Al
 
 We evaluate the linear regression model by examining both quantitative metrics and visual diagnostics. The scatter plot below compares predicted vs. actual ring counts—points along the diagonal indicate accurate predictions.
 
-![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_actual_vs_predicted.png){#model_comp}
+![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_actual_vs_predicted.png){#fig-model-comp}
 
 # this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.
 
@@ -154,7 +154,7 @@ SVR with a Radial Basis Function (RBF) kernel maps the data into a higher-dimens
 
 To determine which approach best addresses our research question, we compare all three models side-by-side using the same test set. This ensures a fair comparison since all models were trained on identical training data and evaluated on identical test data that was never seen during training.
 
-![Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.](../results/model/model_results_model_comparison.png){#model_comp}
+![Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.](../results/model/model_results_model_comparison.png){#fig-model-comp}
 
 
 **Key Finding**: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of 2.17, highest R² of 0.52). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.
