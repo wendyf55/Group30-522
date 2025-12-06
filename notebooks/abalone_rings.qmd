@@ -2,7 +2,9 @@
 title: Predictive Models of the Age of Abalones Based on Physical Characteristics
 author: Serene Zha, Mehmet Imga, Claudia Liauw, Wendy Frankel
 jupyter: python3
-format: html
+format: 
+    html:
+        toc: true
 editor: source
 
 bibliography: references.bib
@@ -19,7 +21,7 @@ In this report, we aim to create an effective model which can predict age of Aba
 Abalone are marine mollusks that are commercially important in fisheries and aquaculture, particularly in regions such as Tasmania. Estimating the age structure of abalone populations is essential for setting sustainable harvest limits and monitoring stock health. However, the standard method for determining age requires cutting the shell through the cone, staining it, and counting growth rings under a microscope—a destructive, time-consuming, and labor-intensive procedure (@pop_biol_paper). Because of this, methods that can infer age from simple, non-destructive measurements of the animal are of practical interest to biologists, fisheries managers, and growers.
 
 
-Here, we ask whether we can use a machine learning model to predict the age of an abalone from basic physical measurements. Specifically, we will explore linear regression models in Python (@python) to relate age to various attributes, including sex, shell length, diameter, height, and several weight measurements. To investigate this question, we use the UCI Abalone dataset (@abalone_1), which contains 4,177 abalones with eight predictor variables and a target variable, “Rings". Each row corresponds to one abalone, and the recorded features include sex (male, female, infant), three shell size measurements (length, diameter, height), and four weight measurements (whole, shucked, viscera, and shell weight). The number of rings serves as a proxy for age, with age in years given approximately by Rings + 1.5 [2], to account for any rings missed in counting (they can be difficult to see). By building and evaluating linear regression models on this dataset, we aim to understand how well these readily obtained physical measurements can predict abalone age and what this implies for practical, non-destructive age estimation.
+Here, we ask whether we can use a machine learning model to predict the age of an abalone from basic physical measurements. Specifically, we will explore linear regression models in Python (@python) to relate age to various attributes, including sex, shell length, diameter, height, and several weight measurements. To investigate this question, we use the UCI Abalone dataset (@abalone_1), which contains 4,177 abalones with eight predictor variables and a target variable, “Rings". Each row corresponds to one abalone, and the recorded features include sex (male, female, infant), three shell size measurements (length, diameter, height), and four weight measurements (whole, shucked, viscera, and shell weight). The number of rings serves as a proxy for age, with age in years given approximately by Rings + 1.5 (@pop_biol_paper), to account for any rings missed in counting (they can be difficult to see). By building and evaluating linear regression models on this dataset, we aim to understand how well these readily obtained physical measurements can predict abalone age and what this implies for practical, non-destructive age estimation.
 
 ## Methods
 
@@ -42,30 +44,30 @@ Before proceeding with analysis, we validate the data quality using Pandera sche
 
 #### Distribution of Target
 
-![Boxplot showing the distribution and outliers of target variable Rings.](../results/data_validation/target_boxplot.png){#dist_boxplot} 
+![Boxplot showing the distribution and outliers of target variable Rings.](../results/data_validation/target_boxplot.png){#fig-dist-boxplot} 
 
-**Observation**: There are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.
+@fig-dist-boxplot shows that there are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.
 
 
-![Histogram showing the distribution of target variable Rings.](../results/data_validation/target_histogram.png){#rings_hist}
+![Histogram showing the distribution of target variable Rings.](../results/data_validation/target_histogram.png){#fig-rings-hist}
 
-**Observation**: The distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.
+@fig-rings-hist shows that the distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.
 
 
 
 #### Correlations
 
-![Correlation heatmap showing relationships between numerical features and the target variable (Rings).](../results/data_validation/correlation_plot.png){#rings_corr}
+![Correlation heatmap showing relationships between numerical features and the target variable (Rings).](../results/data_validation/correlation_plot.png){#fig-rings-corr}
 
 
-**Observation**: Features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.
+@fig-rings-corr shows that features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.
 
 
 ### 5. Exploratory Data Analysis (EDA)
 
 The exploratory analysis below is performed **only on the training set** to avoid any data leakage from the test set. This ensures our understanding of the data and any decisions made based on EDA do not inadvertently incorporate information from the held-out test data.
 
-![EDA](../results/eda/pandas_profiling.html){#eda_prof}
+![EDA](../results/eda/pandas_profiling.html){#fig-eda-prof width=100% height=500}
 
 #### Summary
 * Mostly numerical variables except sex.
@@ -79,9 +81,9 @@ The exploratory analysis below is performed **only on the training set** to avoi
 
 Below, we investigate the possible relationship between sex of adults (M/F), Infants, and number of rings, as the relationship may differ between those categories.
 
-![Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.](../results/eda/interaction_plot.png){#interaction_plot}
+![Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.](../results/eda/interaction_plot.png){#fig-interaction-plot}
 
-**Observation**: The relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.
+@fig-interaction-plot shows that the relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.
 
 
 ### 6. Model Selection and Training
@@ -99,12 +101,14 @@ To address our research question—whether physical measurements can predict aba
 #### Evaluation Metrics
 
 We evaluate models using two complementary metrics:
-- **Root Mean Squared Error (RMSE)**: Measures the average prediction error in the same units as the target (rings). Lower RMSE indicates better predictive accuracy. We use RMSE rather than MSE because it's more interpretable—an RMSE of 2.0 means predictions are off by about 2 rings on average.
-- **R² (Coefficient of Determination)**: Represents the proportion of variance in the target explained by the model. R² = 1.0 means perfect prediction; R² = 0 means the model is no better than predicting the mean. This helps us understand how much of the age variation is captured by physical measurements.
+
+* **Root Mean Squared Error (RMSE)**: Measures the average prediction error in the same units as the target (rings). Lower RMSE indicates better predictive accuracy. We use RMSE rather than MSE because it's more interpretable—an RMSE of 2.0 means predictions are off by about 2 rings on average.
+* **R² (Coefficient of Determination)**: Represents the proportion of variance in the target explained by the model. R² = 1.0 means perfect prediction; R² = 0 means the model is no better than predicting the mean. This helps us understand how much of the age variation is captured by physical measurements.
 
 #### Model A: Linear Regression (Baseline)
 
 We construct a preprocessing pipeline that:
+
 1. One-hot encodes the categorical Sex feature (to handle the three categories: M, F, I)
 2. Standardizes numerical features (important for comparing coefficients)
 3. Fits a Linear Regression model
@@ -118,7 +122,7 @@ In this section, we present the results of our model training and evaluation. Al
 
 We evaluate the linear regression model by examining both quantitative metrics and visual diagnostics. The scatter plot below compares predicted vs. actual ring counts—points along the diagonal indicate accurate predictions.
 
-![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_actual_vs_predicted.png){#model_comp}
+![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_actual_vs_predicted.png){#fig-model-comp}
 
 # this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.
 
@@ -152,7 +156,7 @@ SVR with a Radial Basis Function (RBF) kernel maps the data into a higher-dimens
 
 To determine which approach best addresses our research question, we compare all three models side-by-side using the same test set. This ensures a fair comparison since all models were trained on identical training data and evaluated on identical test data that was never seen during training.
 
-![Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.](../results/model/model_results_model_comparison.png){#model_comp}
+![Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.](../results/model/model_results_model_comparison.png){#fig-model-comp}
 
 
 **Key Finding**: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of 2.17, highest R² of 0.52). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.
@@ -165,7 +169,7 @@ The other two models tested were non-linear approaches. The **Random Forest mode
 
 Although the linear model did not perform as well as the non-linear models, extracting the standardized coefficients reveals important patterns in our data. Whole Weight showed the strongest positive coefficient, while Shucked Weight had a strong negative coefficient. This counterintuitive pattern (since both weights should increase with age) indicates multicollinearity among the weight features—when highly correlated predictors are included together, their individual coefficients become difficult to interpret reliably. This observation further supports our use of non-linear models that are less sensitive to multicollinearity.
 
-Within the context of biological organisms, that a linear regression model did not perform well is unsurprising. Growth rate, which impacts features such as those in our dataset, can be highly variable depending on biotic and abiotic factors. A linear regression model cannot capture enough of the variance present in the dataset. In a literature review by Guney et al. (2022), the authors reviewed six different predictive models of abalone age based on physical characteristics and found that the BPFFNN model had the highest test accuracy, followed by a random forest model [@ML_age_predict_paper]. This aligns with our findings that non-linear models outperform linear approaches.
+Within the context of biological organisms, that a linear regression model did not perform well is unsurprising. Growth rate, which impacts features such as those in our dataset, can be highly variable depending on biotic and abiotic factors. A linear regression model cannot capture enough of the variance present in the dataset. In a literature review by @ML_age_predict_paper, the authors reviewed six different predictive models of abalone age based on physical characteristics and found that the BPFFNN model had the highest test accuracy, followed by a random forest model [@ML_age_predict_paper]. This aligns with our findings that non-linear models outperform linear approaches.
 
 **Practical Implications**: Estimating abalone age in a non-destructive way is important for fisheries managers and aquaculture growers. Our results suggest that non-linear models using physical measurements can predict age with reasonable accuracy (±2.2 rings). However, with an R² of only 0.52, the models still leave about 48% of the variance unexplained. Future work could improve predictions by incorporating environmental features (e.g., water temperature, location), addressing multicollinearity through feature selection or regularization, and testing more sophisticated models such as neural networks.
 
