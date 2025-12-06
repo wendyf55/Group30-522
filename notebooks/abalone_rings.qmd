@@ -99,12 +99,14 @@ To address our research question—whether physical measurements can predict aba
 #### Evaluation Metrics
 
 We evaluate models using two complementary metrics:
-- **Root Mean Squared Error (RMSE)**: Measures the average prediction error in the same units as the target (rings). Lower RMSE indicates better predictive accuracy. We use RMSE rather than MSE because it's more interpretable—an RMSE of 2.0 means predictions are off by about 2 rings on average.
-- **R² (Coefficient of Determination)**: Represents the proportion of variance in the target explained by the model. R² = 1.0 means perfect prediction; R² = 0 means the model is no better than predicting the mean. This helps us understand how much of the age variation is captured by physical measurements.
+
+* **Root Mean Squared Error (RMSE)**: Measures the average prediction error in the same units as the target (rings). Lower RMSE indicates better predictive accuracy. We use RMSE rather than MSE because it's more interpretable—an RMSE of 2.0 means predictions are off by about 2 rings on average.
+* **R² (Coefficient of Determination)**: Represents the proportion of variance in the target explained by the model. R² = 1.0 means perfect prediction; R² = 0 means the model is no better than predicting the mean. This helps us understand how much of the age variation is captured by physical measurements.
 
 #### Model A: Linear Regression (Baseline)
 
 We construct a preprocessing pipeline that:
+
 1. One-hot encodes the categorical Sex feature (to handle the three categories: M, F, I)
 2. Standardizes numerical features (important for comparing coefficients)
 3. Fits a Linear Regression model
