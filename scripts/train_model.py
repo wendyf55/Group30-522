@@ -159,6 +159,96 @@ def create_residuals_chart(predictions_df):
     return chart
 
 
+def create_lr_scatter_chart(predictions_df, metrics_df):
+    """Create scatter plot for Linear Regression only with perfect prediction line."""
+    # Filter for Linear Regression only
+    lr_predictions = predictions_df[predictions_df['Model'] == 'Linear Regression'].copy()
+    
+    # Get metrics for subtitle
+    lr_metrics = metrics_df[metrics_df['Model'] == 'Linear Regression'].iloc[0]
+    lr_r2 = lr_metrics['R2_Score']
+    lr_rmse = lr_metrics['RMSE']
+    
+    # Create scatter plot
+    scatter = alt.Chart(lr_predictions).mark_circle(
+        opacity=0.5,
+        color='steelblue',
+        size=60
+    ).encode(
+        x=alt.X('Actual:Q', 
+                title='Actual Number of Rings',
+                scale=alt.Scale(domain=[0, 30])),
+        y=alt.Y('Predicted:Q', 
+                title='Predicted Number of Rings',
+                scale=alt.Scale(domain=[0, 30])),
+        tooltip=['Actual', 'Predicted']
+    )
+    
+    # Create perfect prediction line (y = x)
+    line_data = pd.DataFrame({'x': [0, 30], 'y': [0, 30]})
+    line = alt.Chart(line_data).mark_line(
+        color='red',
+        strokeDash=[5, 5],
+        strokeWidth=2
+    ).encode(
+        x='x:Q',
+        y='y:Q'
+    )
+    
+    # Combine scatter and line
+    chart = (scatter + line).properties(
+        width=500,
+        height=500,
+        title=alt.TitleParams(
+            text='Linear Regression: Actual vs Predicted Ring Count',
+            fontSize=14,
+            fontWeight='bold',
+            subtitle=f'R² = {lr_r2:.3f}, RMSE = {lr_rmse:.2f} rings',
+            subtitleFontSize=12
+        )
+    ).configure_axis(
+        labelFontSize=12,
+        titleFontSize=13
+    )
+    
+    return chart
+
+
+def extract_lr_coefficients(lr_pipeline, numeric_features, categorical_features):
+    """Extract coefficients from Linear Regression pipeline."""
+    # Get the linear regression model from the pipeline
+    lr_model = lr_pipeline.named_steps['linearregression']
+    
+    # Get the preprocessor to understand feature names after transformation
+    preprocessor = lr_pipeline.named_steps['columntransformer']
+    
+    # Get one-hot encoder categories
+    ohe = preprocessor.named_transformers_['onehotencoder']
+    cat_feature_names = list(ohe.get_feature_names_out(categorical_features))
+    
+    # Combine all feature names (numeric first, then categorical)
+    all_feature_names = numeric_features + cat_feature_names
+    
+    # Get coefficients
+    coefficients = lr_model.coef_
+    
+    # Create DataFrame
+    coef_df = pd.DataFrame({
+        'Feature': all_feature_names,
+        'Coefficient': coefficients
+    })
+    
+    # Sort by absolute value of coefficient (descending)
+    coef_df['Abs_Coefficient'] = coef_df['Coefficient'].abs()
+    coef_df = coef_df.sort_values('Abs_Coefficient', ascending=False)
+    coef_df = coef_df.drop('Abs_Coefficient', axis=1)
+    
+    # Round coefficients
+    coef_df['Coefficient'] = coef_df['Coefficient'].round(4)
+    
+    return coef_df
+
+
 def save_chart(chart, path):
     """Save chart to PNG file."""
     chart.save(path)
@@ -220,6 +310,20 @@ def train_and_save_results(train_path, test_path, output_prefix, seed):
         create_residuals_chart(predictions_df),
         f"{output_prefix}_residuals.png"
     )
+    
+    # Save Linear Regression specific outputs
+    save_chart(
+        create_lr_scatter_chart(predictions_df, metrics_df),
+        f"{output_prefix}_lr_scatter.png"
+    )
+    
+    # Save Linear Regression coefficients table
+    lr_coef_df = extract_lr_coefficients(
+        models['Linear Regression'], 
+        NUMERIC_FEATURES, 
+        CATEGORICAL_FEATURES
+    )
+    lr_coef_df.to_csv(f"{output_prefix}_lr_coefficients.csv", index=False)
 
 
 @click.command()
