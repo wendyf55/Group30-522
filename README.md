@@ -112,8 +112,8 @@ python scripts/train_model.py --train-path data/processed/abalone_train.csv --te
 Renders the Quarto report to HTML and PDF.
 
 ```bash
-quarto render notebooks/abalone_rings.qmd --to html
-quarto render notebooks/abalone_rings.qmd --to pdf
+quarto render reports/abalone_rings.qmd --to html
+quarto render reports/abalone_rings.qmd --to pdf
 ```
 
 ## Dataset
@@ -150,17 +150,6 @@ Install these via the conda environment described above to ensure a reproducible
 - Update the docker-compose.yml file on your branch to use the new container image (make sure to update the tag specifically).
 
 - Send a pull request to merge the changes into the main branch.
-
-## Computational environment (Docker)
-
-This project uses a reproducible Docker environment located at:
-
-- **Docker Hub image:** `wfrankel55/group30-522`
-- **Compose file:** `docker-compose.yml`
-- **Build definition:** `Dockerfile` and `conda-linux-64.lock`
-
-The Docker image is automatically built and pushed to Docker Hub by the
-GitHub Actions workflow `.github/workflows/docker-publish.yml`. 
 
 ## License
 
