@@ -60,8 +60,8 @@ Copy and paste that URL into your browser.
 <img src="img/jupyter-container-web-app-launch-url.png" width=400>
 
 ### Step 3: 
-To run the analysis, open a terminal and run the following commands:
 
+To run the analysis, open a terminal and run the following commands:
 You can run the full analysis pipeline using Make:
 
 ```bash
@@ -70,39 +70,50 @@ make analysis
 Or run individual scripts manually:
 
 #### 1. Download data
+
 Downloads the Abalone dataset from UCI and extracts it to the raw data folder.
+
 ```bash
 python scripts/download_data.py --url "https://archive.ics.uci.edu/static/public/1/abalone.zip" --write_to data/raw
 ```
 
 #### 2. Clean and split data
+
 Reads the raw data, removes missing values, and splits into train/test sets (80/20).
+
 ```bash
 python scripts/data_cleaning.py --origin_path data/raw/abalone.data --output_dir data/processed
 ```
 
 #### 3. Data validation
+
 Validates data quality and generates distribution plots.
+
 ```bash
 python scripts/data_validation.py --train-path data/processed/abalone_train.csv --save-dir results/data_validation
 ```
 
 #### 4. Exploratory data analysis
+
 Generates EDA visualizations and summary statistics.
+
 ```bash
 python scripts/eda.py --train-path data/processed/abalone_train.csv --save-dir results/eda
 ```
 
 #### 5. Model training and evaluation
 Trains Linear Regression, Random Forest, and SVR models, then saves metrics and figures.
+
 ```bash
 python scripts/train_model.py --train-path data/processed/abalone_train.csv --test-path data/processed/abalone_test.csv --output-prefix results/model/model_results
 ```
 
 #### 6. Render the report
-Renders the Quarto report to HTML.
+Renders the Quarto report to HTML and PDF.
+
 ```bash
-quarto render notebooks/abalone_rings.qmd
+quarto render notebooks/abalone_rings.qmd --to html
+quarto render notebooks/abalone_rings.qmd --to pdf
 ```
 
 ## Dataset
