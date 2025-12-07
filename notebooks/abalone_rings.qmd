@@ -122,17 +122,19 @@ In this section, we present the results of our model training and evaluation. Al
 
 We evaluate the linear regression model by examining both quantitative metrics and visual diagnostics. The scatter plot below compares predicted vs. actual ring counts—points along the diagonal indicate accurate predictions.
 
-![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_actual_vs_predicted.png){#fig-model-comp}
-
-# this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.
+![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_lr_scatter.png){#fig-lr-scatter}
 
 **Interpretation**: The model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~0.44. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.
 
 ```{python}
-# | label: tbl-linear_coefs
-# | tbl-cap: Linear Regression coefficient values showing the estimated contribution of each feature to the predicted ring count after standardization and one-hot encoding.
+#| label: tbl-linear-coefs
+#| tbl-cap: Linear Regression coefficient values showing the estimated contribution of each feature to the predicted ring count after standardization and one-hot encoding.
 
-print("this table is MISSING from the results folder.")
+import pandas as pd
+from IPython.display import Markdown
+
+coef_df = pd.read_csv('../results/model/model_results_lr_coefficients.csv')
+Markdown(coef_df.to_markdown(index=False))
 ```
 
 
