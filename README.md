@@ -54,6 +54,11 @@ docker compose up
 
 ### Step 2: 
 
+- In the terminal, look for a URL with `http://127.0.0.1:8888/lab` (for an example, see the highlighted text in the terminal below). 
+Copy and paste that URL into your browser.
+
+<img src="img/jupyter-container-web-app-launch-url.png" width=400>
+
 ### Step 3: 
 To run the analysis, open a terminal and run the following commands:
 
