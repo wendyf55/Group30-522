@@ -155,10 +155,10 @@ We evaluate the linear regression model by examining both quantitative metrics a
 #| tbl-cap: Linear Regression coefficient values showing the estimated contribution of each feature to the predicted ring count after standardization and one-hot encoding.
 
 import pandas as pd
-from IPython.display import Markdown
+from IPython.display import display
 
 coef_df = pd.read_csv('../results/model/model_results_lr_coefficients.csv')
-Markdown(coef_df.to_markdown(index=False))
+display(coef_df)
 ```
 
 
