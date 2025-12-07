@@ -102,6 +102,7 @@ python scripts/eda.py --train-path data/processed/abalone_train.csv --save-dir r
 ```
 
 #### 5. Model training and evaluation
+
 Trains Linear Regression, Random Forest, and SVR models, then saves metrics and figures.
 
 ```bash
@@ -109,12 +110,18 @@ python scripts/train_model.py --train-path data/processed/abalone_train.csv --te
 ```
 
 #### 6. Render the report
+
 Renders the Quarto report to HTML and PDF.
 
 ```bash
 quarto render reports/abalone_rings.qmd --to html
 quarto render reports/abalone_rings.qmd --to pdf
 ```
+
+#### 7. Clean up
+
+To shut down the container and clean up the resources, type `Cntrl` + `C` in the terminal where you launched the container, and then type `docker compose rm`.
+
 
 ## Dataset
 
