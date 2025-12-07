@@ -21,18 +21,18 @@ Group 30 in DSCI 522
 - Claudia Liauw  
 - Serene Zha
 
-## How to Run the Analysis
+## Setup
 
 Follow these steps to set up the environment and reproduce our analysis.
 
-### Step 1: Clone the repository
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/wendyf55/Group30-522.git
 cd Group30-522
 ```
 
-### Step 2: Create and activate the conda environment
+2. Create and activate the conda environment
 
 We provide an environment.yml file that pins the versions of Python and required packages.
 
@@ -41,14 +41,32 @@ conda env create -f environment.yaml
 conda activate 522
 ```
 
-### Step 3: Run the analysis
+## Run the analysis
+
+### Step 1: 
+
+- Navigate to the root of this project on your computer using the
+   command line and enter the following command:
+
+``` 
+docker compose up
+```
+
+### Step 2: 
+
+- In the terminal, look for a URL with `http://127.0.0.1:8888/lab` (for an example, see the highlighted text in the terminal below). 
+Copy and paste that URL into your browser.
+
+<img src="img/jupyter-container-web-app-launch-url.png" width=400>
+
+### Step 3: 
+To run the analysis, open a terminal and run the following commands:
 
 You can run the full analysis pipeline using Make:
 
 ```bash
 make analysis
 ```
-
 Or run individual scripts manually:
 
 #### 1. Download data
@@ -132,41 +150,6 @@ This project uses a reproducible Docker environment located at:
 
 The Docker image is automatically built and pushed to Docker Hub by the
 GitHub Actions workflow `.github/workflows/docker-publish.yml`. 
-
----
-
-### How to start the environment (recommended: Docker Compose)
-
-1. Install **Docker Desktop** (which includes Docker Compose).
-
-2. Clone this repository:
-
-   ```bash
-   git clone https://github.com/wendyf55/Group30-522.git
-   cd Group30-522
-   ```
-
-3. Start the container with Docker Compose:
-
-```bash
-docker compose up
-```
-
-This command:
-
-- builds/pulls the image defined in docker-compose.yml
-
-- starts a container called dockerlock
-
-- maps port 8888 on your machine to 8888 inside the container
-(so Jupyter will be available at http://localhost:8888)
-
-4. To stop the container, press Ctrl + C in the terminal where
-docker compose up is running, then clean up with:
-
-```bash
-docker compose down
-``` 
 
 ## License
 
