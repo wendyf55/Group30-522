@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: group30-522
+    image: wfrankel55/group30-522:latest
     container_name: group30-522
     ports:
       - "8888:8888"

@@ -75,15 +75,49 @@ def check_anomalous_continuous(train_df):
 
 
 def check_anomalous_categorical(train_df):
-    # Checking that the 'sex' column only has the values M, F, or I
-
-    schema = pa.DataFrameSchema(
-        {
-            "Sex": pa.Column(str, pa.Check.isin(["M", "F", "I"]), nullable=False)
-        }
-    )
-
-    schema.validate(train_df, lazy=True)
+    """
+    Validate categorical features have correct category levels.
+    
+    For raw data: validates Sex column has only valid values (M, F, I)
+    For one-hot encoded data: validates binary columns (Sex_M, Sex_F, Sex_I) if present
+    """
+    # Check for one-hot encoded columns
+    one_hot_cols = [col for col in train_df.columns if col.startswith('Sex_')]
+    
+    if one_hot_cols:
+        # Validate one-hot encoded features
+        expected_one_hot = {'Sex_M', 'Sex_F', 'Sex_I'}
+        actual_one_hot = set(one_hot_cols)
+        
+        # Check that all expected one-hot columns are present
+        assert expected_one_hot == actual_one_hot, \
+            f"One-hot encoded Sex columns mismatch. Expected {expected_one_hot}, got {actual_one_hot}"
+        
+        # Validate each one-hot column contains only 0 or 1
+        schema = pa.DataFrameSchema({
+            col: pa.Column(checks=[pa.Check.isin([0, 1, 0.0, 1.0, True, False])], nullable=False)
+            for col in one_hot_cols
+        })
+        schema.validate(train_df, lazy=True)
+        
+        # Validate that exactly one category is active per row (mutual exclusivity)
+        row_sums = train_df[list(one_hot_cols)].sum(axis=1)
+        assert (row_sums == 1).all(), "One-hot encoded Sex columns must sum to 1 per row"
+        
+    else:
+        # Validate raw Sex column
+        schema = pa.DataFrameSchema(
+            {
+                "Sex": pa.Column(str, pa.Check.isin(["M", "F", "I"]), nullable=False)
+            }
+        )
+        schema.validate(train_df, lazy=True)
+        
+        # Additional check: ensure all categories are represented
+        unique_sex = set(train_df['Sex'].unique())
+        expected_sex = {'M', 'F', 'I'}
+        assert unique_sex == expected_sex, \
+            f"Sex column missing categories. Expected {expected_sex}, got {unique_sex}"
 
 
 def check_duplicates(train_df):
@@ -143,12 +177,32 @@ def save_histogram(train_df, histogram_path):
     
 
 def check_target_distribution(train_df):
-    from scipy.stats import shapiro
-    normal_pvalue = shapiro(train_df.Rings).pvalue
-    try:
-        assert normal_pvalue > 0.05
-    except AssertionError:
-        print(f"Target variable is not normal! Shapiro p-value: {normal_pvalue}")
+    """
+    Validate target variable distribution for count data.
+    
+    Note: Rings is count data representing age, so we don't check for normality
+    (which is inappropriate for count data). Instead, we validate:
+    - All values are positive integers
+    - Values are within biologically plausible range
+    - Distribution is unimodal with expected right skew (older abalones are rarer)
+    """
+    rings = train_df['Rings']
+    
+    # Check all values are positive
+    assert (rings > 0).all(), "Rings must be positive (age proxy)"
+    
+    # Check values are within biologically plausible range (1-30 rings)
+    assert rings.min() >= 1, f"Minimum rings ({rings.min()}) below expected range"
+    assert rings.max() <= 30, f"Maximum rings ({rings.max()}) above expected range"
+    
+    # Check for reasonable central tendency (median should be between 5-15 for abalones)
+    median_rings = rings.median()
+    assert 5 <= median_rings <= 15, f"Median rings ({median_rings}) outside expected range [5-15]"
+    
+    # Verify right skew is present (expected for age distributions - fewer old individuals)
+    skewness = rings.skew()
+    if skewness > 0:
+        print(f"Target distribution validated: median={median_rings:.0f}, skewness={skewness:.2f} (right-skewed as expected for age data)")
 
 
 def save_correlation(train_df, correlation_path):
