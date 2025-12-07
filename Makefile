@@ -39,3 +39,36 @@ up: ## stop and start docker-compose services
 .PHONY: stop
 stop: ## stop docker-compose services
 	docker-compose stop
+
+
+.PHONY: data
+data: ## Download and prepare data
+	python scripts/download_data.py --write_to data/raw
+	python scripts/data_cleaning.py --origin_path data/raw/abalone.data --output_dir data/processed
+
+.PHONY: validate
+validate: data ## Run data validation checks
+	python scripts/data_validation.py --train-path data/processed/abalone_train.csv --save-dir results/data_validation
+
+.PHONY: eda
+eda: data ## Run exploratory data analysis
+	python scripts/eda.py --train-path data/processed/abalone_train.csv --save-dir results/eda
+
+.PHONY: model
+model: data ## Train and evaluate models
+	python scripts/train_model.py --train-path data/processed/abalone_train.csv --test-path data/processed/abalone_test.csv --output-prefix results/model/model_results
+
+.PHONY: report
+report: ## Render the Quarto report
+	quarto render notebooks/abalone_rings.qmd
+
+.PHONY: analysis
+analysis: data validate eda model report ## Run the full analysis pipeline
+
+.PHONY: clean
+clean: ## Remove all generated data and results
+	rm -rf data/raw/*
+	rm -rf data/processed/*
+	rm -rf results/data_validation/*
+	rm -rf results/eda/*
+	rm -rf results/model/*

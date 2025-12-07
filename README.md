@@ -43,21 +43,49 @@ conda activate 522
 
 ### Step 3: Run the analysis
 
-1. Launch Jupyter Lab or Jupyter Notebook from within the activated environment:
+You can run the full analysis pipeline using Make:
 
 ```bash
-jupyter lab
+make analysis
 ```
 
-2. Open the abalone_rings.ipynb notebook in the repository.
+Or run individual scripts manually:
 
-3. Run all cells from top to bottom.
-This will:
-- Fetch and load the Abalone dataset,
-- Perform basic data cleaning and train–test splitting,
-- Conduct exploratory data analysis (EDA),
-- Fit and evaluate the linear regression, Random Forest, and SVR models,
-- Produce summary tables and visualizations comparing model performance and feature importance.
+#### 1. Download data
+Downloads the Abalone dataset from UCI and extracts it to the raw data folder.
+```bash
+python scripts/download_data.py --url "https://archive.ics.uci.edu/static/public/1/abalone.zip" --write_to data/raw
+```
+
+#### 2. Clean and split data
+Reads the raw data, removes missing values, and splits into train/test sets (80/20).
+```bash
+python scripts/data_cleaning.py --origin_path data/raw/abalone.data --output_dir data/processed
+```
+
+#### 3. Data validation
+Validates data quality and generates distribution plots.
+```bash
+python scripts/data_validation.py --train-path data/processed/abalone_train.csv --save-dir results/data_validation
+```
+
+#### 4. Exploratory data analysis
+Generates EDA visualizations and summary statistics.
+```bash
+python scripts/eda.py --train-path data/processed/abalone_train.csv --save-dir results/eda
+```
+
+#### 5. Model training and evaluation
+Trains Linear Regression, Random Forest, and SVR models, then saves metrics and figures.
+```bash
+python scripts/train_model.py --train-path data/processed/abalone_train.csv --test-path data/processed/abalone_test.csv --output-prefix results/model/model_results
+```
+
+#### 6. Render the report
+Renders the Quarto report to HTML.
+```bash
+quarto render notebooks/abalone_rings.qmd
+```
 
 ## Dataset
 
