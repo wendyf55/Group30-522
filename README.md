@@ -106,8 +106,7 @@ python scripts/train_model.py --train-path data/processed/abalone_train.csv --te
 Renders the Quarto report to HTML and PDF.
 
 ```bash
-quarto render reports/abalone_rings.qmd --to html
-quarto render reports/abalone_rings.qmd --to pdf
+quarto render reports/abalone_rings.qmd
 ```
 
 #### 7. Clean up

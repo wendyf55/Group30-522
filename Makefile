@@ -60,7 +60,7 @@ model: data ## Train and evaluate models
 
 .PHONY: report
 report: ## Render the Quarto report
-	quarto render notebooks/abalone_rings.qmd
+	quarto render reports/abalone_rings.qmd
 
 .PHONY: analysis
 analysis: data validate eda model report ## Run the full analysis pipeline
