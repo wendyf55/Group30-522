@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -44,7 +44,7 @@ div.csl-indent {
 }</style>
 
 
-<script src="abalone_rings_files/libs/clipboard/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script><script src="abalone_rings_files/libs/clipboard/clipboard.min.js"></script>
 <script src="abalone_rings_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="abalone_rings_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="abalone_rings_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -52,10 +52,13 @@ div.csl-indent {
 <script src="abalone_rings_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="abalone_rings_files/libs/quarto-html/anchor.min.js"></script>
 <link href="abalone_rings_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="abalone_rings_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="abalone_rings_files/libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="abalone_rings_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="abalone_rings_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="abalone_rings_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="abalone_rings_files/libs/bootstrap/bootstrap-590c0f0efd03e66f4b1e967e63cdcb51.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
 </head>
@@ -79,14 +82,11 @@ div.csl-indent {
   <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
   <ul class="collapse">
   <li><a href="#linear-regression-results" id="toc-linear-regression-results" class="nav-link" data-scroll-target="#linear-regression-results">7. Linear Regression Results</a></li>
-  </ul></li>
-  <li><a href="#this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5." id="toc-this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5." class="nav-link" data-scroll-target="#this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5.">this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.</a>
-  <ul class="collapse">
   <li><a href="#non-linear-model-results" id="toc-non-linear-model-results" class="nav-link" data-scroll-target="#non-linear-model-results">8. Non-Linear Model Results</a></li>
   <li><a href="#model-comparison" id="toc-model-comparison" class="nav-link" data-scroll-target="#model-comparison">9. Model Comparison</a></li>
+  </ul></li>
   <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
-  </ul></li>
   </ul>
 </nav>
 </div>
@@ -257,34 +257,98 @@ Figure&nbsp;5: Number of rings (target variable) by shell weight (grams), groupe
 <section id="linear-regression-results" class="level3">
 <h3 class="anchored" data-anchor-id="linear-regression-results">7. Linear Regression Results</h3>
 <p>We evaluate the linear regression model by examining both quantitative metrics and visual diagnostics. The scatter plot below compares predicted vs.&nbsp;actual ring counts—points along the diagonal indicate accurate predictions.</p>
-<div id="fig-model-comp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-lr-scatter" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-model-comp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="../results/model/model_results_actual_vs_predicted.png" class="img-fluid figure-img">
+<div aria-describedby="fig-lr-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/model/model_results_lr_scatter.png" class="img-fluid figure-img">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model-comp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-lr-scatter-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;6: Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.
 </figcaption>
 </figure>
 </div>
-</section>
-</section>
-<section id="this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5." class="level1">
-<h1>this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.</h1>
 <p><strong>Interpretation</strong>: The model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~0.44. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.</p>
-<div id="tbl-linear_coefs" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
+<div class="cell" data-execution_count="2">
+<div id="tbl-linear-coefs" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
 <figure class="quarto-float quarto-float-tbl figure">
-<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-linear_coefs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-linear-coefs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Linear Regression coefficient values showing the estimated contribution of each feature to the predicted ring count after standardization and one-hot encoding.
 </figcaption>
-<div aria-describedby="tbl-linear_coefs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-stdout">
-<pre><code>this table is MISSING from the results folder.</code></pre>
+<div aria-describedby="tbl-linear-coefs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="cell-output cell-output-display">
+<div>
+
+
+<table class="dataframe do-not-create-environment cell caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Feature</th>
+<th data-quarto-table-cell-role="th">Coefficient</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Whole_weight</td>
+<td>4.4834</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Shucked_weight</td>
+<td>-4.3975</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Viscera_weight</td>
+<td>-1.1845</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>Diameter</td>
+<td>1.1533</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>Shell_weight</td>
+<td>1.0202</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">5</td>
+<td>Height</td>
+<td>0.8088</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">6</td>
+<td>Sex_I</td>
+<td>-0.5153</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">7</td>
+<td>Sex_M</td>
+<td>0.3070</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">8</td>
+<td>Length</td>
+<td>-0.2659</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">9</td>
+<td>Sex_F</td>
+<td>0.2083</td>
+</tr>
+</tbody>
+</table>
+
+</div>
 </div>
 </div>
 </figure>
 </div>
+</div>
 <p><strong>Interpretation</strong>: Since features are standardized, coefficient magnitudes are comparable. Whole weight shows the strongest positive association with age, while Shucked weight has a strong negative coefficient. This counterintuitive pattern (since both weights should increase with age) is likely due to multicollinearity among weight features—when correlated features are included together, their individual coefficients can be difficult to interpret. This further motivates our use of non-linear models that are less sensitive to multicollinearity.</p>
+</section>
 <section id="non-linear-model-results" class="level3">
 <h3 class="anchored" data-anchor-id="non-linear-model-results">8. Non-Linear Model Results</h3>
 <p>Given that the linear model explains only about 44% of the variance (R² ≈ 0.44), we now test non-linear models to see if they can capture more complex relationships in the data.</p>
@@ -312,6 +376,7 @@ Figure&nbsp;7: Side-by-side comparison of RMSE (lower is better) and R² (higher
 </div>
 <p><strong>Key Finding</strong>: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of 2.17, highest R² of 0.52). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.</p>
 </section>
+</section>
 <section id="discussion" class="level2">
 <h2 class="anchored" data-anchor-id="discussion">Discussion</h2>
 <p>In this report, we tested three different models to find which model was best at predicting the number of rings (as a proxy for age) of abalone molluscs. The baseline <strong>Linear Regression model</strong> explains about 44% of the variance in ring count (R² = 0.44) using size and weight measurements, with a root mean squared error (RMSE) of approximately <strong>2.34 rings</strong>. This means the model’s predictions are typically off by about 2.3 rings on average.</p>
@@ -323,7 +388,6 @@ Figure&nbsp;7: Side-by-side comparison of RMSE (lower is better) and R² (higher
 <section id="references" class="level2 unnumbered">
 
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
