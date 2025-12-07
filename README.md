@@ -23,22 +23,13 @@ Group 30 in DSCI 522
 
 ## Setup
 
-Follow these steps to set up the environment and reproduce our analysis.
+> If you are using Windows or Mac, make sure Docker Desktop is running.
 
-1. Clone the repository:
+- Clone the repository:
 
 ```bash
 git clone https://github.com/wendyf55/Group30-522.git
 cd Group30-522
-```
-
-2. Create and activate the conda environment
-
-We provide an environment.yml file that pins the versions of Python and required packages.
-
-```bash
-conda env create -f environment.yaml
-conda activate 522
 ```
 
 ## Run the analysis
