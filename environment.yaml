@@ -4,7 +4,7 @@ channels:
 dependencies:
   - ucimlrepo=0.0.7
   - ipykernel=7.1.0
-  - ydata-profiling
+  - ydata-profiling=4.16.0
   - pandas=2.3.3
   - altair=6.0.0
   - jupyterlab=4.5.0
