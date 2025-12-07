@@ -116,6 +116,30 @@ We construct a preprocessing pipeline that:
 
 ## Results
 
+```{python}
+#| label: load-metrics
+#| output: false
+
+import pandas as pd
+
+# Load model metrics for inline references
+metrics = pd.read_csv('../results/model/model_results_metrics.csv')
+
+# Extract values for each model
+lr_r2 = metrics.loc[metrics['Model'] == 'Linear Regression', 'R2_Score'].values[0]
+lr_rmse = metrics.loc[metrics['Model'] == 'Linear Regression', 'RMSE'].values[0]
+
+rf_r2 = metrics.loc[metrics['Model'] == 'Random Forest', 'R2_Score'].values[0]
+rf_rmse = metrics.loc[metrics['Model'] == 'Random Forest', 'RMSE'].values[0]
+
+svr_r2 = metrics.loc[metrics['Model'] == 'SVR (RBF Kernel)', 'R2_Score'].values[0]
+svr_rmse = metrics.loc[metrics['Model'] == 'SVR (RBF Kernel)', 'RMSE'].values[0]
+
+# Calculate variance improvement
+variance_improvement = (svr_r2 - lr_r2) * 100
+unexplained_variance = (1 - svr_r2) * 100
+```
+
 In this section, we present the results of our model training and evaluation. All models were trained exclusively on the training set, and evaluation metrics are computed on the held-out test set to ensure unbiased performance estimates.
 
 ### 7. Linear Regression Results
@@ -126,7 +150,7 @@ We evaluate the linear regression model by examining both quantitative metrics a
 
 # this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.
 
-**Interpretation**: The model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~0.44. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.
+**Interpretation**: The model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~`{python} f"{lr_r2:.2f}"`. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.
 
 ```{python}
 # | label: tbl-linear_coefs
@@ -140,7 +164,7 @@ print("this table is MISSING from the results folder.")
 
 ### 8. Non-Linear Model Results
 
-Given that the linear model explains only about 44% of the variance (R² ≈ 0.44), we now test non-linear models to see if they can capture more complex relationships in the data.
+Given that the linear model explains only about `{python} f"{lr_r2*100:.0f}"`% of the variance (R² ≈ `{python} f"{lr_r2:.2f}"`), we now test non-linear models to see if they can capture more complex relationships in the data.
 
 #### Model B: Random Forest Regressor
 
@@ -159,19 +183,19 @@ To determine which approach best addresses our research question, we compare all
 ![Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.](../results/model/model_results_model_comparison.png){#fig-model-comp}
 
 
-**Key Finding**: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of 2.17, highest R² of 0.52). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.
+**Key Finding**: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of `{python} f"{svr_rmse:.2f}"`, highest R² of `{python} f"{svr_r2:.2f}"`). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.
 
 ## Discussion
 
-In this report, we tested three different models to find which model was best at predicting the number of rings (as a proxy for age) of abalone molluscs. The baseline **Linear Regression model** explains about 44% of the variance in ring count (R² = 0.44) using size and weight measurements, with a root mean squared error (RMSE) of approximately **2.34 rings**. This means the model's predictions are typically off by about 2.3 rings on average.
+In this report, we tested three different models to find which model was best at predicting the number of rings (as a proxy for age) of abalone molluscs. The baseline **Linear Regression model** explains about `{python} f"{lr_r2*100:.0f}"`% of the variance in ring count (R² = `{python} f"{lr_r2:.2f}"`) using size and weight measurements, with a root mean squared error (RMSE) of approximately **`{python} f"{lr_rmse:.2f}"` rings**. This means the model's predictions are typically off by about `{python} f"{lr_rmse:.1f}"` rings on average.
 
-The other two models tested were non-linear approaches. The **Random Forest model** achieves higher R² (0.52) and lower RMSE (2.18 rings) than the linear baseline, demonstrating that abalone growth patterns are not purely linear in relation to physical features. The **Support Vector Regression (SVR) with an RBF kernel** shows the best performance among the three models, with an RMSE of 2.17 rings and R² of 0.52. Both non-linear models capture approximately 8% more variance than the linear model, confirming that physical measurements and age have non-linear relationships.
+The other two models tested were non-linear approaches. The **Random Forest model** achieves higher R² (`{python} f"{rf_r2:.2f}"`) and lower RMSE (`{python} f"{rf_rmse:.2f}"` rings) than the linear baseline, demonstrating that abalone growth patterns are not purely linear in relation to physical features. The **Support Vector Regression (SVR) with an RBF kernel** shows the best performance among the three models, with an RMSE of `{python} f"{svr_rmse:.2f}"` rings and R² of `{python} f"{svr_r2:.2f}"`. Both non-linear models capture approximately `{python} f"{variance_improvement:.0f}"`% more variance than the linear model, confirming that physical measurements and age have non-linear relationships.
 
 Although the linear model did not perform as well as the non-linear models, extracting the standardized coefficients reveals important patterns in our data. Whole Weight showed the strongest positive coefficient, while Shucked Weight had a strong negative coefficient. This counterintuitive pattern (since both weights should increase with age) indicates multicollinearity among the weight features—when highly correlated predictors are included together, their individual coefficients become difficult to interpret reliably. This observation further supports our use of non-linear models that are less sensitive to multicollinearity.
 
 Within the context of biological organisms, that a linear regression model did not perform well is unsurprising. Growth rate, which impacts features such as those in our dataset, can be highly variable depending on biotic and abiotic factors. A linear regression model cannot capture enough of the variance present in the dataset. In a literature review by @ML_age_predict_paper, the authors reviewed six different predictive models of abalone age based on physical characteristics and found that the BPFFNN model had the highest test accuracy, followed by a random forest model [@ML_age_predict_paper]. This aligns with our findings that non-linear models outperform linear approaches.
 
-**Practical Implications**: Estimating abalone age in a non-destructive way is important for fisheries managers and aquaculture growers. Our results suggest that non-linear models using physical measurements can predict age with reasonable accuracy (±2.2 rings). However, with an R² of only 0.52, the models still leave about 48% of the variance unexplained. Future work could improve predictions by incorporating environmental features (e.g., water temperature, location), addressing multicollinearity through feature selection or regularization, and testing more sophisticated models such as neural networks.
+**Practical Implications**: Estimating abalone age in a non-destructive way is important for fisheries managers and aquaculture growers. Our results suggest that non-linear models using physical measurements can predict age with reasonable accuracy (±`{python} f"{svr_rmse:.1f}"` rings). However, with an R² of only `{python} f"{svr_r2:.2f}"`, the models still leave about `{python} f"{unexplained_variance:.0f}"`% of the variance unexplained. Future work could improve predictions by incorporating environmental features (e.g., water temperature, location), addressing multicollinearity through feature selection or regularization, and testing more sophisticated models such as neural networks.
 
 ## References
 

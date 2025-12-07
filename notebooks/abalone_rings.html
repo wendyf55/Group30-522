@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -47,22 +47,49 @@ div.csl-indent {
 <script src="abalone_rings_files/libs/clipboard/clipboard.min.js"></script>
 <script src="abalone_rings_files/libs/quarto-html/quarto.js" type="module"></script>
 <script src="abalone_rings_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="abalone_rings_files/libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="abalone_rings_files/libs/quarto-html/popper.min.js"></script>
 <script src="abalone_rings_files/libs/quarto-html/tippy.umd.min.js"></script>
 <script src="abalone_rings_files/libs/quarto-html/anchor.min.js"></script>
 <link href="abalone_rings_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="abalone_rings_files/libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="abalone_rings_files/libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="abalone_rings_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="abalone_rings_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="abalone_rings_files/libs/bootstrap/bootstrap-81267100e462c21b3d6c0d5bf76a3417.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="abalone_rings_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 
 
 </head>
 
-<body class="fullcontent quarto-light">
+<body class="quarto-light">
 
 <div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
-
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <ul class="collapse">
+  <li><a href="#data-validation" id="toc-data-validation" class="nav-link" data-scroll-target="#data-validation">4. Data Validation</a></li>
+  <li><a href="#exploratory-data-analysis-eda" id="toc-exploratory-data-analysis-eda" class="nav-link" data-scroll-target="#exploratory-data-analysis-eda">5. Exploratory Data Analysis (EDA)</a></li>
+  <li><a href="#model-selection-and-training" id="toc-model-selection-and-training" class="nav-link" data-scroll-target="#model-selection-and-training">6. Model Selection and Training</a></li>
+  </ul></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a>
+  <ul class="collapse">
+  <li><a href="#linear-regression-results" id="toc-linear-regression-results" class="nav-link" data-scroll-target="#linear-regression-results">7. Linear Regression Results</a></li>
+  </ul></li>
+  <li><a href="#this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5." id="toc-this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5." class="nav-link" data-scroll-target="#this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5.">this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.</a>
+  <ul class="collapse">
+  <li><a href="#non-linear-model-results" id="toc-non-linear-model-results" class="nav-link" data-scroll-target="#non-linear-model-results">8. Non-Linear Model Results</a></li>
+  <li><a href="#model-comparison" id="toc-model-comparison" class="nav-link" data-scroll-target="#model-comparison">9. Model Comparison</a></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
+  </ul>
+</nav>
+</div>
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
@@ -97,7 +124,7 @@ div.csl-indent {
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
 <p>Abalone are marine mollusks that are commercially important in fisheries and aquaculture, particularly in regions such as Tasmania. Estimating the age structure of abalone populations is essential for setting sustainable harvest limits and monitoring stock health. However, the standard method for determining age requires cutting the shell through the cone, staining it, and counting growth rings under a microscope—a destructive, time-consuming, and labor-intensive procedure (<span class="citation" data-cites="pop_biol_paper">W. Nash et al. (<a href="#ref-pop_biol_paper" role="doc-biblioref">1994</a>)</span>). Because of this, methods that can infer age from simple, non-destructive measurements of the animal are of practical interest to biologists, fisheries managers, and growers.</p>
-<p>Here, we ask whether we can use a machine learning model to predict the age of an abalone from basic physical measurements. Specifically, we will explore linear regression models in Python (<span class="citation" data-cites="python">Python Core Team (<a href="#ref-python" role="doc-biblioref">2025</a>)</span>) to relate age to various attributes, including sex, shell length, diameter, height, and several weight measurements. To investigate this question, we use the UCI Abalone dataset (<span class="citation" data-cites="abalone_1">S. Nash Warwick and Ford (<a href="#ref-abalone_1" role="doc-biblioref">1994</a>)</span>), which contains 4,177 abalones with eight predictor variables and a target variable, “Rings”. Each row corresponds to one abalone, and the recorded features include sex (male, female, infant), three shell size measurements (length, diameter, height), and four weight measurements (whole, shucked, viscera, and shell weight). The number of rings serves as a proxy for age, with age in years given approximately by Rings + 1.5 [2], to account for any rings missed in counting (they can be difficult to see). By building and evaluating linear regression models on this dataset, we aim to understand how well these readily obtained physical measurements can predict abalone age and what this implies for practical, non-destructive age estimation.</p>
+<p>Here, we ask whether we can use a machine learning model to predict the age of an abalone from basic physical measurements. Specifically, we will explore linear regression models in Python (<span class="citation" data-cites="python">Python Core Team (<a href="#ref-python" role="doc-biblioref">2025</a>)</span>) to relate age to various attributes, including sex, shell length, diameter, height, and several weight measurements. To investigate this question, we use the UCI Abalone dataset (<span class="citation" data-cites="abalone_1">S. Nash Warwick and Ford (<a href="#ref-abalone_1" role="doc-biblioref">1994</a>)</span>), which contains 4,177 abalones with eight predictor variables and a target variable, “Rings”. Each row corresponds to one abalone, and the recorded features include sex (male, female, infant), three shell size measurements (length, diameter, height), and four weight measurements (whole, shucked, viscera, and shell weight). The number of rings serves as a proxy for age, with age in years given approximately by Rings + 1.5 (<span class="citation" data-cites="pop_biol_paper">W. Nash et al. (<a href="#ref-pop_biol_paper" role="doc-biblioref">1994</a>)</span>), to account for any rings missed in counting (they can be difficult to see). By building and evaluating linear regression models on this dataset, we aim to understand how well these readily obtained physical measurements can predict abalone age and what this implies for practical, non-destructive age estimation.</p>
 </section>
 <section id="methods" class="level2">
 <h2 class="anchored" data-anchor-id="methods">Methods</h2>
@@ -117,39 +144,55 @@ div.csl-indent {
 </section>
 <section id="distribution-of-target" class="level4">
 <h4 class="anchored" data-anchor-id="distribution-of-target">Distribution of Target</h4>
-<div id="dist_boxplot" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../results/data_validation/target_boxplot.png" class="img-fluid figure-img"></p>
-<figcaption>Boxplot showing the distribution and outliers of target variable Rings.</figcaption>
+<div id="fig-dist-boxplot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-dist-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/data_validation/target_boxplot.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-dist-boxplot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Boxplot showing the distribution and outliers of target variable Rings.
+</figcaption>
 </figure>
 </div>
-<p><strong>Observation</strong>: There are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.</p>
-<div id="rings_hist" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../results/data_validation/target_histogram.png" class="img-fluid figure-img"></p>
-<figcaption>Histogram showing the distribution of target variable Rings.</figcaption>
+<p><a href="#fig-dist-boxplot" class="quarto-xref">Figure&nbsp;1</a> shows that there are outliers on the high end (older abalones), but no anomalous values below 0 or unreasonably high values. The outliers represent legitimately old abalones rather than data errors.</p>
+<div id="fig-rings-hist" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rings-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/data_validation/target_histogram.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rings-hist-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Histogram showing the distribution of target variable Rings.
+</figcaption>
 </figure>
 </div>
-<p><strong>Observation</strong>: The distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.</p>
+<p><a href="#fig-rings-hist" class="quarto-xref">Figure&nbsp;2</a> shows that the distribution shows a slight right skew, with most abalones having between 7-12 rings. This suggests age distribution in the sample is not perfectly normal, which may affect model assumptions.</p>
 </section>
 <section id="correlations" class="level4">
 <h4 class="anchored" data-anchor-id="correlations">Correlations</h4>
-<div id="rings_corr" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../results/data_validation/correlation_plot.png" class="img-fluid figure-img"></p>
-<figcaption>Correlation heatmap showing relationships between numerical features and the target variable (Rings).</figcaption>
+<div id="fig-rings-corr" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-rings-corr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/data_validation/correlation_plot.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-rings-corr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Correlation heatmap showing relationships between numerical features and the target variable (Rings).
+</figcaption>
 </figure>
 </div>
-<p><strong>Observation</strong>: Features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (&gt;0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn’t necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.</p>
+<p><a href="#fig-rings-corr" class="quarto-xref">Figure&nbsp;3</a> shows that features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (&gt;0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn’t necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.</p>
 </section>
 </section>
 <section id="exploratory-data-analysis-eda" class="level3">
 <h3 class="anchored" data-anchor-id="exploratory-data-analysis-eda">5. Exploratory Data Analysis (EDA)</h3>
 <p>The exploratory analysis below is performed <strong>only on the training set</strong> to avoid any data leakage from the test set. This ensures our understanding of the data and any decisions made based on EDA do not inadvertently incorporate information from the held-out test data.</p>
-<div id="eda_prof" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><embed src="../results/eda/pandas_profiling.html" class="img-fluid"></p>
-<figcaption>EDA</figcaption>
+<div id="fig-eda-prof" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-eda-prof-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<embed src="../results/eda/pandas_profiling.html" style="width:100.0%" height="500">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-eda-prof-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: EDA
+</figcaption>
 </figure>
 </div>
 <section id="summary-1" class="level4">
@@ -165,13 +208,17 @@ div.csl-indent {
 <section id="visualisation" class="level4">
 <h4 class="anchored" data-anchor-id="visualisation">Visualisation</h4>
 <p>Below, we investigate the possible relationship between sex of adults (M/F), Infants, and number of rings, as the relationship may differ between those categories.</p>
-<div id="interaction_plot" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../results/eda/interaction_plot.png" class="img-fluid figure-img"></p>
-<figcaption>Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.</figcaption>
+<div id="fig-interaction-plot" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-interaction-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/eda/interaction_plot.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-interaction-plot-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Number of rings (target variable) by shell weight (grams), grouped by Sex: Male (M), Female (F), and Infant (I). Linear regression lines for each group are shown.
+</figcaption>
 </figure>
 </div>
-<p><strong>Observation</strong>: The relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.</p>
+<p><a href="#fig-interaction-plot" class="quarto-xref">Figure&nbsp;5</a> shows that the relationship between shell weight and age appears roughly linear within each sex category, but the slopes differ—particularly for Infants, which show a steeper growth curve. This suggests that age-weight relationships may depend on developmental stage, supporting the inclusion of Sex as a feature in our models.</p>
 </section>
 </section>
 <section id="model-selection-and-training" class="level3">
@@ -187,11 +234,20 @@ div.csl-indent {
 </section>
 <section id="evaluation-metrics" class="level4">
 <h4 class="anchored" data-anchor-id="evaluation-metrics">Evaluation Metrics</h4>
-<p>We evaluate models using two complementary metrics: - <strong>Root Mean Squared Error (RMSE)</strong>: Measures the average prediction error in the same units as the target (rings). Lower RMSE indicates better predictive accuracy. We use RMSE rather than MSE because it’s more interpretable—an RMSE of 2.0 means predictions are off by about 2 rings on average. - <strong>R² (Coefficient of Determination)</strong>: Represents the proportion of variance in the target explained by the model. R² = 1.0 means perfect prediction; R² = 0 means the model is no better than predicting the mean. This helps us understand how much of the age variation is captured by physical measurements.</p>
+<p>We evaluate models using two complementary metrics:</p>
+<ul>
+<li><strong>Root Mean Squared Error (RMSE)</strong>: Measures the average prediction error in the same units as the target (rings). Lower RMSE indicates better predictive accuracy. We use RMSE rather than MSE because it’s more interpretable—an RMSE of 2.0 means predictions are off by about 2 rings on average.</li>
+<li><strong>R² (Coefficient of Determination)</strong>: Represents the proportion of variance in the target explained by the model. R² = 1.0 means perfect prediction; R² = 0 means the model is no better than predicting the mean. This helps us understand how much of the age variation is captured by physical measurements.</li>
+</ul>
 </section>
 <section id="model-a-linear-regression-baseline" class="level4">
 <h4 class="anchored" data-anchor-id="model-a-linear-regression-baseline">Model A: Linear Regression (Baseline)</h4>
-<p>We construct a preprocessing pipeline that: 1. One-hot encodes the categorical Sex feature (to handle the three categories: M, F, I) 2. Standardizes numerical features (important for comparing coefficients) 3. Fits a Linear Regression model</p>
+<p>We construct a preprocessing pipeline that:</p>
+<ol type="1">
+<li>One-hot encodes the categorical Sex feature (to handle the three categories: M, F, I)</li>
+<li>Standardizes numerical features (important for comparing coefficients)</li>
+<li>Fits a Linear Regression model</li>
+</ol>
 </section>
 </section>
 </section>
@@ -201,10 +257,14 @@ div.csl-indent {
 <section id="linear-regression-results" class="level3">
 <h3 class="anchored" data-anchor-id="linear-regression-results">7. Linear Regression Results</h3>
 <p>We evaluate the linear regression model by examining both quantitative metrics and visual diagnostics. The scatter plot below compares predicted vs.&nbsp;actual ring counts—points along the diagonal indicate accurate predictions.</p>
-<div id="model_comp" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../results/model/model_results_actual_vs_predicted.png" class="img-fluid figure-img"></p>
-<figcaption>Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.</figcaption>
+<div id="fig-model-comp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-model-comp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/model/model_results_actual_vs_predicted.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model-comp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.
+</figcaption>
 </figure>
 </div>
 </section>
@@ -212,7 +272,7 @@ div.csl-indent {
 <section id="this-figure-is-missing-from-the-results-folder.-the-one-above-is-not-correct.-should-be-figure-5." class="level1">
 <h1>this figure is MISSING from the results folder. the one above is not correct. Should be figure 5.</h1>
 <p><strong>Interpretation</strong>: The model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~0.44. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.</p>
-<div id="tbl-linear_coefs" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="1">
+<div id="tbl-linear_coefs" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-execution_count="2">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-linear_coefs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Linear Regression coefficient values showing the estimated contribution of each feature to the predicted ring count after standardization and one-hot encoding.
@@ -240,10 +300,14 @@ Table&nbsp;1: Linear Regression coefficient values showing the estimated contrib
 <section id="model-comparison" class="level3">
 <h3 class="anchored" data-anchor-id="model-comparison">9. Model Comparison</h3>
 <p>To determine which approach best addresses our research question, we compare all three models side-by-side using the same test set. This ensures a fair comparison since all models were trained on identical training data and evaluated on identical test data that was never seen during training.</p>
-<div id="model_comp" class="quarto-figure quarto-figure-center anchored">
-<figure class="figure">
-<p><img src="../results/model/model_results_model_comparison.png" class="img-fluid figure-img"></p>
-<figcaption>Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.</figcaption>
+<div id="fig-model-comp" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-model-comp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="../results/model/model_results_model_comparison.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-model-comp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.
+</figcaption>
 </figure>
 </div>
 <p><strong>Key Finding</strong>: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of 2.17, highest R² of 0.52). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.</p>
@@ -253,7 +317,7 @@ Table&nbsp;1: Linear Regression coefficient values showing the estimated contrib
 <p>In this report, we tested three different models to find which model was best at predicting the number of rings (as a proxy for age) of abalone molluscs. The baseline <strong>Linear Regression model</strong> explains about 44% of the variance in ring count (R² = 0.44) using size and weight measurements, with a root mean squared error (RMSE) of approximately <strong>2.34 rings</strong>. This means the model’s predictions are typically off by about 2.3 rings on average.</p>
 <p>The other two models tested were non-linear approaches. The <strong>Random Forest model</strong> achieves higher R² (0.52) and lower RMSE (2.18 rings) than the linear baseline, demonstrating that abalone growth patterns are not purely linear in relation to physical features. The <strong>Support Vector Regression (SVR) with an RBF kernel</strong> shows the best performance among the three models, with an RMSE of 2.17 rings and R² of 0.52. Both non-linear models capture approximately 8% more variance than the linear model, confirming that physical measurements and age have non-linear relationships.</p>
 <p>Although the linear model did not perform as well as the non-linear models, extracting the standardized coefficients reveals important patterns in our data. Whole Weight showed the strongest positive coefficient, while Shucked Weight had a strong negative coefficient. This counterintuitive pattern (since both weights should increase with age) indicates multicollinearity among the weight features—when highly correlated predictors are included together, their individual coefficients become difficult to interpret reliably. This observation further supports our use of non-linear models that are less sensitive to multicollinearity.</p>
-<p>Within the context of biological organisms, that a linear regression model did not perform well is unsurprising. Growth rate, which impacts features such as those in our dataset, can be highly variable depending on biotic and abiotic factors. A linear regression model cannot capture enough of the variance present in the dataset. In a literature review by Guney et al.&nbsp;(2022), the authors reviewed six different predictive models of abalone age based on physical characteristics and found that the BPFFNN model had the highest test accuracy, followed by a random forest model <span class="citation" data-cites="ML_age_predict_paper">(<a href="#ref-ML_age_predict_paper" role="doc-biblioref">Guney et al. 2022</a>)</span>. This aligns with our findings that non-linear models outperform linear approaches.</p>
+<p>Within the context of biological organisms, that a linear regression model did not perform well is unsurprising. Growth rate, which impacts features such as those in our dataset, can be highly variable depending on biotic and abiotic factors. A linear regression model cannot capture enough of the variance present in the dataset. In a literature review by <span class="citation" data-cites="ML_age_predict_paper">Guney et al. (<a href="#ref-ML_age_predict_paper" role="doc-biblioref">2022</a>)</span>, the authors reviewed six different predictive models of abalone age based on physical characteristics and found that the BPFFNN model had the highest test accuracy, followed by a random forest model <span class="citation" data-cites="ML_age_predict_paper">(<a href="#ref-ML_age_predict_paper" role="doc-biblioref">Guney et al. 2022</a>)</span>. This aligns with our findings that non-linear models outperform linear approaches.</p>
 <p><strong>Practical Implications</strong>: Estimating abalone age in a non-destructive way is important for fisheries managers and aquaculture growers. Our results suggest that non-linear models using physical measurements can predict age with reasonable accuracy (±2.2 rings). However, with an R² of only 0.52, the models still leave about 48% of the variance unexplained. Future work could improve predictions by incorporating environmental features (e.g., water temperature, location), addressing multicollinearity through feature selection or regularization, and testing more sophisticated models such as neural networks.</p>
 </section>
 <section id="references" class="level2 unnumbered">
@@ -328,13 +392,14 @@ Python Core Team. 2025. <em><span class="nocase">Python: A dynamic, open source 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
