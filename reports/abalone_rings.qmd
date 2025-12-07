@@ -148,7 +148,7 @@ We evaluate the linear regression model by examining both quantitative metrics a
 
 ![Actual Rings (x-axis) vs Predicted Rings (y-axis) for the linear regression model. The red dashed line represents perfect prediction (y = x). Points close to this line indicate accurate predictions, while deviations show prediction errors.](../results/model/model_results_lr_scatter.png){#fig-lr-scatter}
 
-**Interpretation**: The model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~`{python} f"{lr_r2:.2f}"`. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.
+@fig-lr-scatter shows that the model tends to under-predict for older abalones (high ring counts) and shows considerable scatter throughout, consistent with the moderate R² value of ~`{python} f"{lr_r2:.2f}"`. This suggests that linear relationships alone cannot fully capture how age relates to physical measurements.
 
 ```{python}
 #| label: tbl-linear-coefs
@@ -162,7 +162,7 @@ display(coef_df)
 ```
 
 
-**Interpretation**: Since features are standardized, coefficient magnitudes are comparable. Whole weight shows the strongest positive association with age, while Shucked weight has a strong negative coefficient. This counterintuitive pattern (since both weights should increase with age) is likely due to multicollinearity among weight features—when correlated features are included together, their individual coefficients can be difficult to interpret. This further motivates our use of non-linear models that are less sensitive to multicollinearity.
+@tbl-linear-coefs shows that since features are standardized, coefficient magnitudes are comparable. Whole weight shows the strongest positive association with age, while Shucked weight has a strong negative coefficient. This counterintuitive pattern (since both weights should increase with age) is likely due to multicollinearity among weight features—when correlated features are included together, their individual coefficients can be difficult to interpret. This further motivates our use of non-linear models that are less sensitive to multicollinearity.
 
 ### 8. Non-Linear Model Results
 
@@ -185,7 +185,7 @@ To determine which approach best addresses our research question, we compare all
 ![Side-by-side comparison of RMSE (lower is better) and R² (higher is better) across all three models evaluated on the test set.](../results/model/model_results_model_comparison.png){#fig-model-comp}
 
 
-**Key Finding**: Both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of `{python} f"{svr_rmse:.2f}"`, highest R² of `{python} f"{svr_r2:.2f}"`). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.
+@fig-model-comp shows that both non-linear models (Random Forest and SVR) outperform the linear baseline, with SVR achieving the best performance (lowest RMSE of `{python} f"{svr_rmse:.2f}"`, highest R² of `{python} f"{svr_r2:.2f}"`). This confirms that the relationship between physical measurements and abalone age contains non-linear components that simple linear regression cannot capture.
 
 ## Discussion
 

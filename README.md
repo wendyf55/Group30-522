@@ -102,7 +102,7 @@ python scripts/train_model.py --train-path data/processed/abalone_train.csv --te
 #### 6. Render the report
 Renders the Quarto report to HTML.
 ```bash
-quarto render notebooks/abalone_rings.qmd
+quarto render reports/abalone_rings.qmd
 ```
 
 ## Dataset
