@@ -58,7 +58,8 @@ You can run the full analysis pipeline using Make:
 ```bash
 make analysis
 ```
-Or run individual scripts manually:
+
+To run individual scripts manually:
 
 #### 1. Download data
 
