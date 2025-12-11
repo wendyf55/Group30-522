@@ -166,6 +166,7 @@ display(coef_df)
 ### 8. Non-Linear Model Results
 
 Given that the linear model explains only about `{python} f"{lr_r2*100:.0f}"`% of the variance (R² ≈ `{python} f"{lr_r2:.2f}"`), we now test non-linear models to see if they can capture more complex relationships in the data.
+One additional motivation for trying these non-linear models is the strong multicollinearity we observed among several weight-related features. Linear regression can become unstable when predictors are highly correlated, because small changes in the data can lead to large swings in the estimated coefficients. Tree-based methods like Random Forest and kernel-based methods like SVR are much less sensitive to multicollinearity, so they provide a more robust way to leverage all correlated predictors without needing to manually drop or combine them.
 
 #### Model B: Random Forest Regressor
 
