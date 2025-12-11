@@ -5,6 +5,7 @@ jupyter: python3
 format: 
     html:
         toc: true
+        embed-resources: true
 editor: source
 
 bibliography: references.bib
@@ -35,11 +36,9 @@ Following the **golden rule of machine learning**, we split the data into traini
 
 Before proceeding with analysis, we validate the data quality using Pandera schema validation. This ensures our data meets expected constraints (correct types, reasonable value ranges, no missing values in critical columns) and helps catch any data quality issues early in the pipeline.
 
-#### Correct Data File Format
+#### Correct Data File Format and Data Validation:
 
-
-#### Data Validation Using Panderas
-
+We used several validation tests to ensure data had the correct file format. We also completed data validation to ensure columns were of the expected data type, had no missing values, and were titled correctly. 
 
 
 #### Distribution of Target
