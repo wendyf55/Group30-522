@@ -41,6 +41,11 @@ stop: ## stop docker-compose services
 	docker-compose stop
 
 
+.PHONY: test
+test: ## Run unit tests with pytest
+	python -m pytest tests/ -v
+
+
 .PHONY: data
 data: ## Download and prepare data
 	python scripts/download_data.py --write_to data/raw

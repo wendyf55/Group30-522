@@ -1,16 +1,19 @@
 import os
+import sys
 import click
 import pickle
 import numpy as np
 import pandas as pd
 import altair as alt
-from sklearn.compose import make_column_transformer
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression
 from sklearn.svm import SVR
 from sklearn.metrics import mean_squared_error, r2_score
 from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
+# Add project root to path for imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+from src.model_utils import create_preprocessor
 
 
 DEFAULT_TRAIN_PATH = '../data/processed/abalone_train.csv'
@@ -26,22 +29,13 @@ CATEGORICAL_FEATURES = ['Sex']
 TARGET_COLUMN = 'Rings'
 
 
-def create_preprocessor():
-    """Create preprocessing pipeline for numeric and categorical features."""
-    preprocessor = make_column_transformer(
-        (StandardScaler(), NUMERIC_FEATURES),
-        (OneHotEncoder(drop='if_binary', sparse_output=False), CATEGORICAL_FEATURES)
-    )
-    return preprocessor
-
-
 def train_models(X, y, seed):
     """Train Linear Regression, Random Forest, and SVR models."""
     models = {}
     
     # Linear Regression (Baseline)
     lr_pipeline = make_pipeline(
-        create_preprocessor(),
+        create_preprocessor(NUMERIC_FEATURES, CATEGORICAL_FEATURES),
         LinearRegression()
     )
     lr_pipeline.fit(X, y)
@@ -49,7 +43,7 @@ def train_models(X, y, seed):
     
     # Random Forest
     rf_pipeline = make_pipeline(
-        create_preprocessor(),
+        create_preprocessor(NUMERIC_FEATURES, CATEGORICAL_FEATURES),
         RandomForestRegressor(
             n_estimators=100,
             random_state=seed,
@@ -61,7 +55,7 @@ def train_models(X, y, seed):
     
     # SVR (RBF Kernel)
     svr_pipeline = make_pipeline(
-        create_preprocessor(),
+        create_preprocessor(NUMERIC_FEATURES, CATEGORICAL_FEATURES),
         SVR(kernel='rbf', C=1.0, epsilon=0.1)
     )
     svr_pipeline.fit(X, y)
