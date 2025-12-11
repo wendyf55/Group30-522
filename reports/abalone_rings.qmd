@@ -59,7 +59,7 @@ We used several validation tests to ensure data had the correct file format. We 
 ![Correlation heatmap showing relationships between numerical features and the target variable (Rings).](../results/data_validation/correlation_plot.png){#fig-rings-corr}
 
 
-@fig-rings-corr shows that features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity.
+@fig-rings-corr shows that features show moderate positive correlations with Rings (0.5-0.6), indicating that physical measurements do contain predictive signal for age. However, there are high correlations among the features themselves (>0.9 between weights and dimensions), suggesting multicollinearity. This could affect linear regression coefficient interpretation, though it doesn't necessarily harm prediction accuracy. Non-linear models like Random Forest are less sensitive to multicollinearity. 
 
 
 ### 5. Exploratory Data Analysis (EDA)
@@ -74,6 +74,7 @@ The exploratory analysis below is performed **only on the training set** to avoi
 * Target (Rings) ranges from 1 to 29. Mostly normal, slight right skew.
 * Sex needs to be one-hot encoded, the rest should be scaled.
 * Numeric variables are moderately positively correlated with target.
+* There is high correlation between diameter, height, length and weights. We will explore non-linear models, which are less sensitive to multicollinearity.
 
 #### Visualisation
 
