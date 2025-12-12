@@ -12,3 +12,9 @@ GITHUB ISSUE FOR PEER REVIEW: <https://github.com/UBC-MDS/data-analysis-review-2
 
 Added:
 - sentence linking multicollinearity to our usage of non-linear models
+
+
+GITHUB ISSUE FOR PEER REVIEW: <https://github.com/UBC-MDS/data-analysis-review-2025/issues/55#issuecomment-3639184190>
+
+Added:
+- interpretations linking multicollinearity to our non-linear models results
