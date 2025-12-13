@@ -5,6 +5,9 @@ import pandera.pandas as pa
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from src.validate_data import validate_data
 
 DEFAULT_TRAIN_PATH = "data/processed/abalone_train.csv"
 DEFAULT_SAVE_DIR = "results/data_validation"
@@ -18,26 +21,6 @@ def check_data_format(train_df):
     assert isinstance(
         train_df, pd.DataFrame
     ), "Expected 'train_df' to be a Pandas DataFrame"
-
-
-def check_data_type_and_null(train_df):
-    # This schema checks column types, and that there are no NULL values in the feature columns.
-
-    schema = pa.DataFrameSchema(
-        {
-            "Sex": pa.Column(str, nullable=False),
-            "Length": pa.Column(float, nullable=False),
-            "Diameter": pa.Column(float, nullable=False),
-            "Height": pa.Column(float, nullable=False),
-            "Whole_weight": pa.Column(float, nullable=False),
-            "Shucked_weight": pa.Column(float, nullable=False),
-            "Viscera_weight": pa.Column(float, nullable=False),
-            "Shell_weight": pa.Column(float, nullable=False),
-            "Rings": pa.Column(int),
-        }
-    )
-
-    schema.validate(train_df, lazy=True)
 
 
 def check_missing_target(train_df):
@@ -334,7 +317,7 @@ def main(train_path, save_dir, boxplot_file, hist_file, correlation_file, thresh
     train_df = pd.read_csv(train_path)
 
     check_data_format(train_df)
-    check_data_type_and_null(train_df)
+    validate_data(train_df)
     check_missing_target(train_df)
     check_anomalous_continuous(train_df)
     check_anomalous_categorical(train_df)
