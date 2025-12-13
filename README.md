@@ -21,6 +21,17 @@ Group 30 in DSCI 522
 - Claudia Liauw  
 - Serene Zha
 
+## Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- **Docker Desktop** - [Download here](https://www.docker.com/products/docker-desktop/)
+- **Git** - [Download here](https://git-scm.com/downloads)
+- **Terminal/Command Line** - Terminal (Mac/Linux) or Command Prompt/PowerShell (Windows)
+
+For local development without Docker (optional):
+- **Conda** - [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or [Miniforge](https://github.com/conda-forge/miniforge)
+
 ## Setup
 
 > If you are using Windows or Mac, make sure Docker Desktop is running.
