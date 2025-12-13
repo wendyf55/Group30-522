@@ -103,5 +103,6 @@ clean: # Remove all generated data and results
 	rm -rf results/data_validation/*
 	rm -rf results/eda/*
 	rm -rf results/model/*
+	rm -f reports/abalone_rings.html
 
 
