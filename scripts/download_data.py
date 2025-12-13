@@ -22,4 +22,3 @@ def main(url, write_to):
 
 if __name__ == '__main__':
     main()
-
