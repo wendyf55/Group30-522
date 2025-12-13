@@ -18,3 +18,11 @@ GITHUB ISSUE FOR PEER REVIEW: <https://github.com/UBC-MDS/data-analysis-review-2
 
 Added:
 - interpretations linking multicollinearity to our non-linear models results
+
+
+GITHUB ISSUE FOR PEER REVIEW: <https://github.com/UBC-MDS/data-analysis-review-2025/issues/51#issuecomment-3638951656>
+
+Added:
+- `make` to `environment.yaml` to enable `make analysis` command in Docker container (fixes "make: not found" error)
+- `pytest` to `environment.yaml` for running unit tests
+- Prerequisites section to README.md with explicit requirements (Docker Desktop, Git, Terminal access, optional Conda)
