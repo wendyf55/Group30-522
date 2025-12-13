@@ -5,12 +5,12 @@ import click
 
 
 DEFAULT_URL = "https://archive.ics.uci.edu/static/public/1/abalone.zip"
-DEFAULT_WRITE_TO = "../data/raw"
+DEFAULT_WRITE_TO = "data/raw"
 
 
-def download_and_extract(url, write_to): 
+def download_and_extract(url, write_to):
     """
-    Download the Abalone zip file from `url` and extract it into `write_to`, 
+    Download the Abalone zip file from `url` and extract it into `write_to`,
     with a configurable output directory.
     """
 
@@ -24,7 +24,8 @@ def download_and_extract(url, write_to):
 
     with zipfile.ZipFile(zip_path, "r") as zip_ref:
         zip_ref.extractall(write_to)
-   
+
+
 @click.command()
 @click.option(
     "--url",
@@ -44,7 +45,6 @@ def main(url, write_to):
     """Downloads Abalone data zip from the web and extracts it."""
     download_and_extract(url, write_to)
 
-  
+
 if __name__ == "__main__":
     main()
-

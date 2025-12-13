@@ -3,8 +3,8 @@ import click
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-DEFAULT_ORIGIN_PATH = "../data/raw/abalone.data"
-DEFAULT_OUTPUT_DIR = "../data/processed"
+DEFAULT_ORIGIN_PATH = "data/raw/abalone.data"
+DEFAULT_OUTPUT_DIR = "data/processed"
 
 COLUMN_NAMES = [
     "Sex",
