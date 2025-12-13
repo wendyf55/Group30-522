@@ -5,7 +5,28 @@ from sklearn.model_selection import train_test_split
 
 def read_and_split(origin_path, output_dir):
     """
-    Reads in the Abalone dataset from a filepath, adds in correct column headers, then cleans and splits the data and sends it to the destination.
+    Load the Abalone dataset, clean it, split it into training and test
+    sets, and write the resulting datasets to CSV files.
+
+    The function reads the raw Abalone data (without headers), assigns
+    column names, removes rows containing missing values, separates features and
+    target, performs an 80/20 train–test split, and saves the resulting datasets
+    to the specified output directory.
+
+    Parameters
+    ----------
+    origin_path : str
+        File path to the raw Abalone dataset CSV.
+
+    output_dir : str
+        Directory where the processed training and test CSV files will be saved.
+        The directory is created if it does not already exist.
+
+    Returns
+    -------
+    abalone_test.csv
+    abalone_train.csv
+
     """
     os.makedirs(output_dir, exist_ok=True)
 
