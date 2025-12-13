@@ -47,7 +47,9 @@ test: # Run unit tests with pytest
 
 # Download  data
 data/raw/abalone.data: scripts/download_data.py
-	python scripts/download_data.py
+	python scripts/download_data.py \
+		--url "https://archive.ics.uci.edu/static/public/1/abalone.zip" \
+		--write_to data/raw
 
 # Clean + split data
 data/processed/abalone_train.csv data/processed/abalone_test.csv: \

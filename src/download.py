@@ -14,7 +14,7 @@ def download_and_extract(url, write_to):
         The directory where the files should be extracted.
     """
     # Define the path for the zip file
-    zip_path = os.path.join(write_to, "data.zip")
+    zip_path = os.path.join(write_to, "abalone.zip")
 
     # Download the file
     response = requests.get(url)
