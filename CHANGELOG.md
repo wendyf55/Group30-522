@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+## Pull request 102
+
+Link: <https://github.com/wendyf55/Group30-522/pull/102>
+
+### Fixed
+
+- Revert a change in pull request 89 below: removed `embed-resources: true` so that Figure 4 renders
+
+
 ## Pull request 97
 
 Link: <https://github.com/wendyf55/Group30-522/pull/97>
