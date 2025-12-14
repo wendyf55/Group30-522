@@ -2,6 +2,18 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
+COLUMN_NAMES = [
+    "Sex",
+    "Length",
+    "Diameter",
+    "Height",
+    "Whole_weight",
+    "Shucked_weight",
+    "Viscera_weight",
+    "Shell_weight",
+    "Rings",
+]
+
 
 def read_and_split(origin_path, output_dir):
     """
