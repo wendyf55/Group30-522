@@ -17,4 +17,4 @@ dependencies:
   - click=8.1.8
   - quarto=1.8.26
   - pytest=8.3.4
-  - make
+  - make=4.4.1
